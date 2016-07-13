@@ -2,6 +2,14 @@ $icon-font-path: '../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
 
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 
+textarea,
+input,
+select,
+a:active,
+a:focus {
+  outline: none;
+}
+
 
 section {
   border-bottom: solid 4px $text-color;
@@ -43,6 +51,10 @@ section {
       font-size: 26px;
       margin-top: 0;
       margin-bottom: 0.6em;
+    }
+
+    h3 {
+      font-size: 20px;
     }
 
     .instructions {
@@ -122,7 +134,6 @@ section {
         width: 100%;
         padding: 15px 20px;
         resize: none;
-        outline: none;
         border: none;
 
         @media (min-width: $screen-md-min) {
@@ -187,6 +198,44 @@ section {
               border-right-width: 4px;
             }
           }
+        }
+      }
+    }
+
+    &.source {
+      .answer {
+        ul {
+          display: table;
+          margin: 0 0 $grid-gutter-width/4 0;
+          padding: 0;
+          width: 100%;
+
+          li {
+            display: table-cell;
+            padding: 2px;
+
+            input {
+              width: 100%;
+              border: solid 2px $text-color;
+              padding: 4px 8px;
+            }
+
+            .select {
+              display: block;
+              border: solid 2px $text-color;
+              padding: 4px 2px 4px 0;
+
+              select {
+                width: 100%;
+                border:none;
+                background-color: #fff;
+              }
+            }
+          }
+        }
+
+        .add {
+          color: $gray-light;
         }
       }
     }
