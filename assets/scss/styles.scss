@@ -31,9 +31,8 @@ section {
     padding-bottom: $grid-gutter-width;
 
     h2 {
-      @include make-md-column(6);
-      @include make-md-column-offset(3);
       font-size: 26px;
+      margin-top: 0;
       margin-bottom: 0.6em;
     }
 
@@ -44,9 +43,40 @@ section {
 
       div {
         text-align: left;
+        background-color: $text-color;
+        z-index: 1;
+        padding: 15px;
+
+        @media (min-width: $screen-md-min) {
+          position: absolute;
+          top: -20%;
+
+          &:after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 8px 0 8px 8px;
+            border-color: transparent transparent transparent $text-color;
+            position: absolute;
+            top: 10px;
+            right: -8px;
+          }
+        }
+
+        &.in,
+        &.collapsing {
+          color: #fff;
+
+          & + .toggle {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+          }
+        }
       }
     }
-    .answer {
+    .main {
       @include make-md-column(6);
     }
     .comments {
@@ -76,7 +106,7 @@ section {
 
     &.scale,
     &.yes-no {
-      .wrapper {
+      .answer {
         display: table;
         width: 100%;
         table-layout: fixed;

@@ -5859,19 +5859,9 @@ section {
     section .question:after {
       clear: both; }
     section .question h2 {
-      position: relative;
-      min-height: 1px;
-      padding-left: 15px;
-      padding-right: 15px;
       font-size: 26px;
+      margin-top: 0;
       margin-bottom: 0.6em; }
-      @media (min-width: 992px) {
-        section .question h2 {
-          float: left;
-          width: 50%; } }
-      @media (min-width: 992px) {
-        section .question h2 {
-          margin-left: 25%; } }
     section .question .instructions {
       position: relative;
       min-height: 1px;
@@ -5884,14 +5874,37 @@ section {
           float: left;
           width: 25%; } }
       section .question .instructions div {
-        text-align: left; }
-    section .question .answer {
+        text-align: left;
+        background-color: #333333;
+        z-index: 1;
+        padding: 15px; }
+        @media (min-width: 992px) {
+          section .question .instructions div {
+            position: absolute;
+            top: -20%; }
+            section .question .instructions div:after {
+              content: '';
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 8px 0 8px 8px;
+              border-color: transparent transparent transparent #333333;
+              position: absolute;
+              top: 10px;
+              right: -8px; } }
+        section .question .instructions div.in, section .question .instructions div.collapsing {
+          color: #fff; }
+          section .question .instructions div.in + .toggle, section .question .instructions div.collapsing + .toggle {
+            position: relative;
+            z-index: 2;
+            color: #fff; }
+    section .question .main {
       position: relative;
       min-height: 1px;
       padding-left: 15px;
       padding-right: 15px; }
       @media (min-width: 992px) {
-        section .question .answer {
+        section .question .main {
           float: left;
           width: 50%; } }
     section .question .comments {
@@ -5918,20 +5931,20 @@ section {
             margin-left: -5px; } }
         section .question .comments textarea:focus {
           border: solid 2px #333333; }
-    section .question.scale .wrapper, section .question.yes-no .wrapper {
+    section .question.scale .answer, section .question.yes-no .answer {
       display: table;
       width: 100%;
       table-layout: fixed; }
-      section .question.scale .wrapper input, section .question.yes-no .wrapper input {
+      section .question.scale .answer input, section .question.yes-no .answer input {
         display: none; }
-        section .question.scale .wrapper input:checked + label span, section .question.yes-no .wrapper input:checked + label span {
+        section .question.scale .answer input:checked + label span, section .question.yes-no .answer input:checked + label span {
           background-color: #333333;
           color: #fff; }
-      section .question.scale .wrapper label, section .question.yes-no .wrapper label {
+      section .question.scale .answer label, section .question.yes-no .answer label {
         display: table-cell;
         text-align: center;
         font-weight: normal; }
-        section .question.scale .wrapper label span, section .question.yes-no .wrapper label span {
+        section .question.scale .answer label span, section .question.yes-no .answer label span {
           display: block;
           border-style: solid;
           border-color: #333333;
@@ -5943,13 +5956,13 @@ section {
           text-align: center;
           font-weight: bold;
           margin-bottom: 0.5em; }
-        section .question.scale .wrapper label:first-of-type, section .question.yes-no .wrapper label:first-of-type {
+        section .question.scale .answer label:first-of-type, section .question.yes-no .answer label:first-of-type {
           text-align: left; }
-          section .question.scale .wrapper label:first-of-type span, section .question.yes-no .wrapper label:first-of-type span {
+          section .question.scale .answer label:first-of-type span, section .question.yes-no .answer label:first-of-type span {
             border-left-width: 4px; }
-        section .question.scale .wrapper label:last-of-type, section .question.yes-no .wrapper label:last-of-type {
+        section .question.scale .answer label:last-of-type, section .question.yes-no .answer label:last-of-type {
           text-align: right; }
-          section .question.scale .wrapper label:last-of-type span, section .question.yes-no .wrapper label:last-of-type span {
+          section .question.scale .answer label:last-of-type span, section .question.yes-no .answer label:last-of-type span {
             border-right-width: 4px; }
 
 /*# sourceMappingURL=styles.css.map */
