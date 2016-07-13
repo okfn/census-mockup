@@ -80,13 +80,27 @@ section {
           & + .toggle {
             position: relative;
             z-index: 2;
-            color: #fff;
+
+            span {
+              background-color: #fff;
+              color: $text-color;
+            }
           }
         }
       }
 
       .toggle {
-        color: $gray-light;
+        span {
+          background-color: $gray-light;
+          color: #fff;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          display: inline-block;
+          text-align: center;
+          border-radius: 50%;
+          margin-top: 5px;
+        }
       }
     }
     .main {

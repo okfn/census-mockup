@@ -5902,10 +5902,20 @@ section {
           color: #fff; }
           section .question .instructions div.in + .toggle, section .question .instructions div.collapsing + .toggle {
             position: relative;
-            z-index: 2;
-            color: #fff; }
-      section .question .instructions .toggle {
-        color: #777777; }
+            z-index: 2; }
+            section .question .instructions div.in + .toggle span, section .question .instructions div.collapsing + .toggle span {
+              background-color: #fff;
+              color: #333333; }
+      section .question .instructions .toggle span {
+        background-color: #777777;
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        margin-top: 5px; }
     section .question .main {
       position: relative;
       min-height: 1px;
