@@ -5,8 +5,17 @@ $icon-font-path: '../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
 
 section {
   border-bottom: solid 4px $text-color;
-  padding-top: $grid-gutter-width;
-  padding-bottom: $grid-gutter-width;
+
+  .container {
+    padding-top: $grid-gutter-width;
+    padding-bottom: $grid-gutter-width;
+
+    @media (min-width: $screen-md-min) {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAYAAAD0In+KAAAAEklEQVQImWP48OHD/w8fPvwHACIjB58VdezUAAAAAElFTkSuQmCC);
+      background-repeat: repeat-y;
+      background-position: 76% 0;
+    }
+  }
 
   .intro {
     margin-bottom: $grid-gutter-width;
@@ -75,6 +84,10 @@ section {
           }
         }
       }
+
+      .toggle {
+        color: $gray-light;
+      }
     }
     .main {
       @include make-md-column(6);
@@ -83,23 +96,28 @@ section {
       @include make-md-column(3);
 
       label {
-        position: absolute;
-        cursor: pointer;
+        color: $gray-light;
+        padding-left: 18px;
+
+        @media (min-width: $screen-md-min) {
+          height: 0;
+          overflow: hidden;
+        }
       }
       textarea {
         width: 100%;
-        padding: 5px 5px 5px 20px;
-        border: solid 2px $body-bg;
+        padding: 15px 20px;
         resize: none;
         outline: none;
+        border: none;
 
         @media (min-width: $screen-md-min) {
-          margin-top: -7px;
-          margin-left: -5px;
+          margin-top: -10px;
+          margin-left: -2px;
         }
 
         &:focus {
-          border: solid 2px $text-color;
+          background-color: $gray-lighter;
         }
       }
     }
@@ -155,6 +173,14 @@ section {
               border-right-width: 4px;
             }
           }
+        }
+      }
+    }
+
+    &.first {
+      .comments {
+        label {
+          height: auto;
         }
       }
     }

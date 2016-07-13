@@ -5810,9 +5810,15 @@ button.close {
   .hidden-print {
     display: none !important; } }
 section {
-  border-bottom: solid 4px #333333;
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  border-bottom: solid 4px #333333; }
+  section .container {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    @media (min-width: 992px) {
+      section .container {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAYAAAD0In+KAAAAEklEQVQImWP48OHD/w8fPvwHACIjB58VdezUAAAAAElFTkSuQmCC);
+        background-repeat: repeat-y;
+        background-position: 76% 0; } }
   section .intro {
     margin-bottom: 30px;
     margin-left: -15px;
@@ -5898,6 +5904,8 @@ section {
             position: relative;
             z-index: 2;
             color: #fff; }
+      section .question .instructions .toggle {
+        color: #777777; }
     section .question .main {
       position: relative;
       min-height: 1px;
@@ -5917,20 +5925,24 @@ section {
           float: left;
           width: 25%; } }
       section .question .comments label {
-        position: absolute;
-        cursor: pointer; }
+        color: #777777;
+        padding-left: 18px; }
+        @media (min-width: 992px) {
+          section .question .comments label {
+            height: 0;
+            overflow: hidden; } }
       section .question .comments textarea {
         width: 100%;
-        padding: 5px 5px 5px 20px;
-        border: solid 2px #fff;
+        padding: 15px 20px;
         resize: none;
-        outline: none; }
+        outline: none;
+        border: none; }
         @media (min-width: 992px) {
           section .question .comments textarea {
-            margin-top: -7px;
-            margin-left: -5px; } }
+            margin-top: -10px;
+            margin-left: -2px; } }
         section .question .comments textarea:focus {
-          border: solid 2px #333333; }
+          background-color: #eeeeee; }
     section .question.scale .answer, section .question.yes-no .answer {
       display: table;
       width: 100%;
@@ -5964,5 +5976,7 @@ section {
           text-align: right; }
           section .question.scale .answer label:last-of-type span, section .question.yes-no .answer label:last-of-type span {
             border-right-width: 4px; }
+    section .question.first .comments label {
+      height: auto; }
 
 /*# sourceMappingURL=styles.css.map */
