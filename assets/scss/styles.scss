@@ -1,0 +1,132 @@
+$icon-font-path: '../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
+
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+section {
+  border-bottom: solid 4px $text-color;
+  padding-top: $grid-gutter-width;
+  padding-bottom: $grid-gutter-width;
+
+  .intro {
+    margin-bottom: $grid-gutter-width;
+
+    @include make-row();
+    h1 {
+      @include make-md-column(6);
+      @include make-md-column-offset(3);
+    }
+
+    p {
+      clear: left;
+      @include make-md-column(6);
+      @include make-md-column-offset(3);
+      font-size: 16px;
+    }
+  }
+
+  .question {
+    clear: both;
+    @include make-row();
+    padding-bottom: $grid-gutter-width;
+
+    h2 {
+      @include make-md-column(6);
+      @include make-md-column-offset(3);
+      font-size: 26px;
+      margin-bottom: 0.6em;
+    }
+
+    .instructions {
+      @include make-md-column(3);
+      clear: left;
+      text-align: right;
+
+      div {
+        text-align: left;
+      }
+    }
+    .answer {
+      @include make-md-column(6);
+    }
+    .comments {
+      @include make-md-column(3);
+
+      label {
+        position: absolute;
+        cursor: pointer;
+      }
+      textarea {
+        width: 100%;
+        padding: 5px 5px 5px 20px;
+        border: solid 2px $body-bg;
+        resize: none;
+        outline: none;
+
+        @media (min-width: $screen-md-min) {
+          margin-top: -7px;
+          margin-left: -5px;
+        }
+
+        &:focus {
+          border: solid 2px $text-color;
+        }
+      }
+    }
+
+    &.scale,
+    &.yes-no {
+      .wrapper {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+
+        input {
+          display: none;
+
+          &:checked {
+
+            & + label span {
+              background-color: $text-color;
+              color: $body-bg;
+            }
+          }
+        }
+
+        label {
+          display: table-cell;
+          text-align: center;
+          font-weight: normal;
+
+          span {
+            display: block;
+            border-style: solid;
+            border-color: $text-color;
+            border-width: 4px 2px;
+            cursor: pointer;
+            font-size: 20px;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+          }
+
+          &:first-of-type {
+            text-align: left;
+            span {
+              border-left-width: 4px;
+            }
+          }
+
+          &:last-of-type {
+            text-align: right;
+            span {
+              border-right-width: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
