@@ -5876,7 +5876,8 @@ section {
       margin-top: 0;
       margin-bottom: 0.6em; }
     section .question h3 {
-      font-size: 20px; }
+      font-size: 20px;
+      margin-top: 0; }
     section .question .instructions {
       position: relative;
       min-height: 1px;
@@ -5994,28 +5995,35 @@ section {
           text-align: right; }
           section .question.scale .answer label:last-of-type span, section .question.yes-no .answer label:last-of-type span {
             border-right-width: 4px; }
-    section .question.source .answer ul {
+    section .question.source .answer {
       display: table;
-      margin: 0 0 7.5px 0;
-      padding: 0;
       width: 100%; }
-      section .question.source .answer ul li {
-        display: table-cell;
-        padding: 2px; }
-        section .question.source .answer ul li input {
-          width: 100%;
-          border: solid 2px #333333;
-          padding: 4px 8px; }
-        section .question.source .answer ul li .select {
-          display: block;
-          border: solid 2px #333333;
-          padding: 4px 2px 4px 0; }
-          section .question.source .answer ul li .select select {
+      section .question.source .answer ul {
+        display: table-row; }
+        section .question.source .answer ul li {
+          display: table-cell;
+          padding: 2px; }
+          section .question.source .answer ul li input {
             width: 100%;
-            border: none;
-            background-color: #fff; }
-    section .question.source .answer .add {
-      color: #777777; }
+            border: solid 2px #333333;
+            padding: 4px 8px; }
+          section .question.source .answer ul li .select {
+            display: block;
+            border: solid 2px #333333;
+            padding: 4px 2px 4px 0; }
+            section .question.source .answer ul li .select select {
+              width: 100%;
+              border: none;
+              background-color: #fff; }
+        section .question.source .answer ul:nth-child(n+2) label {
+          display: none; }
+      section .question.source .answer .add {
+        color: #777777;
+        display: inline-block;
+        margin-top: 0.25em; }
+        section .question.source .answer .add:before {
+          content: '+';
+          font-weight: bold; }
     section .question.first .comments label {
       height: auto; }
 

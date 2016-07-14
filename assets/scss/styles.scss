@@ -55,6 +55,7 @@ section {
 
     h3 {
       font-size: 20px;
+      margin-top: 0;
     }
 
     .instructions {
@@ -204,11 +205,11 @@ section {
 
     &.source {
       .answer {
+        display: table;
+        width: 100%;
+
         ul {
-          display: table;
-          margin: 0 0 $grid-gutter-width/4 0;
-          padding: 0;
-          width: 100%;
+          display: table-row;
 
           li {
             display: table-cell;
@@ -232,10 +233,23 @@ section {
               }
             }
           }
+
+          &:nth-child(n+2) {
+            label {
+              display: none;
+            }
+          }
         }
 
         .add {
           color: $gray-light;
+          display: inline-block;
+          margin-top: 0.25em;
+
+          &:before {
+            content: '+';
+            font-weight: bold;
+          }
         }
       }
     }
