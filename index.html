@@ -28,15 +28,15 @@
             <div class="answer">
               <input type="radio" name="scaleOne" id="scaleOne1">
               <label for="scaleOne1">
-                <span>1</span> I'm not familiar at all with the field
+                <span>1</span> <em class="description"> I'm not familiar at all with the field</em>
               </label>
               <input type="radio" name="scaleOne" id="scaleOne2">
               <label for="scaleOne2">
-                <span>2</span>
+                <span>2</span> <em class="description">I have some knowledge about the field</em>
               </label>
               <input type="radio" name="scaleOne" id="scaleOne3">
               <label for="scaleOne3">
-                <span>3</span> I have advanced knowledge in this field
+                <span>3</span> <em class="description">I have advanced knowledge in this field</em>
               </label>
             </div>
 
@@ -56,15 +56,15 @@
             <div class="answer">
               <input type="radio" name="scaleTwo" id="scaleTwo1">
               <label for="scaleTwo1">
-                <span>1</span> I'm not familiar at all with open data
+                <span>1</span> <em class="description">I'm not familiar at all with open data</em>
               </label>
               <input type="radio" name="scaleTwo" id="scaleTwo2">
               <label for="scaleTwo2">
-                <span>2</span>
+                <span>2</span> <em class="description">I have some knowledge about open data</em>
               </label>
               <input type="radio" name="scaleTwo" id="scaleTwo3">
               <label for="scaleTwo3">
-                <span>3</span> I have advanced knowledge
+                <span>3</span> <em class="description">I have advanced knowledge</em>
               </label>
             </div>
 
@@ -167,8 +167,15 @@
           </div>
         </div>
 
-        <div class="source question">
+        <div class="source sub question">
           <div class="instructions">
+            <div class="collapse" id="instructionsFive">
+              <p>
+                Example: If you find data on a financial department website, please fill in: “website of National Department of Finances”. Sometimes you can find data in a lot of places in the web.
+              </p>
+            </div>
+            <a class="toggle" role="button" data-toggle="collapse" href="#instructionsFive" aria-expanded="false" aria-controls="instructionsFive"><span class="sr-only">Help</span><span>?</span></a>
+
           </div>
           <div class="main">
             <h3><span>B2.1</span> Where did you find the dataset?</h3>
@@ -219,8 +226,38 @@
             </div>
           </div>
           <div class="comments">
-            <label for="commentFour">Comments</label>
-            <textarea placeholder="Add comments" id="commentFour" rows="6"></textarea>
+            <label for="commentFive">Comments</label>
+            <textarea placeholder="Add comments" id="commentFive" rows="6"></textarea>
+          </div>
+        </div>
+
+        <div class="scale sub question">
+          <div class="instructions">
+          </div>
+          <div class="main">
+            <h3><span>B2.2</span> How much do you agree with the following statement? “It was easy for me to find the data.”</h3>
+            <div class="answer">
+              <input type="radio" name="scaleSix" id="scaleSix1">
+              <label for="scaleSix1">
+                <span>1</span> <em class="description">Do not agree at all</em>
+              </label>
+              <input type="radio" name="scaleSix" id="scaleSix2">
+              <label for="scaleSix2">
+                <span>2</span> <em class="description">Rather do not agree</em>
+              </label>
+              <input type="radio" name="scaleSix" id="scaleSix3">
+              <label for="scaleSix3">
+                <span>3</span> <em class="description">Rather agree</em>
+              </label>
+              <input type="radio" name="scaleSix" id="scaleSix4">
+              <label for="scaleSix4">
+                <span>4</span> <em class="description">Totally agree</em>
+              </label>
+            </div>
+          </div>
+          <div class="comments">
+            <label for="commentSix">Comments</label>
+            <textarea placeholder="Tell us the steps you took to find the data. e.g I googled for the data and found the data in the first search result." id="commentSix" rows="6"></textarea>
           </div>
         </div>
       </div>

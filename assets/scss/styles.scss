@@ -186,10 +186,17 @@ section {
             margin-bottom: 0.5em;
           }
 
+          em {
+            display: none;
+          }
+
           &:first-of-type {
             text-align: left;
             span {
               border-left-width: 4px;
+            }
+            em {
+              display: block;
             }
           }
 
@@ -197,6 +204,9 @@ section {
             text-align: right;
             span {
               border-right-width: 4px;
+            }
+            em{
+              display: block;
             }
           }
         }
@@ -249,6 +259,34 @@ section {
           &:before {
             content: '+';
             font-weight: bold;
+          }
+        }
+      }
+    }
+
+    &.sub {
+      padding-bottom: $grid-gutter-width/2;
+
+      &.scale,
+      &.yes-no {
+        .answer {
+          label {
+            span {
+              border-width: 2px 1px;
+              font-size: 16px;
+            }
+
+            &:first-of-type {
+              span {
+                border-left-width: 2px;
+              }
+            }
+
+            &:last-of-type {
+              span {
+                border-right-width: 2px;
+              }
+            }
           }
         }
       }
