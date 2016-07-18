@@ -35,6 +35,11 @@ section {
     h1 {
       @include make-md-column(6);
       @include make-md-column-offset(3);
+      margin: 0;
+
+      @media (min-width: $screen-md-min) {
+        margin-top: 20px;
+      }
     }
 
     p {
@@ -42,6 +47,7 @@ section {
       @include make-md-column(6);
       @include make-md-column-offset(3);
       font-size: 16px;
+      margin-top: 10px;
     }
   }
 
