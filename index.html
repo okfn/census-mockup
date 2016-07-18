@@ -425,13 +425,7 @@
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 
     <script>
-      $(".scale input, .yes-no input").change(function(){
-        $( this ).parents(".question").addClass( "answered" );
-      });
-      $(".source input[type='text']").change(function(){
-        $( this ).parents(".question").addClass( "answered" );
-      });
-      $(".select select").change(function(){
+      $(".scale input, .yes-no input, .multiple input, .source input[type='text'], .select select").change(function(){
         $( this ).parents(".question").addClass( "answered" );
       });
     </script>

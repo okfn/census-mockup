@@ -299,6 +299,7 @@ section {
             font-size: 18px;
             padding: 0.5em;
             margin: 0;
+            cursor: pointer;
 
             .letter {
               display: inline-block;
@@ -401,6 +402,11 @@ section {
           width: auto;
         }
       }
+    }
+
+    .answered,
+    &:not(.answered) + :not(.answered) {
+      opacity: 0.2;
     }
   }
 }

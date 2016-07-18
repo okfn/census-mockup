@@ -6062,7 +6062,8 @@ section {
           border: solid 4px #333333;
           font-size: 18px;
           padding: 0.5em;
-          margin: 0; }
+          margin: 0;
+          cursor: pointer; }
           section .question.multiple ul li label .letter {
             display: inline-block;
             border: solid 2px #333333;
@@ -6119,5 +6120,7 @@ section {
     section .question.first .comments label {
       height: auto;
       width: auto; }
+    section .question .answered, section .question:not(.answered) + :not(.answered) {
+      opacity: 0.2; }
 
 /*# sourceMappingURL=styles.css.map */
