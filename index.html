@@ -151,12 +151,12 @@
           <div class="main">
             <h2><span>B2.</span> Is the dataset available online directly (without the requirement to register or request access to data)?</h2>
             <div class="answer">
-              <input type="radio" name="yesnoOne" id="yesnoOne1">
-              <label for="yesnoOne1">
+              <input type="radio" name="yesnoFour" id="yesnoFour1">
+              <label for="yesnoFour1">
                 <span>Yes</span>
               </label>
-              <input type="radio" name="yesnoOne" id="yesnoOne2">
-              <label for="yesnoOne2">
+              <input type="radio" name="yesnoFour" id="yesnoFour2">
+              <label for="yesnoFour2">
                 <span>No</span>
               </label>
             </div>
@@ -260,6 +260,71 @@
             <textarea placeholder="Tell us the steps you took to find the data. e.g I googled for the data and found the data in the first search result." id="commentSix" rows="6"></textarea>
           </div>
         </div>
+
+        <div class="select question">
+          <div class="instructions">
+            <div class="collapse" id="instructionsSeven">
+              <p>
+                Pick the URL where you find the most complete dataset.
+              </p>
+            </div>
+            <a class="toggle" role="button" data-toggle="collapse" href="#instructionsSeven" aria-expanded="false" aria-controls="instructionsSeven"><span class="sr-only">Help</span><span>?</span></a>
+          </div>
+          <div class="main">
+            <h2><span>B3.</span> Select one URL and tell us which of the following dataset characteristics you can find in the dataset.</h2>
+            <div class="answer">
+              <select>
+                <option value="">Select</option>
+                <option value="my-url-description-1">My URL Description 1</option>
+                <option value="my-url-description-2">My URL Description 2</option>
+              </select>
+            </div>
+          </div>
+          <div class="comments">
+            <label for="commentSeven">Comments</label>
+            <textarea placeholder="Add comments" id="commentSeven" rows="6"></textarea>
+          </div>
+        </div>
+
+        <div class="multiple question continuation">
+          <div class="instructions">
+
+          </div>
+          <div class="main">
+            <div class="answer">
+              <ul>
+                <li>
+                  <input type="checkbox" name="checkboxEight" id="checkboxEight1" value="1">
+                  <label for="checkboxEight1"><span class="letter">A</span> <span class="description">Characteristic 1</span></label>
+                </li>
+                <li>
+                  <input type="checkbox" name="checkboxEight" id="checkboxEight2" value="1">
+                  <label for="checkboxEight2"><span class="letter">B</span> <span class="description">Characteristic 2</span></label>
+                </li>
+                <li>
+                  <input type="checkbox" name="checkboxEight" id="checkboxEight3" value="1">
+                  <label for="checkboxEight3"><span class="letter">C</span> <span class="description">Characteristic 3</span></label>
+                </li>
+                <li>
+                  <input type="checkbox" name="checkboxEight" id="checkboxEight4" value="1">
+                  <label for="checkboxEight4"><span class="letter">D</span> <span class="description">Characteristic 4</span></label>
+                </li>
+                <li>
+                  <input type="checkbox" name="checkboxEight" id="checkboxEight5" value="1">
+                  <label for="checkboxEight5"><span class="letter">E</span> <span class="description">Characteristic 5</span></label>
+                </li>
+                <li>
+                  <input type="checkbox" name="checkboxEight" id="checkboxEight6" value="1">
+                  <label for="checkboxEight6"><span class="letter">F</span> <span class="description">Characteristic 6</span></label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="comments">
+            <label for="commentEight">Comments</label>
+            <textarea placeholder="Add comments" id="commentEight" rows="6"></textarea>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -268,10 +333,15 @@
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 
     <script>
-      $("input").change(function(){
+      $(".scale input, .yes-no input").change(function(){
         $( this ).parents(".question").addClass( "answered" );
       });
-
+      $(".source input[type='text']").change(function(){
+        $( this ).parents(".question").addClass( "answered" );
+      });
+      $(".select select").change(function(){
+        $( this ).parents(".question").addClass( "answered" );
+      });
     </script>
   </body>
 </html>

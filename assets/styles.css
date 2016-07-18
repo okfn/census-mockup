@@ -5827,7 +5827,7 @@ section {
         background-repeat: repeat-y;
         background-position: 76% 0; } }
   section .intro {
-    margin-bottom: 30px;
+    margin-bottom: 37.5px;
     margin-left: -15px;
     margin-right: -15px; }
     section .intro:before, section .intro:after {
@@ -5950,6 +5950,7 @@ section {
         @media (min-width: 992px) {
           section .question .comments label {
             height: 0;
+            width: 0;
             overflow: hidden; } }
       section .question .comments textarea {
         width: 100%;
@@ -6030,6 +6031,75 @@ section {
         section .question.source .answer .add:before {
           content: '+';
           font-weight: bold; }
+    section .question.select .answer {
+      border: solid 4px #333333;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0.6em 0.5em; }
+      section .question.select .answer select {
+        width: 100%;
+        border: none;
+        background-color: #fff; }
+    section .question.multiple ul {
+      margin: 0 -5px;
+      padding: 0; }
+      section .question.multiple ul li {
+        display: block;
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding: 5px; }
+        @media (min-width: 992px) {
+          section .question.multiple ul li {
+            float: left;
+            width: 50%; } }
+        section .question.multiple ul li label {
+          display: block;
+          border: solid 4px #333333;
+          font-size: 18px;
+          padding: 0.5em;
+          margin: 0; }
+          section .question.multiple ul li label .letter {
+            display: inline-block;
+            border: solid 2px #333333;
+            width: 1.95em;
+            text-align: center;
+            border-radius: 4px;
+            opacity: 0.7;
+            font-size: 14px;
+            padding: 0.15em;
+            float: left;
+            overflow: hidden;
+            position: relative; }
+          section .question.multiple ul li label .description {
+            display: block;
+            margin-left: 2em; }
+        section .question.multiple ul li input {
+          display: none; }
+          section .question.multiple ul li input:checked + label {
+            background-color: #333333;
+            color: #fff; }
+            section .question.multiple ul li input:checked + label .letter {
+              border-color: #fff;
+              opacity: 1;
+              text-indent: -4em; }
+              section .question.multiple ul li input:checked + label .letter:after {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                text-indent: 0;
+                padding-top: 0.25em;
+                font-family: 'Glyphicons Halflings';
+                font-style: normal;
+                font-weight: normal;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                content: "\e013"; }
     section .question.sub {
       padding-bottom: 15px; }
       section .question.sub.scale .answer label span, section .question.sub.yes-no .answer label span {
@@ -6039,7 +6109,10 @@ section {
         border-left-width: 2px; }
       section .question.sub.scale .answer label:last-of-type span, section .question.sub.yes-no .answer label:last-of-type span {
         border-right-width: 2px; }
+    section .question.continuation {
+      margin-top: -15px; }
     section .question.first .comments label {
-      height: auto; }
+      height: auto;
+      width: auto; }
 
 /*# sourceMappingURL=styles.css.map */
