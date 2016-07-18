@@ -5827,7 +5827,6 @@ section {
         background-repeat: repeat-y;
         background-position: 76% 0; } }
   section .intro {
-    margin-bottom: 30px;
     margin-left: -15px;
     margin-right: -15px; }
     section .intro:before, section .intro:after {
@@ -5835,6 +5834,9 @@ section {
       display: table; }
     section .intro:after {
       clear: both; }
+    @media (min-width: 992px) {
+      section .intro {
+        margin-bottom: 30px; } }
     section .intro h1 {
       position: relative;
       min-height: 1px;
@@ -5865,13 +5867,15 @@ section {
     clear: both;
     margin-left: -15px;
     margin-right: -15px;
-    padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-top: 30px; }
     section .question:before, section .question:after {
       content: " ";
       display: table; }
     section .question:after {
       clear: both; }
+    @media (min-width: 992px) {
+      section .question {
+        padding-bottom: 30px; } }
     section .question h2 {
       font-size: 26px;
       margin-top: 0;
@@ -5947,9 +5951,11 @@ section {
           width: 25%; } }
       section .question .comments label {
         color: #777777;
-        padding-left: 18px; }
+        margin-top: 15px; }
         @media (min-width: 992px) {
           section .question .comments label {
+            margin-top: 0;
+            padding-left: 18px;
             height: 0;
             width: 0;
             overflow: hidden;
@@ -5959,11 +5965,13 @@ section {
         width: 100%;
         padding: 15px 20px;
         resize: none;
-        border: none; }
+        border: none;
+        border: solid 2px #777777; }
         @media (min-width: 992px) {
           section .question .comments textarea {
             margin-top: -10px;
-            margin-left: -2px; } }
+            margin-left: -2px;
+            border: none; } }
         section .question .comments textarea:focus {
           background-color: #eeeeee; }
     section .question.scale .answer, section .question.yes-no .answer {

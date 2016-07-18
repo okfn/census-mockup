@@ -26,9 +26,12 @@ section {
   }
 
   .intro {
-    margin-bottom: $grid-gutter-width;
-
     @include make-row();
+
+    @media (min-width: $screen-md-min) {
+      margin-bottom: $grid-gutter-width;
+    }
+
     h1 {
       @include make-md-column(6);
       @include make-md-column-offset(3);
@@ -46,7 +49,9 @@ section {
     clear: both;
     @include make-row();
     padding-top: $grid-gutter-width;
-    padding-bottom: $grid-gutter-width;
+    @media (min-width: $screen-md-min) {
+      padding-bottom: $grid-gutter-width;
+    }
 
     h2 {
       font-size: 26px;
@@ -125,9 +130,11 @@ section {
 
       label {
         color: $gray-light;
-        padding-left: 18px;
+        margin-top: $grid-gutter-width/2;
 
         @media (min-width: $screen-md-min) {
+          margin-top: 0;
+          padding-left: 18px;
           height: 0;
           width: 0;
           overflow: hidden;
@@ -140,10 +147,12 @@ section {
         padding: 15px 20px;
         resize: none;
         border: none;
+        border: solid 2px $gray-light;
 
         @media (min-width: $screen-md-min) {
           margin-top: -10px;
           margin-left: -2px;
+          border: none;
         }
 
         &:focus {
