@@ -425,6 +425,8 @@
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 
     <script>
+      $( ".scale input:checked, .yes-no input:checked, .multiple input:checked").parents(".question").addClass( "answered" ); //needs other input types added
+
       $(".scale input, .yes-no input, .multiple input, .source input[type='text'], .select select").change(function(){
         $( this ).parents(".question").addClass( "answered" );
       });

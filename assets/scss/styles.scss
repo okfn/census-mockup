@@ -419,7 +419,6 @@ section {
       }
     }
 
-    .answered,
     &:not(.answered) + :not(.answered) {
       opacity: 0.2;
     }

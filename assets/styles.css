@@ -6133,7 +6133,7 @@ section {
     section .question.first .comments label {
       height: auto;
       width: auto; }
-    section .question .answered, section .question:not(.answered) + :not(.answered) {
+    section .question:not(.answered) + :not(.answered) {
       opacity: 0.2; }
 
 /*# sourceMappingURL=styles.css.map */
