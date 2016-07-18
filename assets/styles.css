@@ -5827,7 +5827,7 @@ section {
         background-repeat: repeat-y;
         background-position: 76% 0; } }
   section .intro {
-    margin-bottom: 37.5px;
+    margin-bottom: 30px;
     margin-left: -15px;
     margin-right: -15px; }
     section .intro:before, section .intro:after {
@@ -5865,6 +5865,7 @@ section {
     clear: both;
     margin-left: -15px;
     margin-right: -15px;
+    padding-top: 30px;
     padding-bottom: 30px; }
     section .question:before, section .question:after {
       content: " ";
@@ -5951,7 +5952,9 @@ section {
           section .question .comments label {
             height: 0;
             width: 0;
-            overflow: hidden; } }
+            overflow: hidden;
+            position: absolute;
+            top: -30px; } }
       section .question .comments textarea {
         width: 100%;
         padding: 15px 20px;
@@ -6072,6 +6075,20 @@ section {
             float: left;
             overflow: hidden;
             position: relative; }
+            section .question.multiple ul li label .letter:after {
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              text-indent: 0;
+              padding-top: 0.25em;
+              font-family: 'Glyphicons Halflings';
+              font-style: normal;
+              font-weight: normal;
+              line-height: 1;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale; }
           section .question.multiple ul li label .description {
             display: block;
             margin-left: 2em; }
@@ -6086,21 +6103,9 @@ section {
               text-indent: -4em; }
               section .question.multiple ul li input:checked + label .letter:after {
                 display: block;
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                text-indent: 0;
-                padding-top: 0.25em;
-                font-family: 'Glyphicons Halflings';
-                font-style: normal;
-                font-weight: normal;
-                line-height: 1;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
                 content: "\e013"; }
     section .question.sub {
+      padding-top: 0;
       padding-bottom: 15px; }
       section .question.sub.scale .answer label span, section .question.sub.yes-no .answer label span {
         border-width: 2px 1px;
@@ -6110,7 +6115,7 @@ section {
       section .question.sub.scale .answer label:last-of-type span, section .question.sub.yes-no .answer label:last-of-type span {
         border-right-width: 2px; }
     section .question.continuation {
-      margin-top: -15px; }
+      margin-top: -30px; }
     section .question.first .comments label {
       height: auto;
       width: auto; }

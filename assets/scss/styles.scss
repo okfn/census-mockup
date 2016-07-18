@@ -26,7 +26,7 @@ section {
   }
 
   .intro {
-    margin-bottom: $grid-gutter-width*1.25;
+    margin-bottom: $grid-gutter-width;
 
     @include make-row();
     h1 {
@@ -45,6 +45,7 @@ section {
   .question {
     clear: both;
     @include make-row();
+    padding-top: $grid-gutter-width;
     padding-bottom: $grid-gutter-width;
 
     h2 {
@@ -130,6 +131,8 @@ section {
           height: 0;
           width: 0;
           overflow: hidden;
+          position: absolute;
+          top: -$grid-gutter-width;
         }
       }
       textarea {
@@ -309,6 +312,22 @@ section {
               float: left;
               overflow: hidden;
               position: relative;
+
+              &:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                text-indent: 0;
+                padding-top: 0.25em;
+                font-family: 'Glyphicons Halflings';
+                font-style: normal;
+                font-weight: normal;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+              }
             }
 
             .description {
@@ -332,19 +351,6 @@ section {
 
                   &:after {
                     display: block;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    text-indent: 0;
-                    padding-top: 0.25em;
-                    font-family: 'Glyphicons Halflings';
-                    font-style: normal;
-                    font-weight: normal;
-                    line-height: 1;
-                    -webkit-font-smoothing: antialiased;
-                    -moz-osx-font-smoothing: grayscale;
                     content: "\e013";
                   }
                 }
@@ -356,6 +362,7 @@ section {
     }
 
     &.sub {
+      padding-top: 0;
       padding-bottom: $grid-gutter-width/2;
 
       &.scale,
@@ -384,7 +391,7 @@ section {
     }
 
     &.continuation {
-      margin-top: -$grid-gutter-width/2;
+      margin-top: -$grid-gutter-width;
     }
 
     &.first {
