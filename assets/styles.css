@@ -6059,11 +6059,11 @@ section {
           padding: 2px; }
           section .question.source .answer ul li input {
             width: 100%;
-            border: solid 2px #333333;
+            border: solid 4px #333333;
             padding: 4px 8px; }
           section .question.source .answer ul li .select {
             display: block;
-            border: solid 2px #333333;
+            border: solid 4px #333333;
             padding: 4px 2px 4px 0; }
             section .question.source .answer ul li .select select {
               width: 100%;
@@ -6159,6 +6159,10 @@ section {
         border-left-width: 2px; }
       section .question.sub.scale .answer label:last-of-type span, section .question.sub.yes-no .answer label:last-of-type span {
         border-right-width: 2px; }
+      section .question.sub.source .answer ul li input {
+        border-width: 2px; }
+      section .question.sub.source .answer ul li .select {
+        border-width: 2px; }
     section .question.continuation {
       margin-top: -30px; }
     section .question.first .comments label {
