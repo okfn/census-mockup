@@ -1,0 +1,23 @@
+h2, h3 {
+  span {
+    color: $gray-light;
+  }
+}
+
+section {
+  border: solid 1px $gray-lighter;
+
+  &:nth-child(odd) {
+    background-color: rgba($gray-lighter, 0.3);
+  }
+
+  .question {
+    .instructions {
+      .toggle {
+        .icon {
+          background-color: $brand-info;
+        }
+      }
+    }
+  }
+}
