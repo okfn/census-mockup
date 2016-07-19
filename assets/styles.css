@@ -6001,7 +6001,8 @@ section {
         resize: none;
         border: none;
         border: solid 2px #777777;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        background-color: transparent; }
         @media (min-width: 992px) {
           section .question .comments textarea {
             margin-top: -10px;

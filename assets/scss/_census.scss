@@ -188,6 +188,7 @@ section {
         border: none;
         border: solid 2px $gray-light;
         margin-bottom: $grid-gutter-width;
+        background-color: transparent;
 
         @media (min-width: $screen-md-min) {
           margin-top: -10px;
