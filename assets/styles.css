@@ -5903,7 +5903,8 @@ section {
         text-align: left;
         background-color: #333333;
         z-index: 1;
-        padding: 22.5px; }
+        padding: 22.5px;
+        margin-bottom: 30px; }
         section .question .instructions div h4 {
           margin-top: 0; }
         section .question .instructions div :last-child {
@@ -5924,19 +5925,26 @@ section {
               right: -8px; } }
         section .question .instructions div.in, section .question .instructions div.collapsing {
           color: #fff; }
-          section .question .instructions div.in + .toggle, section .question .instructions div.collapsing + .toggle {
-            position: relative;
-            z-index: 2; }
-            section .question .instructions div.in + .toggle .icon, section .question .instructions div.collapsing + .toggle .icon {
-              background-color: #fff; }
-              section .question .instructions div.in + .toggle .icon:after, section .question .instructions div.collapsing + .toggle .icon:after {
-                content: 'x';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                color: #333333;
-                line-height: 1.3; }
+          @media (min-width: 992px) {
+            section .question .instructions div.in + .toggle, section .question .instructions div.collapsing + .toggle {
+              position: relative;
+              z-index: 2; } }
+          section .question .instructions div.in + .toggle .icon, section .question .instructions div.collapsing + .toggle .icon {
+            background-color: #fff;
+            top: 5px;
+            right: 25px; }
+            @media (min-width: 992px) {
+              section .question .instructions div.in + .toggle .icon, section .question .instructions div.collapsing + .toggle .icon {
+                top: auto;
+                right: auto; } }
+            section .question .instructions div.in + .toggle .icon:after, section .question .instructions div.collapsing + .toggle .icon:after {
+              content: 'x';
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              color: #333333;
+              line-height: 1.3; }
       section .question .instructions .toggle .icon {
         background-color: #777777;
         color: #fff;
@@ -5947,7 +5955,16 @@ section {
         text-align: center;
         border-radius: 50%;
         margin-top: 5px;
-        position: relative; }
+        position: absolute;
+        top: -20px;
+        right: 20px;
+        z-index: 2; }
+        @media (min-width: 992px) {
+          section .question .instructions .toggle .icon {
+            position: relative;
+            top: auto;
+            right: auto;
+            z-index: auto; } }
     section .question .main {
       position: relative;
       min-height: 1px;
@@ -5983,11 +6000,13 @@ section {
         padding: 15px 20px;
         resize: none;
         border: none;
-        border: solid 2px #777777; }
+        border: solid 2px #777777;
+        margin-bottom: 30px; }
         @media (min-width: 992px) {
           section .question .comments textarea {
             margin-top: -10px;
             margin-left: -2px;
+            margin-bottom: 0;
             border: none; } }
         section .question .comments textarea:focus {
           background-color: #eeeeee; }

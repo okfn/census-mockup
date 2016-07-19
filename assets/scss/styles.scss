@@ -80,6 +80,7 @@ section {
         background-color: $text-color;
         z-index: 1;
         padding: $grid-gutter-width*0.75;
+        margin-bottom: $grid-gutter-width;
 
         h4 {
           margin-top: 0;
@@ -111,11 +112,19 @@ section {
           color: #fff;
 
           & + .toggle {
-            position: relative;
-            z-index: 2;
+            @media (min-width: $screen-md-min) {
+              position: relative;
+              z-index: 2;
+            }
 
             .icon {
               background-color: #fff;
+              top: 5px;
+              right: 25px;
+              @media (min-width: $screen-md-min) {
+                top: auto;
+                right: auto;
+              }
 
               &:after {
                 content: 'x';
@@ -142,7 +151,17 @@ section {
           text-align: center;
           border-radius: 50%;
           margin-top: 5px;
-          position: relative;
+          position: absolute;
+          top: -20px;
+          right: 20px;
+          z-index: 2;
+
+          @media (min-width: $screen-md-min) {
+            position: relative;
+            top: auto;
+            right: auto;
+            z-index: auto;
+          }
         }
       }
     }
@@ -172,10 +191,12 @@ section {
         resize: none;
         border: none;
         border: solid 2px $gray-light;
+        margin-bottom: $grid-gutter-width;
 
         @media (min-width: $screen-md-min) {
           margin-top: -10px;
           margin-left: -2px;
+          margin-bottom: 0;
           border: none;
         }
 
