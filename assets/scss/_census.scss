@@ -8,7 +8,7 @@ a:focus {
 
 
 section {
-  border-bottom: solid 4px $text-color;
+  border-bottom: solid $ui-border $text-color;
 
   .container {
     padding-top: $grid-gutter-width;
@@ -230,7 +230,7 @@ section {
             display: block;
             border-style: solid;
             border-color: $text-color;
-            border-width: 4px 2px;
+            border-width: $ui-border $ui-border/2;
             cursor: pointer;
             font-size: 20px;
             padding-top: 0.5em;
@@ -247,7 +247,7 @@ section {
           &:first-of-type {
             text-align: left;
             span {
-              border-left-width: 4px;
+              border-left-width: $ui-border;
             }
             em {
               display: block;
@@ -257,7 +257,7 @@ section {
           &:last-of-type {
             text-align: right;
             span {
-              border-right-width: 4px;
+              border-right-width: $ui-border;
             }
             em{
               display: block;
@@ -281,13 +281,13 @@ section {
 
             input {
               width: 100%;
-              border: solid 2px $text-color;
+              border: solid $ui-border $text-color;
               padding: 4px 8px;
             }
 
             .select {
               display: block;
-              border: solid 2px $text-color;
+              border: solid $ui-border $text-color;
               padding: 4px 2px 4px 0;
 
               select {
@@ -320,7 +320,7 @@ section {
 
     &.select {
       .answer {
-        border: solid 4px $text-color;
+        border: solid $ui-border $text-color;
         font-size: 18px;
         font-weight: bold;
         padding: 0.6em 0.5em;
@@ -345,7 +345,7 @@ section {
 
           label {
             display: block;
-            border: solid 4px $text-color;
+            border: solid $ui-border $text-color;
             font-size: 18px;
             padding: 0.5em;
             margin: 0;
@@ -421,19 +421,34 @@ section {
         .answer {
           label {
             span {
-              border-width: 2px 1px;
+              border-width: $ui-border-sub $ui-border-sub/2;
               font-size: 16px;
             }
 
             &:first-of-type {
               span {
-                border-left-width: 2px;
+                border-left-width: $ui-border-sub;
               }
             }
 
             &:last-of-type {
               span {
-                border-right-width: 2px;
+                border-right-width: $ui-border-sub;
+              }
+            }
+          }
+        }
+      }
+      &.source {
+        .answer {
+          ul {
+            li {
+              input {
+                border-width: $ui-border-sub;
+              }
+
+              .select {
+                border-width: $ui-border-sub;
               }
             }
           }
