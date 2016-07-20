@@ -1,21 +1,44 @@
-h2, h3 {
-  span {
-    color: $gray-light;
+body {
+  & > header {
+    background-color: $brand-primary;
+    border-bottom: solid 2px darken($brand-primary, 10%);
+
+    a {
+      color: inherit;
+    }
+
+    .logo {
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 20px;
+      padding: 25px 0;
+      color: inherit;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
   }
-}
 
-section {
-  border: solid 1px $gray-lighter;
 
-  &:nth-child(odd) {
-    background-color: rgba($gray-lighter, 0.3);
+  h2, h3 {
+    span {
+      color: $gray-light;
+    }
   }
 
-  .question {
-    .instructions {
-      .toggle {
-        .icon {
-          background-color: $brand-info;
+  section {
+    border-bottom: solid 1px $gray-lighter;
+
+    &:nth-of-type(odd) {
+      background-color: rgba($gray-lighter, 0.3);
+    }
+
+    .question {
+      .instructions {
+        .toggle {
+          .icon {
+            background-color: $brand-info;
+          }
         }
       }
     }

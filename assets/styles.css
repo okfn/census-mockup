@@ -6172,14 +6172,27 @@ section {
     section .question:not(.answered) + :not(.answered) {
       opacity: 0.2; }
 
-h2 span, h3 span {
+body > header {
+  background-color: #EAD045;
+  border-bottom: solid 2px #e2c31a; }
+  body > header a {
+    color: inherit; }
+  body > header .logo {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 25px 0;
+    color: inherit;
+    text-decoration: none;
+    letter-spacing: 1px; }
+body h2 span, body h3 span {
   color: #777777; }
-
-section {
-  border: solid 1px #eeeeee; }
-  section:nth-child(odd) {
+body section {
+  border-bottom: solid 1px #eeeeee; }
+  body section:nth-of-type(odd) {
     background-color: rgba(238, 238, 238, 0.3); }
-  section .question .instructions .toggle .icon {
+  body section .question .instructions .toggle .icon {
     background-color: #428bca; }
 
 /*# sourceMappingURL=styles.css.map */
