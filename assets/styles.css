@@ -6194,6 +6194,10 @@ body section {
     background-color: rgba(238, 238, 238, 0.3); }
   body section .question .instructions .toggle .icon {
     background-color: #428bca; }
+  body section .question .comments label {
+    font-weight: normal; }
+  body section .question .comments textarea {
+    font-weight: 300; }
   body section .question.scale .answer label:first-of-type span, body section .question.yes-no .answer label:first-of-type span {
     border-radius: 6px 0 0 6px; }
   body section .question.scale .answer label:last-of-type span, body section .question.yes-no .answer label:last-of-type span {
