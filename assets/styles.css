@@ -6230,5 +6230,15 @@ body section {
     border-radius: 4px; }
   body section .question.sub.source .answer ul li .select {
     border-radius: 4px; }
+  body section .question:not(.answered).scale .answer label span, body section .question:not(.answered).yes-no .answer label span {
+    border-color: #777777; }
+  body section .question:not(.answered).source .answer ul li input {
+    border-color: #777777; }
+  body section .question:not(.answered).source .answer ul li .select {
+    border-color: #777777; }
+  body section .question:not(.answered).select .answer {
+    border-color: #777777; }
+  body section .question:not(.answered).multiple ul li label {
+    border-color: #777777; }
 
 /*# sourceMappingURL=styles.css.map */
