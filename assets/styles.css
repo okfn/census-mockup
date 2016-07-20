@@ -6193,7 +6193,8 @@ body section {
   body section:nth-of-type(odd) {
     background-color: rgba(238, 238, 238, 0.3); }
   body section .question .instructions .toggle .icon {
-    background-color: #428bca; }
+    background-color: #428bca;
+    font-weight: 700; }
   body section .question .comments label {
     font-weight: normal; }
   body section .question .comments textarea {
