@@ -41,6 +41,123 @@ body {
           }
         }
       }
+
+      &.scale,
+      &.yes-no {
+        .answer {
+          label {
+            &:first-of-type {
+              span {
+                border-radius: $border-radius-large 0 0 $border-radius-large;
+              }
+            }
+            &:last-of-type {
+              span {
+                border-radius: 0 $border-radius-large $border-radius-large 0;
+              }
+            }
+          }
+
+          input {
+            &:checked {
+              & + label {
+                span {
+                  background-color: $brand-warning;
+                  border-color: darken($brand-warning, 25%);
+                }
+                &:first-of-type {
+                  span {
+                    background-color: $brand-danger;
+                    border-color: darken($brand-danger, 25%);
+                  }
+                }
+                &:last-of-type {
+                  span {
+                    background-color: $brand-success;
+                    border-color: darken($brand-success, 20%);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.source {
+        .answer {
+          ul {
+            li {
+              input {
+                border-radius: $border-radius-large;
+              }
+
+              .select {
+                border-radius: $border-radius-large;
+              }
+            }
+          }
+        }
+      }
+
+      &.select {
+        .answer {
+          border-radius: $border-radius-large;
+        }
+      }
+
+      &.multiple {
+        ul {
+          li {
+            label {
+              border-radius: $border-radius-large;
+            }
+            input {
+              &:checked {
+                & + label {
+                  background-color: $brand-success;
+                  border-color: darken($brand-success, 20%);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.sub {
+        &.scale,
+        &.yes-no {
+          .answer {
+            label {
+              &:first-of-type {
+                span {
+                  border-radius: $border-radius-base 0 0 $border-radius-base;
+                }
+              }
+
+              &:last-of-type {
+                span {
+                  border-radius: 0 $border-radius-base $border-radius-base 0;
+                }
+              }
+            }
+          }
+        }
+        &.source {
+          .answer {
+            ul {
+              li {
+                input {
+                  border-radius: $border-radius-base;
+                }
+
+                .select {
+                  border-radius: $border-radius-base;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
