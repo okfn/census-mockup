@@ -1083,10 +1083,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #EAD045;
+  color: #428bca;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #ccaf17;
+    color: #2a6496;
     text-decoration: underline; }
   a:focus {
     outline: thin dotted;
@@ -3087,7 +3087,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
     background-color: #fff; }
 
 .btn-link {
-  color: #EAD045;
+  color: #428bca;
   font-weight: normal;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled], fieldset[disabled] .btn-link {
@@ -3097,7 +3097,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
-    color: #ccaf17;
+    color: #2a6496;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
@@ -3586,7 +3586,7 @@ tbody.collapse.in {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #eeeeee;
-    border-color: #EAD045; }
+    border-color: #428bca; }
   .nav .nav-divider {
     height: 1px;
     margin: 9px 0;
@@ -4100,7 +4100,7 @@ tbody.collapse.in {
       padding: 6px 12px;
       line-height: 1.42857;
       text-decoration: none;
-      color: #EAD045;
+      color: #428bca;
       background-color: #fff;
       border: 1px solid #ddd;
       margin-left: -1px; }
@@ -4117,7 +4117,7 @@ tbody.collapse.in {
   .pagination > li > span:hover,
   .pagination > li > span:focus {
     z-index: 2;
-    color: #ccaf17;
+    color: #2a6496;
     background-color: #eeeeee;
     border-color: #ddd; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
@@ -4279,7 +4279,7 @@ a.label:hover, a.label:focus {
     top: 0;
     padding: 1px 5px; }
   .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-    color: #EAD045;
+    color: #428bca;
     background-color: #fff; }
   .list-group-item > .badge {
     float: right; }
@@ -4350,7 +4350,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #EAD045; }
+  border-color: #428bca; }
 
 .alert {
   padding: 15px;
@@ -6247,6 +6247,9 @@ body section {
     border-color: #365200; }
   body section .question.text textarea,
   body section .question.text input[type="text"] {
+    border-radius: 6px; }
+  body section .question.submit button {
+    background-color: #428bca;
     border-radius: 6px; }
   body section .question.sub.scale .answer label:first-of-type span, body section .question.sub.yes-no .answer label:first-of-type span {
     border-radius: 4px 0 0 4px; }

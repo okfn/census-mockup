@@ -142,6 +142,13 @@ body {
         }
       }
 
+      &.submit {
+        button {
+          background-color: $link-color;
+          border-radius: $border-radius-large;
+        }
+      }
+
       &.sub {
         &.scale,
         &.yes-no {
