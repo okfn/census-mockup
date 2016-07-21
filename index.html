@@ -462,6 +462,22 @@
             <textarea placeholder="If you answered 'other', tell us the format here" id="commentThirteen" rows="5"></textarea>
           </div>
         </div>
+
+        <div class="text question">
+          <div class="instructions">
+
+          </div>
+          <div class="main">
+            <h2><span>B9.</span> Any other comments?</h2>
+            <div class="answer">
+              <textarea rows="5"></textarea>
+            </div>
+          </div>
+          <div class="comments">
+
+          </div>
+        </div>
+    
       </div>
     </section>
 
@@ -494,8 +510,19 @@
           }
         });
 
+        $("div.text.question").each(function() {
+          var ta = $( this ).find("textarea");
+          if ($(ta).val() ) {
+            $(this).addClass( "answered");
+          }
+          var i = $( this ).find("input");
+          if ($(i).val() ) {
+            $(this).addClass( "answered");
+          }
+        });
+
         // add answered class when fields change
-        $(".scale input, .yes-no input, .multiple input, .source input[type='text'], .select select").change(function(){
+        $(".scale input, .yes-no input, .multiple input, .source input[type='text'], .select select, .text textarea, .text input").change(function(){
           $( this ).parents(".question").addClass( "answered" );
         });
 

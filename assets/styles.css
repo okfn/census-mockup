@@ -6150,6 +6150,13 @@ section {
               section .question.multiple ul li input:checked + label .letter:after {
                 display: block;
                 content: "\e013"; }
+    section .question.text textarea,
+    section .question.text input[type="text"] {
+      width: 100%;
+      border: solid 4px #333333;
+      padding: 15px;
+      font-size: 16px;
+      max-width: 100%; }
     section .question.sub {
       padding-top: 0;
       padding-bottom: 15px; }
@@ -6164,6 +6171,13 @@ section {
         border-width: 2px; }
       section .question.sub.source .answer ul li .select {
         border-width: 2px; }
+      section .question.sub.text textarea,
+      section .question.sub.text input[type="text"] {
+        border-width: 2px;
+        font-size: 14px; }
+      section .question.sub.text input[type="text"] {
+        padding-top: 7.5px;
+        padding-bottom: 7.5px; }
     section .question.continuation {
       margin-top: -30px; }
     section .question.first .comments label {
