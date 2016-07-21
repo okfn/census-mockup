@@ -135,6 +135,13 @@ body {
         }
       }
 
+      &.text {
+        textarea,
+        input[type="text"] {
+          border-radius: $border-radius-large;
+        }
+      }
+
       &.sub {
         &.scale,
         &.yes-no {
@@ -167,6 +174,12 @@ body {
                 }
               }
             }
+          }
+        }
+        &.text {
+          textarea,
+          input[type="text"] {
+            border-radius: $border-radius-base;
           }
         }
       }
@@ -209,6 +222,12 @@ body {
                 border-color: $gray-light;
               }
             }
+          }
+        }
+        &.text {
+          textarea,
+          input[type="text"] {
+            border-color: $gray-light;
           }
         }
       }
