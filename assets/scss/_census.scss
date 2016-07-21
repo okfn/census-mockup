@@ -163,6 +163,10 @@ section {
     }
     .main {
       @include make-md-column(6);
+
+      p {
+        margin-bottom: 1.2em;
+      }
     }
     .comments {
       @include make-md-column(3);
@@ -421,6 +425,16 @@ section {
         padding: $grid-gutter-width/2;
         font-size: 16px;
         max-width: 100%;
+      }
+    }
+
+    &.submit {
+      button {
+        background-color: $text-color;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        padding: $grid-gutter-width/2 $grid-gutter-width;
       }
     }
 

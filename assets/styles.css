@@ -5974,6 +5974,8 @@ section {
         section .question .main {
           float: left;
           width: 50%; } }
+      section .question .main p {
+        margin-bottom: 1.2em; }
     section .question .comments {
       position: relative;
       min-height: 1px;
@@ -6157,6 +6159,12 @@ section {
       padding: 15px;
       font-size: 16px;
       max-width: 100%; }
+    section .question.submit button {
+      background-color: #333333;
+      color: #fff;
+      border: none;
+      font-size: 18px;
+      padding: 15px 30px; }
     section .question.sub {
       padding-top: 0;
       padding-bottom: 15px; }
