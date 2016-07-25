@@ -5855,8 +5855,26 @@ body > header {
       text-align: right; } }
   body > header nav .user {
     display: block;
-    padding-top: 15px;
-    padding-bottom: 15px; }
+    padding-top: 10px;
+    padding-bottom: 5px; }
+  body > header nav .menu {
+    margin: 0;
+    margin-left: -10px;
+    padding: 0;
+    font-size: 16px; }
+    @media (min-width: 992px) {
+      body > header nav .menu {
+        margin-left: 0;
+        margin-right: -10px; } }
+    body > header nav .menu li {
+      display: inline-block; }
+      body > header nav .menu li a {
+        display: inline-block;
+        padding: 8px 10px;
+        border-radius: 4px; }
+        body > header nav .menu li a:hover {
+          text-decoration: none;
+          background-color: rgba(255, 255, 255, 0.2); }
 body .breadcrumb-wrapper {
   background-color: #f6f6f6; }
   body .breadcrumb-wrapper .breadcrumb {
