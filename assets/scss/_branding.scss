@@ -69,24 +69,28 @@ body {
               }
             }
           }
+        }
 
-          input {
-            &:checked {
-              & + label {
-                span {
-                  background-color: $brand-warning;
-                  border-color: darken($brand-warning, 25%);
-                }
-                &:first-of-type {
+        &:not(.neutral) {
+          .answer {
+            input {
+              &:checked {
+                & + label {
                   span {
-                    background-color: $brand-danger;
-                    border-color: darken($brand-danger, 25%);
+                    background-color: $brand-warning;
+                    border-color: darken($brand-warning, 25%);
                   }
-                }
-                &:last-of-type {
-                  span {
-                    background-color: $brand-success;
-                    border-color: darken($brand-success, 20%);
+                  &:first-of-type {
+                    span {
+                      background-color: $brand-danger;
+                      border-color: darken($brand-danger, 25%);
+                    }
+                  }
+                  &:last-of-type {
+                    span {
+                      background-color: $brand-success;
+                      border-color: darken($brand-success, 20%);
+                    }
                   }
                 }
               }

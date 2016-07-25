@@ -6225,13 +6225,13 @@ body section {
     border-radius: 6px 0 0 6px; }
   body section .question.scale .answer label:last-of-type span, body section .question.yes-no .answer label:last-of-type span {
     border-radius: 0 6px 6px 0; }
-  body section .question.scale .answer input:checked + label span, body section .question.yes-no .answer input:checked + label span {
+  body section .question.scale:not(.neutral) .answer input:checked + label span, body section .question.yes-no:not(.neutral) .answer input:checked + label span {
     background-color: #f47c23;
     border-color: #904207; }
-  body section .question.scale .answer input:checked + label:first-of-type span, body section .question.yes-no .answer input:checked + label:first-of-type span {
+  body section .question.scale:not(.neutral) .answer input:checked + label:first-of-type span, body section .question.yes-no:not(.neutral) .answer input:checked + label:first-of-type span {
     background-color: #ff0000;
     border-color: maroon; }
-  body section .question.scale .answer input:checked + label:last-of-type span, body section .question.yes-no .answer input:checked + label:last-of-type span {
+  body section .question.scale:not(.neutral) .answer input:checked + label:last-of-type span, body section .question.yes-no:not(.neutral) .answer input:checked + label:last-of-type span {
     background-color: #7AB800;
     border-color: #365200; }
   body section .question.source .answer ul li input {
