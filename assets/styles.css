@@ -5810,19 +5810,58 @@ button.close {
   .hidden-print {
     display: none !important; } }
 body > header {
-  background-color: #EAD045;
-  border-bottom: solid 2px #e2c31a; }
+  background-color: #428bca;
+  border-bottom: solid 2px #3071a9;
+  color: #fff; }
   body > header a {
     color: inherit; }
+    body > header a:hover {
+      color: inherit; }
   body > header .logo {
-    display: inline-block;
+    padding-top: 23px;
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: 20px;
-    padding: 25px 0;
-    color: inherit;
-    text-decoration: none;
     letter-spacing: 1px; }
+    @media (min-width: 992px) {
+      body > header .logo {
+        padding-bottom: 23px;
+        float: left;
+        white-space: nowrap; } }
+    body > header .logo .glyphicon {
+      float: left;
+      font-size: 33px;
+      line-height: 1.1;
+      margin-right: 7px;
+      text-decoration: none;
+      display: none; }
+      @media (min-width: 768px) {
+        body > header .logo .glyphicon {
+          display: block; } }
+    body > header .logo .title {
+      font-weight: 700;
+      font-size: 20px;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      line-height: 1.2; }
+    body > header .logo .tagline {
+      display: block;
+      font-size: 12px;
+      line-height: 1.1;
+      font-weight: 300; }
+      body > header .logo .tagline a {
+        font-weight: normal; }
+  @media (min-width: 992px) {
+    body > header nav {
+      text-align: right; } }
+  body > header nav .user {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+body .breadcrumb-wrapper {
+  background-color: #f6f6f6; }
+  body .breadcrumb-wrapper .breadcrumb {
+    background-color: inherit;
+    margin-bottom: 0; }
 
 textarea,
 input,
@@ -6214,7 +6253,13 @@ body h2 span, body h3 span {
 body section {
   border-bottom: solid 1px #eeeeee; }
   body section:nth-of-type(odd) {
-    background-color: rgba(238, 238, 238, 0.3); }
+    background-color: #f6f6f6; }
+  body section.banner {
+    background-image: url(img/icon-tile.png);
+    background-size: 350px auto;
+    background-position: center top; }
+    body section.banner .container {
+      background-image: none; }
   body section .question .instructions .toggle .icon {
     background-color: #428bca;
     font-weight: 700; }
@@ -6241,6 +6286,8 @@ body section {
     border-radius: 6px; }
   body section .question.select .answer {
     border-radius: 6px; }
+    body section .question.select .answer select {
+      background-color: transparent; }
   body section .question.multiple ul li label {
     border-radius: 6px; }
   body section .question.multiple ul li input:checked + label {
@@ -6249,6 +6296,9 @@ body section {
   body section .question.text textarea,
   body section .question.text input[type="text"] {
     border-radius: 6px; }
+    body section .question.text textarea:not(:focus),
+    body section .question.text input[type="text"]:not(:focus) {
+      background-color: transparent; }
   body section .question.submit button {
     background-color: #428bca;
     border-radius: 6px; }
@@ -6257,9 +6307,12 @@ body section {
   body section .question.sub.scale .answer label:last-of-type span, body section .question.sub.yes-no .answer label:last-of-type span {
     border-radius: 0 4px 4px 0; }
   body section .question.sub.source .answer ul li input {
-    border-radius: 4px; }
+    border-radius: 4px;
+    background-color: transparent; }
   body section .question.sub.source .answer ul li .select {
     border-radius: 4px; }
+    body section .question.sub.source .answer ul li .select select {
+      background-color: transparent; }
   body section .question.sub.text textarea,
   body section .question.sub.text input[type="text"] {
     border-radius: 4px; }

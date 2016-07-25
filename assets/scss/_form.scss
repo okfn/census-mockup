@@ -10,7 +10,17 @@ body {
     border-bottom: solid 1px $gray-lighter;
 
     &:nth-of-type(odd) {
-      background-color: rgba($gray-lighter, 0.3);
+      background-color: lighten($gray-lighter, 3%);
+    }
+
+    &.banner {
+      background-image: url(img/icon-tile.png);
+      background-size: 350px auto;
+      background-position: center top;
+
+      .container {
+        background-image: none;
+      }
     }
 
     .question {
@@ -98,6 +108,10 @@ body {
       &.select {
         .answer {
           border-radius: $border-radius-large;
+
+          select {
+            background-color: transparent;
+          }
         }
       }
 
@@ -123,6 +137,9 @@ body {
         textarea,
         input[type="text"] {
           border-radius: $border-radius-large;
+          &:not(:focus) {
+            background-color: transparent;
+          }
         }
       }
 
@@ -158,10 +175,15 @@ body {
               li {
                 input {
                   border-radius: $border-radius-base;
+                  background-color: transparent;
                 }
 
                 .select {
                   border-radius: $border-radius-base;
+
+                  select {
+                    background-color: transparent;
+                  }
                 }
               }
             }
