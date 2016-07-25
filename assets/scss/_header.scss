@@ -1,8 +1,10 @@
 body {
   & > header {
+    $header-bg: $brand-info;
+    $header-fg: #fff;
     background-color: $brand-info;
-    border-bottom: solid 2px darken($brand-info, 10%);
-    color: #fff;
+    border-bottom: solid 2px darken($header-bg, 10%);
+    color: $header-fg;
 
     a {
       color: inherit;
@@ -66,6 +68,12 @@ body {
         display: block;
         padding-top: 10px;
         padding-bottom: 5px;
+        color: rgba($header-fg, 0.8);
+
+        a:hover {
+          text-decoration: none;
+          color: $header-fg;
+        }
       }
 
       .menu {
