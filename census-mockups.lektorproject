@@ -1,0 +1,6 @@
+[project]
+name = census-mockup
+
+[servers.ghpages]
+target = ghpages://okfn/census-mockup
+default = yes

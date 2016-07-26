@@ -1,8 +1,9 @@
 {
-  "name": "census",
-  "homepage": "https://github.com/smth/census",
+  "name": "census-mockup",
+  "directory": "assets/bower_components/",
+  "homepage": "https://github.com/okfn/census-mockup",
   "authors": [
-    "Sam Smith <sam@mintcanary.com>"
+    "Sam Smith"
   ],
   "description": "",
   "main": "",

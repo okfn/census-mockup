@@ -1,3 +1,3 @@
-# Census Mockup
+# Census Mockups
 
-Form mockup census.okfn.org
+Static pages, built with [Lektor](https://www.getlektor.com/docs/).

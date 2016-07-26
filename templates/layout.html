@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{% block title %}Welcome{% endblock %} — Open Data Census</title>
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ '/static/styles.css'|url }}">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a class="glyphicon glyphicon-th-list" aria-hidden="true"></a>
+          <a class="title" href="/">UK Local Open Data Census</a>
+          <span class="tagline">Powered by <a href="http://census.okfn.org">Open Data Census</a></span>
+        </div>
+        <nav class="user">
+          <span class="user">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            Logged in as Sam | <a href="http://id.census.okfn.org/logout">Log out</a>
+          </span>
+
+          <ul class="menu">
+            <li><a href="/about/">About</a></li>
+            <li><a href="/changes/">Changes</a></li>
+            <li><a href="/faq/">FAQ</a></li>
+            <li><a href="/tutorial/">Tutorial</a></li>
+            <li><a target="_blank" href="https://discuss.okfn.org/c/open-data-index">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="breadcrumb-wrapper">
+      <ol class="breadcrumb container">
+        <li>
+            <a href="./">Home</a>
+        </li>
+        <li class="active">{{ this.title }}</li>
+      </ol>
+    </div>
+
+    {% block body %}{% endblock %}
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-primary">
+          <a class="footer-logo" href="https://okfn.org/">
+          <img src="https://a.okfn.org/img/oki/landscape-white-468x122.png" alt="Open Knowledge International">
+          </a>
+          <ul class="footer-links">
+            <li><a href="/privacy-policy/">Privacy policy</a></li>
+            <li><a href="/ip-policy/">IP policy</a></li>
+            <li><a href="/cookie-policy/">Cookie policy</a></li>
+            <li><a href="/terms-of-use/">Terms of use</a></li>
+            <li><a href="http://okfn.org/opendata/" title="More about Open Data">What is Open Data</a></li>
+            <li><a href="http://meta.census.okfn.org/">Run Your Own Local Open Data Census</a></li>
+          </ul>
+        </div>
+        <div class="footer-secondary">
+          <p class="pull-right">
+            <strong>Download:</strong> <a href="/api/entries.cascade.csv">Current (CSV)</a> |
+            <a href="/api/entries.csv">All (CSV)</a> |
+            <a href="/api/entries.cascade.json">Current (JSON)</a> |
+            <a href="/api/entries.json">All (JSON)</a>
+            </p>
+          <p>
+            <a href="http://opendatacommons.org/licenses/pddl/1.0">Data License (Public Domain)</a>. <a href="https://github.com/okfn/opendatacensus/">Source code</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ "/bower_components/jquery/dist/jquery.min.js"|url }}"><\/script>')</script>
+    <script src="{{ '/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js'|url }}"></script>
+
+    <script>
+      $( document ).ready(function() {
+
+        $("div.source.question ul li").each(function() {
+          // determine whether source fields are filled
+          var url = $( this ).find("input[type='url']");
+          var desc = $( this ).find("input[type='text']");
+          if ($(url).val() ) {
+            $(this).parent("ul").addClass( "url-filled");
+          }
+          if ($(desc).val()) {
+            $(this).parent("ul").addClass( "desc-filled");
+          }
+        });
+
+        // add answered class if already filled
+        $( ".scale input:checked, .yes-no input:checked, .multiple input:checked, .source ul.url-filled.desc-filled").parents(".question").addClass( "answered" );
+
+        $("div.select.question").each(function() {
+          var slct = $( this ).find("select");
+          if ($(slct).val() ) {
+            $(this).addClass( "answered");
+          }
+        });
+
+        $("div.text.question").each(function() {
+          var ta = $( this ).find("textarea");
+          if ($(ta).val() ) {
+            $(this).addClass( "answered");
+          }
+          var i = $( this ).find("input");
+          if ($(i).val() ) {
+            $(this).addClass( "answered");
+          }
+        });
+
+        // add answered class when fields change
+        $(".scale input, .yes-no input, .multiple input, .source input[type='text'], .select select, .text textarea, .text input").change(function(){
+          $( this ).parents(".question").addClass( "answered" );
+        });
+
+      });
+    </script>
+  </body>
+</html>
