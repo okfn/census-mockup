@@ -1,5 +1,6 @@
-{% extends "layout.html" %}
+{% extends "page.html" %}
 {% block title %}{{ this.title }}{% endblock %}
+{% block body_class %}form{% endblock %}
 {% block body %}
 <section>
   <div class="container">
@@ -625,7 +626,9 @@
       </div>
       <div class="main">
         <p>
-          By submitting material to the index you agreeing to <a href="http://okfn.org/terms-of-use/">terms of use</a> and also to license your contribution (to the extent there are any rights in it!) under the <a href="http://opendatacommons.org/licenses/pddl/1.0/">Open Data Commons Public Domain Dedication and License</a>.
+          <small>
+            By submitting material to the index you agreeing to <a href="http://okfn.org/terms-of-use/">terms of use</a> and also to license your contribution (to the extent there are any rights in it!) under the <a href="http://opendatacommons.org/licenses/pddl/1.0/">Open Data Commons Public Domain Dedication and License</a>.
+          </small>
         </p>
         <div class="answer">
           <button>Submit</button>

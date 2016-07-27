@@ -1,0 +1,50 @@
+// Summary of stats for current year
+.summary-stats {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  .explain {
+    span {
+      font-size: 13px;
+      font-weight: bold;
+      padding: 30px;
+      display: block;
+      text-align: center;
+      i {
+        line-height: 20px;
+        padding: 2px 4px 2px 4px;
+        border-radius: 4px;
+        font-style: normal;
+      }
+    }
+  }
+  #places_in_index {
+    margin-top:15px;
+    text-align: center;
+  }
+
+  #alt_general_stat {
+    text-align: left;
+    margin: 35px 0px 0px 20px;
+    i {
+      font-size: 12px;
+    }
+  }
+
+  .stat {
+    strong {
+      padding: 10px 10px;
+      font-size: 2em;
+      background-color: $color-okf-black;
+      color: $color-okf-white;
+    }
+    span {
+      display: block;
+      margin-top: 10px;
+    }
+    small {
+      display: block;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,6 +1,18 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
+
+{% block breadcrumb %}
+<div class="breadcrumb-wrapper">
+  <ol class="breadcrumb container">
+    <li>
+        <a href="{{ '/'|url }}">Home</a>
+    </li>
+    <li class="active">{{ this.title }}</li>
+  </ol>
+</div>
+{% endblock %}
 {% block body %}
-  <h2>{{ this.title }}</h2>
+<div class="container">
   {{ this.body }}
+</div>
 {% endblock %}

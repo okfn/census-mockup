@@ -1,6 +1,5 @@
 {
   "name": "census-mockup",
-  "directory": "assets/bower_components/",
   "homepage": "https://github.com/okfn/census-mockup",
   "authors": [
     "Sam Smith"
@@ -17,6 +16,10 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass": "^3.3.6"
+    "jquery": "<3",
+    "bootstrap-sass": "^3.3.6",
+    "font-awesome": "fontawesome#^4.6.3",
+    "requirejs": "^2.2.0",
+    "domReady": "^2.0.1"
   }
 }

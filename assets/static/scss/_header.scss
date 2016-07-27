@@ -2,7 +2,7 @@ body {
   & > header {
     $header-bg: $brand-info;
     $header-fg: #fff;
-    background-color: $brand-info;
+    background-color: $header-bg;
     border-bottom: solid 2px darken($header-bg, 10%);
     color: $header-fg;
 
@@ -69,6 +69,7 @@ body {
         padding-top: 10px;
         padding-bottom: 5px;
         color: rgba($header-fg, 0.8);
+        font-size: 14px;
 
         a:hover {
           text-decoration: none;
@@ -107,11 +108,42 @@ body {
   }
 
   .breadcrumb-wrapper {
-    background-color: lighten($gray-lighter, 3%);
+    display: none;
 
-    .breadcrumb {
-      background-color: inherit;
-      margin-bottom: 0;
+    @media (min-width: $screen-sm-min) {
+      display: block;
+      position: absolute;
+      width: 100%;
+
+      .breadcrumb {
+        background-color: inherit;
+        margin-bottom: 0;
+        padding-top: $grid-gutter-width*0.5;
+      }
+
+      & + * {
+        padding-top: 50px;
+      }
+    }
+  }
+
+  &.godi {
+    & > header {
+      $header-bg: $brand-primary;
+      $header-fg: $gray-dark;
+      background-color: $header-bg;
+      border-bottom: solid 2px darken($header-bg, 10%);
+      color: $header-fg;
+
+      nav {
+        .user {
+          color: rgba($header-fg, 0.8);
+
+          a:hover {
+            color: $header-fg;
+          }
+        }
+      }
     }
   }
 }
