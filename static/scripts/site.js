@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: 'SITEURL/static'.replace('SITEURL', siteUrl),
+    baseUrl: 'SITEURL'.replace('SITEURL', siteUrl),
     shim : {
         bootstrap: {deps:['jquery']},
         //tablesorter: {deps: ['jquery']},
