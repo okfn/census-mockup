@@ -1,7 +1,14 @@
 $icon-font-path: '../bower_components/bootstrap-sass/assets/fonts/bootstrap/';
 @import 'variables';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+@import '../../bower_components/font-awesome/scss/font-awesome';
+@import 'sexytables';
 @import 'header';
-@import 'census';
-@import 'form';
 @import 'footer';
+@import 'buttons';
+@import 'bootstrap-overrides';
+@import 'summary-stats';
+@import 'tables';
+@import 'unsorted';
+@import 'form-layout';
+@import 'form-styling';
