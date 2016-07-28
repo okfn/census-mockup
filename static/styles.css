@@ -8296,7 +8296,8 @@ body.godi > header {
 
 .popover {
   max-width: 360px;
-  width: 360px; }
+  width: 360px;
+  font-size: 14px; }
 
 .table {
   font-size: 14px;
@@ -8352,8 +8353,24 @@ body.godi > header {
 .data-table thead th {
   font-size: 14px; }
 
+#slice-table .year span {
+  text-align: center;
+  background-color: #f0f0f0;
+  opacity: 0.6;
+  padding: 2px;
+  width: 40px;
+  text-align: center;
+  display: inline-block; }
 #slice-table tr.details {
   background-color: #f0f0f0; }
+  #slice-table tr.details td.info-content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 70px; }
+    #slice-table tr.details td.info-content hr {
+      border-top-color: rgba(51, 51, 51, 0.5);
+      margin-top: 12px;
+      margin-bottom: 12px; }
 #slice-table td.breakdown {
   padding: 5px 8px; }
 #slice-table td.info-expander {
