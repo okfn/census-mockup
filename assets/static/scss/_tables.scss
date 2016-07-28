@@ -1,3 +1,13 @@
+@mixin table-label($bg-colour:$color-okf-grey) {
+  text-align: center;
+  background-color: $bg-colour;
+  opacity: 0.6;
+  padding: 2px;
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
 // Tables
 .data-table {
   thead th {
@@ -6,8 +16,25 @@
 }
 
 #slice-table {
+  .year {
+    span {
+      @include table-label();
+    }
+  }
   tr.details {
     background-color: $color-okf-grey;
+
+    td.info-content {
+      padding-top: $grid-gutter-width/2;
+      padding-bottom: $grid-gutter-width/2;
+      padding-right: 70px;
+
+      hr {
+        border-top-color: rgba($text-color, 0.5);
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+    }
   }
   td {
     &.breakdown {

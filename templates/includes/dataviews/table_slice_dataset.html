@@ -1,31 +1,35 @@
 <div class="table-responsive">
     <table id="slice-table" class="table data-table table-header-stuck">
-        <colgroup><col style="width:6%">
-        <col style="width:20%">
-        <col style="width:23%">
-        <col style="width:20%">
-        <col style="width:10%">
-        <col style="width:5%">
-        <col style="width:10%">
-        <col style="width:6%">
-        </colgroup><thead class="" style="">
+        <colgroup>
+          <col style="width:6%">
+          <col>
+          <col style="width:23%">
+          <col>
+          <col style="width:12%">
+          <col style="width:5%">
+          {% if godi != "true" %}
+          <col style="width:8%">
+          {% endif %}
+          <col style="width:6%">
+        </colgroup>
+        <thead class="" style="">
             <tr>
-                <th style="width: 68px;" class="header headerSortDown">Rank</th>
-                <th style="width: 228px;" class="header">Place</th>
-                <th style="width: 262px;">Breakdown</th>
-                <th style="width: 228px;">Location (URL)</th>
-                <th style="width: 114px;">Format</th>
-                <th style="width: 57px;">Info</th>
-                <th style="width: 114px;">Prev. (2014)</th>
-                <th style="width: 68px;" class="header">Score</th>
+                <th>Rank</th>
+                <th>Place</th>
+                <th>Breakdown</th>
+                <th>Location (URL)</th>
+                <th>Format</th>
+                <th>Info</th>
+                {% if godi != "true" %}
+                <th>Year</th>
+                {% endif %}
+                <th>Score</th>
             </tr>
         </thead>
         <tbody>
 
-        <!-- row -->
-
-<!-- row -->
-<tr data-rank="1" data-score="100" data-place="romania">
+          <!-- row -->
+          <tr data-rank="1" data-score="100" data-place="romania">
                   <td>
                       1
                   </td>
@@ -106,36 +110,45 @@
                       </ul>
                   </td>
                   <td>
-<a href="http://www.insse.ro/cms/">http://www.insse.ro/cms/</a>                  </td>
+                    <a href="http://www.insse.ro/cms/">http://www.insse.ro/cms/</a>
+                  </td>
                   <td>
-PDF, ...                  </td>
+                    PDF, ...
+                  </td>
                   <td class="info-expander" title="Click for full details">
                       <a aria-expanded="false" data-toggle="collapse" data-target="#detail-ro" class="collapsed">
                         <i class="fa fa-info-circle"></i>
                       </a>
                   </td>
-                  <td class="previous-results">
-                      <span class="rank rank-previous">#23</span>&nbsp;&nbsp;<span style="background-color: rgb(191, 197, 35); color: white;" class="score score-previous" data-score="70">70%</span>
+                  {% if godi != "true" %}
+                  <td class="year">
+                    <span title="5:21pm on 16th Oct 2015 (Submitted by Stephen Gates and reviewed by Stephen Gates)">2015</span>
                   </td>
+                  {% endif %}
                   <td style="background-color: rgb(122, 184, 0); color: white;" class="score" data-score="100">
                       <span>100%</span>
                   </td>
-              </tr><tr style="height: 0px;" aria-expanded="false" id="detail-ro" class="details collapse">
+              </tr>
+                <tr style="height: 0px;" aria-expanded="false" id="detail-ro" class="details collapse">
                   <td><span style="visibility: hidden">1</span></td>
-                  <td colspan="7">
-<span style="visibility: hidden;">Romania</span>
-                      <br><br>
-                      <p>The National Statistics Institute collects the data and it can be retrieved: </p>
-<p>(1) online, free of charge, PDF format, for the main indicators </p>
-<p>(2) online, interrogation of the database using the interface provided by an institution. Most data is free but it requires an account (also free). Data can't be downloaded in bulk.</p>
-<p>(3) Offline, <strong>data can be downloded in bulk data, for a fee, after submitting a specific request</strong> </p>
-<p>(4) the data are under copyright © 1998-2014 Institutul National de Statistica - ROMANIA, and it is unclear if there is a licence.</p>
-                      <br>
+                  <td colspan="7" class="info-content">
+                    <span style="visibility: hidden;">Romania</span>
+                    <p>The National Statistics Institute collects the data and it can be retrieved: </p>
+                    <p>(1) online, free of charge, PDF format, for the main indicators </p>
+                    <p>(2) online, interrogation of the database using the interface provided by an institution. Most data is free but it requires an account (also free). Data can't be downloaded in bulk.</p>
+                    <p>(3) Offline, <strong>data can be downloded in bulk data, for a fee, after submitting a specific request</strong> </p>
+                    <p>(4) the data are under copyright © 1998-2014 Institutul National de Statistica - ROMANIA, and it is unclear if there is a licence.</p>
+
+                    {% if godi == "true" %}
+                    <hr />
+                      <strong>Previous (2014):</strong>
+                      <span class="rank rank-previous">#23</span>&nbsp;&nbsp;<span style="background-color: rgb(191, 197, 35); color: white;" class="score score-previous" data-score="70">70%</span>
+                    {% endif %}
                   </td>
               </tr>
 
-<!-- row -->
-<tr data-rank="23" data-score="90" data-place="tunisia">
+              <!-- row -->
+              <tr data-rank="23" data-score="90" data-place="tunisia">
                   <td>
                       23
                   </td>
@@ -224,9 +237,11 @@ HTML,PD ...                  </td>
                         <i class="fa fa-info-circle"></i>
                       </a>
                   </td>
-                  <td class="previous-results">
-                      <span class="rank rank-previous">#66</span>&nbsp;&nbsp;<span style="background-color: rgb(238, 186, 53); color: white;" class="score score-previous" data-score="45">45%</span>
+                  {% if godi != "true" %}
+                  <td class="year">
+                    <span title="5:21pm on 16th Oct 2015 (Submitted by Stephen Gates and reviewed by Stephen Gates)">2015</span>
                   </td>
+                  {% endif %}
                   <td style="background-color: rgb(145, 188, 11); color: white;" class="score" data-score="90">
                       <span>90%</span>
                   </td>
@@ -234,16 +249,17 @@ HTML,PD ...                  </td>
                   <td><span style="visibility: hidden">23</span></td>
                   <td colspan="7">
 <span style="visibility: hidden;">Tunisia</span>
-                      <br><br>
-                      <p>Population up to 2014.
-Unemployment up to 2012.
-GDP up to 2013 on this <a href="http://dataportal.ins.tn/fr/Map">data</a> portal. </p>
-                      <br>
+                      <p>Population up to 2014. Unemployment up to 2012. GDP up to 2013 on this <a href="http://dataportal.ins.tn/fr/Map">data</a> portal. </p>
+                      {% if godi == "true" %}
+                      <hr />
+                      <strong>Previous (2014):</strong>
+                      <span class="rank rank-previous">#66</span>&nbsp;&nbsp;<span style="background-color: rgb(238, 186, 53); color: white;" class="score score-previous" data-score="45">45%</span>
+                      {% endif %}
                   </td>
               </tr>
 
-<!-- row -->
-<tr data-rank="33" data-score="70" data-place="belgium">
+              <!-- row -->
+              <tr data-rank="33" data-score="70" data-place="belgium">
                   <td>
                       33
                   </td>
@@ -332,27 +348,32 @@ Excel, ...                  </td>
                         <i class="fa fa-info-circle"></i>
                       </a>
                   </td>
-                  <td class="previous-results">
-                      <span class="rank rank-previous">#23</span>&nbsp;&nbsp;<span style="background-color: rgb(191, 197, 35); color: white;" class="score score-previous" data-score="70">70%</span>
+                  {% if godi != "true" %}
+                  <td class="year">
+                    <span title="5:21pm on 16th Oct 2015 (Submitted by Stephen Gates and reviewed by Stephen Gates)">2015</span>
                   </td>
+                  {% endif %}
                   <td style="background-color: rgb(191, 197, 35); color: white;" class="score" data-score="70">
                       <span>70%</span>
                   </td>
               </tr><tr id="detail-be" class="details collapse">
                   <td><span style="visibility: hidden">33</span></td>
                   <td colspan="7">
-<span style="visibility: hidden;">Belgium</span>
-                      <br><br>
+                    <span style="visibility: hidden;">Belgium</span>
                       <p>Many separate spreadsheets available, although some data is only available when making a selection using online report builder. </p>
-<p>More data is available at <a href="http://www.census2011.be/">http://www.census2011.be/</a>.</p>
-<p>Note that all statistics are also published by Eurostat. Where they are available in bulk. See <a href="https://ec.europa.eu/CensusHub2/query.do?step=selectHyperCube&amp;qhc=false&amp;countrycode=be">https://ec.europa.eu/CensusHub2/query.do?step=selectHyperCube&amp;qhc=false&amp;countrycode=be</a>
-This holds for every European Union Member state.</p>
-                      <br>
+                      <p>More data is available at <a href="http://www.census2011.be/">http://www.census2011.be/</a>.</p>
+                      <p>Note that all statistics are also published by Eurostat. Where they are available in bulk. See <a href="https://ec.europa.eu/CensusHub2/query.do?step=selectHyperCube&amp;qhc=false&amp;countrycode=be">https://ec.europa.eu/CensusHub2/query.do?step=selectHyperCube&amp;qhc=false&amp;countrycode=be</a>
+                      This holds for every European Union Member state.</p>
+                      {% if godi == "true" %}
+                      <hr />
+                      <strong>Previous (2014):</strong>
+                      <span class="rank rank-previous">#23</span>&nbsp;&nbsp;<span style="background-color: rgb(191, 197, 35); color: white;" class="score score-previous" data-score="70">70%</span>
+                      {% endif %}
                   </td>
               </tr>
 
-<!-- row -->
-<tr data-rank="64" data-score="50" data-place="bolivia">
+              <!-- row -->
+              <tr data-rank="64" data-score="50" data-place="bolivia">
                   <td>
                       64
                   </td>
@@ -441,26 +462,26 @@ Excel, ...                  </td>
                         <i class="fa fa-info-circle"></i>
                       </a>
                   </td>
-                  <td class="previous-results">
-                      n/a
+                  {% if godi != "true" %}
+                  <td class="year">
+                    <span title="5:21pm on 16th Oct 2015 (Submitted by Stephen Gates and reviewed by Stephen Gates)">2015</span>
                   </td>
+                  {% endif %}
                   <td style="background-color: rgb(237, 207, 59); color: white;" class="score" data-score="50">
                       <span>50%</span>
                   </td>
               </tr><tr id="detail-bo" class="details collapse">
                   <td><span style="visibility: hidden">64</span></td>
                   <td colspan="7">
-<span style="visibility: hidden;">Bolivia, Plurinational State of</span>
-                      <br><br>
+                    <span style="visibility: hidden;">Bolivia, Plurinational State of</span>
                       <p><a href="http://www.ine.gob.bo/indice/general.aspx?codigo=40204">GDP</a> up to 2015</p>
-<p><a href="http://www.ine.gob.bo/indice/EstadisticaSocial.aspx?codigo=30406">Unemployment</a> up to 2010. </p>
-<p><a href="http://www.ine.gob.bo/indice/EstadisticaSocial.aspx?codigo=30801">Population</a> up to 2011.</p>
-                      <br>
+                      <p><a href="http://www.ine.gob.bo/indice/EstadisticaSocial.aspx?codigo=30406">Unemployment</a> up to 2010. </p>
+                      <p><a href="http://www.ine.gob.bo/indice/EstadisticaSocial.aspx?codigo=30801">Population</a> up to 2011.</p>
                   </td>
               </tr>
 
-<!-- row -->
-<tr data-rank="76" data-score="45" data-place="kenya">
+              <!-- row -->
+              <tr data-rank="76" data-score="45" data-place="kenya">
                   <td>
                       76
                   </td>
@@ -549,26 +570,30 @@ n/a                  </td>
                         <i class="fa fa-info-circle"></i>
                       </a>
                   </td>
-                  <td class="previous-results">
-                      <span class="rank rank-previous">#92</span>&nbsp;&nbsp;<span style="background-color: rgb(251, 41, 11); color: white;" class="score score-previous" data-score="10">10%</span>
+                  {% if godi != "true" %}
+                  <td class="year">
+                    <span title="5:21pm on 16th Oct 2015 (Submitted by Stephen Gates and reviewed by Stephen Gates)">2015</span>
                   </td>
+                  {% endif %}
                   <td style="background-color: rgb(238, 186, 53); color: white;" class="score" data-score="45">
                       <span>45%</span>
                   </td>
               </tr><tr id="detail-ke" class="details collapse">
                   <td><span style="visibility: hidden">76</span></td>
                   <td colspan="7">
-<span style="visibility: hidden;">Kenya</span>
-                      <br><br>
-                      <p>The Kenya National Bureau of statistics which is the central government agency that collects data has statistics on census, economic activities, demographics. It has many channels through which the some of the data is distributed, with links for these pages on their website, one of which is the Kenya Open Data Initiative (KODI). However there seems to be no standard for distributing data. Some are available and open e.g. KODI but some are available on the KNBS website itself but not open. Some of these are not charged while others are. KNBS applies a statistics act and a form has to be submitted for data requests. On the plus side some include metadata, background information, data description. On the Kenya Open Data portal, the datasets are mostly from KNBS but not up to date.
-[According to Ahmed ]</p>
-<p>Other areas i.e. Consumer Price Indices have regularly updated data within the site, the Statistics section has data between 2006 and 2012 which is pretty outdated at present.</p>
-                      <br>
+                      <span style="visibility: hidden;">Kenya</span>
+                      <p>The Kenya National Bureau of statistics which is the central government agency that collects data has statistics on census, economic activities, demographics. It has many channels through which the some of the data is distributed, with links for these pages on their website, one of which is the Kenya Open Data Initiative (KODI). However there seems to be no standard for distributing data. Some are available and open e.g. KODI but some are available on the KNBS website itself but not open. Some of these are not charged while others are. KNBS applies a statistics act and a form has to be submitted for data requests. On the plus side some include metadata, background information, data description. On the Kenya Open Data portal, the datasets are mostly from KNBS but not up to date. [According to Ahmed ]</p>
+                      <p>Other areas i.e. Consumer Price Indices have regularly updated data within the site, the Statistics section has data between 2006 and 2012 which is pretty outdated at present.</p>
+                      {% if godi == "true" %}
+                      <hr />
+                      <strong>Previous (2014):</strong>
+                      <span class="rank rank-previous">#92</span>&nbsp;&nbsp;<span style="background-color: rgb(251, 41, 11); color: white;" class="score score-previous" data-score="10">10%</span>
+                      {% endif %}
                   </td>
               </tr>
 
-<!-- row -->
-<tr data-rank="87" data-score="35" data-place="guernsey">
+              <!-- row -->
+              <tr data-rank="87" data-score="35" data-place="guernsey">
                   <td>
                       87
                   </td>
@@ -657,27 +682,27 @@ PDF                  </td>
                         <i class="fa fa-info-circle"></i>
                       </a>
                   </td>
-                  <td class="previous-results">
-                      n/a
+                  {% if godi != "true" %}
+                  <td class="year">
+                    <span title="5:21pm on 16th Oct 2015 (Submitted by Stephen Gates and reviewed by Stephen Gates)">2015</span>
                   </td>
+                  {% endif %}
                   <td style="background-color: rgb(242, 144, 41); color: white;" class="score" data-score="35">
                       <span>35%</span>
                   </td>
               </tr><tr id="detail-gg" class="details collapse">
                   <td><span style="visibility: hidden">87</span></td>
                   <td colspan="7">
-<span style="visibility: hidden;">Guernsey</span>
-                      <br><br>
+                      <span style="visibility: hidden;">Guernsey</span>
                       <p>GDP - see "National accounts" <a href="http://www.gov.gg/gdp">http://www.gov.gg/gdp</a> (latest figure is an estimate for 2014, published August 2015) <a href="http://www.gov.gg/CHttpHandler.ashx?id=97340&amp;p=">http://www.gov.gg/CHttpHandler.ashx?id=97340&amp;p=</a></p>
-<p>Unemployment - see "Labout market" <a href="http://www.gov.gg/lmb">http://www.gov.gg/lmb</a> (latest figures are for June 2015, published September 2015) <a href="http://www.gov.gg/CHttpHandler.ashx?id=97595&amp;p=0">http://www.gov.gg/CHttpHandler.ashx?id=97595&amp;p=0</a></p>
-<p>Population - see <a href="http://www.gov.gg/population">http://www.gov.gg/population</a>
-Latest reports (for 2015) should be at <a href="http://www.gov.gg/article/116644/2015">http://www.gov.gg/article/116644/2015</a> but the page has no entries as at 28 September 2015.</p>
-                      <br>
+                      <p>Unemployment - see "Labout market" <a href="http://www.gov.gg/lmb">http://www.gov.gg/lmb</a> (latest figures are for June 2015, published September 2015) <a href="http://www.gov.gg/CHttpHandler.ashx?id=97595&amp;p=0">http://www.gov.gg/CHttpHandler.ashx?id=97595&amp;p=0</a></p>
+                      <p>Population - see <a href="http://www.gov.gg/population">http://www.gov.gg/population</a>
+                      Latest reports (for 2015) should be at <a href="http://www.gov.gg/article/116644/2015">http://www.gov.gg/article/116644/2015</a> but the page has no entries as at 28 September 2015.</p>
                   </td>
               </tr>
 
-<!-- row -->
-<tr data-rank="106" data-score="0" data-place="china">
+              <!-- row -->
+              <tr data-rank="106" data-score="0" data-place="china">
                   <td>
                       106
                   </td>
@@ -766,24 +791,30 @@ n/a                  </td>
                         <i class="fa fa-info-circle"></i>
                       </a>
                   </td>
-                  <td class="previous-results">
-                      <span class="rank rank-previous">#41</span>&nbsp;&nbsp;<span style="background-color: rgb(214, 202, 47); color: white;" class="score score-previous" data-score="60">60%</span>
+                  {% if godi != "true" %}
+                  <td class="year">
+                    <span title="5:21pm on 16th Oct 2015 (Submitted by Stephen Gates and reviewed by Stephen Gates)">2015</span>
                   </td>
+                  {% endif %}
                   <td style="background-color: rgb(255, 0, 0); color: white;" class="score" data-score="0">
                       <span>0%</span>
                   </td>
               </tr><tr id="detail-cn" class="details collapse">
                   <td><span style="visibility: hidden">106</span></td>
                   <td colspan="7">
-<span style="visibility: hidden;">China</span>
-                      <br><br>
-                      <p><a href="http://data.stats.gov.cn/">http://data.stats.gov.cn/</a> is the data portal managed by the National Statistics Bureau. </p>
-<p>It provides:
-1. Quarterly and Yearly GDP for the whole country
-2. Yearly Unemployment statistics
-3. Yearly population data</p>
-<p>However, based upon the new minimum criteria set by index (2015 version), that means China does not have the right statistic data opened up by the government.</p>
-                      <br>
+                    <span style="visibility: hidden;">China</span>
+                    <p><a href="http://data.stats.gov.cn/">http://data.stats.gov.cn/</a> is the data portal managed by the National Statistics Bureau. </p>
+                    <p>It provides:
+                    1. Quarterly and Yearly GDP for the whole country
+                    2. Yearly Unemployment statistics
+                    3. Yearly population data</p>
+                    <p>However, based upon the new minimum criteria set by index (2015 version), that means China does not have the right statistic data opened up by the government.</p>
+
+                    {% if godi == "true" %}
+                    <hr />
+                    <strong>Previous (2014):</strong>
+                    <span class="rank rank-previous">#41</span>&nbsp;&nbsp;<span style="background-color: rgb(214, 202, 47); color: white;" class="score score-previous" data-score="60">60%</span>
+                    {% endif %}
                   </td>
               </tr></tbody>
     </table>
