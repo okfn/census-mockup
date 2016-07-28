@@ -16,24 +16,23 @@
 }
 
 #slice-table {
-  .year {
-    span {
-      @include table-label();
-    }
-  }
 
-  thead:not(.is_stuck) {
-    th.admin {
-      border-bottom-color: #fff;
-    }
-  }
+  tr {
+    &.queued {
+      background-color: lighten($brand-warning, 42%);
 
-  td.admin {
-    border-top-color: #fff;
-    text-align: right;
+      td {
+        opacity: 0.5;
+        border-top-color: lighten($brand-warning, 40%);
 
-    a.view {
-      color: $brand-danger;
+        &.rank {
+          color: lighten($brand-warning, 42%);
+        }
+
+        &.admin  {
+          opacity: 1;
+        }
+      }
     }
   }
 
@@ -52,6 +51,28 @@
       }
     }
   }
+
+  .year {
+    span {
+      @include table-label();
+    }
+  }
+
+  thead:not(.is_stuck) {
+    th.admin {
+      border-bottom-color: #fff;
+    }
+  }
+
+  td.admin {
+    border-top-color: #fff;
+    text-align: right;
+
+    a.view {
+      color: $brand-warning;
+    }
+  }
+
   td {
     &.breakdown {
       padding: 5px 8px;
@@ -76,6 +97,10 @@
           }
         }
       }
+    }
+    &.rank {
+      background-color: transparent;
+      text-align: left;
     }
   }
 }

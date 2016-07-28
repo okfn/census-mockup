@@ -43,7 +43,7 @@
         </thead>
         <tbody>
 
-          <!-- row -->
+          {# row #}
           <tr data-rank="1" data-score="100" data-place="romania">
                   <td>
                       1
@@ -167,7 +167,7 @@
                   </td>
               </tr>
 
-              <!-- row -->
+              {# row #}
               <tr data-rank="23" data-score="90" data-place="tunisia">
                   <td>
                       23
@@ -284,7 +284,7 @@ HTML,PD ...                  </td>
                   </td>
               </tr>
 
-              <!-- row -->
+              {# row #}
               <tr data-rank="33" data-score="70" data-place="belgium">
                   <td>
                       33
@@ -384,7 +384,7 @@ Excel, ...                  </td>
                   </td>
                   {% if godi != "true" %}
                   <td class="admin">
-                    <a href="#" class="view" title="View Submission"><span class="glyphicon glyphicon-check" aria-hidden="true"></span></a>
+                    <a href="#" class="propose" title="Propose Revisions"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
                   </td>
                   {% endif %}
               </tr>
@@ -404,7 +404,81 @@ Excel, ...                  </td>
                   </td>
               </tr>
 
-              <!-- row -->
+              {% if godi != "true" %}
+              {# row #}
+              <tr data-rank="33" data-score="70" data-place="belgium" class="queued">
+                  <td class="rank">
+                      33
+                  </td>
+                  <td>
+
+        <strong>&#8627; Awaiting review</strong><br>
+
+        <span title="Submitted by anonymous" class="queued-context">
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;
+          anonymous
+        </span>
+        <br>
+        <span title="Submitted on 5:59am on 6th Jul 2016" class="queued-context">
+          <span class="glyphicon glyphicon-time" aria-hidden="true"></span></i>&nbsp;
+          22 days ago
+        </span>
+
+                  </td>
+                  <td>
+                      <ul class="availability availability-slice">
+                          <li data-original-title="<h4><p>Openly licensed? </p></h4>" class="yes" title=""><i class="fa fa-unlock-alt"></i>&nbsp;</li>
+                          <li data-original-title="<h4><p>Is the data machine readable? </p></h4>" class="yes" title=""><i class="fa fa-keyboard-o"></i>&nbsp;</li>
+                          <li data-original-title="<h4><p>Is the data available for free? </p></h4>" class="yes" title="" data-content="<p>The data is free if you don’t have to pay for it.</p>"><i class="fa fa-dollar"></i>&nbsp;</li>
+                          <li data-original-title="<h4><p>Available in bulk? </p></h4>" class="yes" data-toggle="popover" title=""><i class="fa fa-copy"></i>&nbsp;</li>
+                          <li data-original-title="<h4><p>Is the data provided on a timely and up to date basis? </p></h4>" class="yes" title=""><i class="fa fa-clock-o"></i>&nbsp;</li>
+                          <li data-original-title="<h4><p>Is the data available online? </p></h4>" class="yes" title=""><i class="fa fa-download"></i>&nbsp;</li>
+                          <li data-original-title="<h4><p>Is data in digital form? </p></h4>" class="yes" title=""><i class="fa fa-save"></i>&nbsp;</li>
+                          <li data-original-title="<h4><p>Publicly available? </p></h4>" class="yes" title=""><i class="fa fa-eye"></i>&nbsp;</li>
+                          <li data-original-title="<h4><p>Does the data exist? </p></h4>" class="yes" title=""><i class="fa fa-file-o"></i>&nbsp;</li>
+                      </ul>
+                  </td>
+                  <td>
+<a href="http://stat.nbb.be/Index.aspx?ThemeTreeId=8&amp;lang=en">http://stat.nbb.be/Index.aspx?...</a>                  </td>
+                  <td>
+Excel, ...                  </td>
+                  <td class="info-expander" title="Click for full details">
+                      <a data-toggle="collapse" data-target="#detail-be" class="collapsed">
+                        <i class="fa fa-info-circle"></i>
+                      </a>
+                  </td>
+                  {% if godi != "true" %}
+                  <td class="year">
+                    <span title="5:21pm on 16th Oct 2015 (Submitted by Stephen Gates and reviewed by Stephen Gates)">2016</span>
+                  </td>
+                  {% endif %}
+                  <td style="background-color: rgb(191, 197, 35); color: white;" class="score" data-score="70">
+                      <span>70%</span>
+                  </td>
+                  {% if godi != "true" %}
+                  <td class="admin">
+                    <a href="#" class="view" title="View Submission"><span class="glyphicon glyphicon-check" aria-hidden="true"></span></a>
+                  </td>
+                  {% endif %}
+              </tr>
+              <tr id="detail-be" class="details collapse">
+                  <td><span style="visibility: hidden">33</span></td>
+                  <td colspan="7">
+                    <span style="visibility: hidden;">Belgium</span>
+                      <p>Many separate spreadsheets available, although some data is only available when making a selection using online report builder. </p>
+                      <p>More data is available at <a href="http://www.census2011.be/">http://www.census2011.be/</a>.</p>
+                      <p>Note that all statistics are also published by Eurostat. Where they are available in bulk. See <a href="https://ec.europa.eu/CensusHub2/query.do?step=selectHyperCube&amp;qhc=false&amp;countrycode=be">https://ec.europa.eu/CensusHub2/query.do?step=selectHyperCube&amp;qhc=false&amp;countrycode=be</a>
+                      This holds for every European Union Member state.</p>
+                      {% if godi == "true" %}
+                      <hr />
+                      <strong>Previous (2014):</strong>
+                      <span class="rank rank-previous">#23</span>&nbsp;&nbsp;<span style="background-color: rgb(191, 197, 35); color: white;" class="score score-previous" data-score="70">70%</span>
+                      {% endif %}
+                  </td>
+              </tr>
+              {% endif %}
+
+              {# row #}
               <tr data-rank="64" data-score="50" data-place="bolivia">
                   <td>
                       64
@@ -518,7 +592,7 @@ Excel, ...                  </td>
                   </td>
               </tr>
 
-              <!-- row -->
+              {# row #}
               <tr data-rank="76" data-score="45" data-place="kenya">
                   <td>
                       76
@@ -636,7 +710,7 @@ n/a                  </td>
                   </td>
               </tr>
 
-              <!-- row -->
+              {# row #}
               <tr data-rank="87" data-score="35" data-place="guernsey">
                   <td>
                       87
@@ -751,7 +825,7 @@ PDF                  </td>
                   </td>
               </tr>
 
-              <!-- row -->
+              {# row #}
               <tr data-rank="106" data-score="0" data-place="china">
                   <td>
                       106
