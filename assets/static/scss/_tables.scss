@@ -21,6 +21,18 @@
       @include table-label();
     }
   }
+
+  th.admin {
+    border-bottom-color: #fff;
+  }
+  td.admin {
+    border-top-color: #fff;
+
+    a.view {
+      color: $brand-danger;
+    }
+  }
+
   tr.details {
     background-color: $color-okf-grey;
 
