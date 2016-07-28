@@ -22,11 +22,15 @@
     }
   }
 
-  th.admin {
-    border-bottom-color: #fff;
+  thead:not(.is_stuck) {
+    th.admin {
+      border-bottom-color: #fff;
+    }
   }
+
   td.admin {
     border-top-color: #fff;
+    text-align: right;
 
     a.view {
       color: $brand-danger;

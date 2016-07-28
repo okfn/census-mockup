@@ -8361,10 +8361,11 @@ body.godi > header {
   width: 40px;
   text-align: center;
   display: inline-block; }
-#slice-table th.admin {
+#slice-table thead:not(.is_stuck) th.admin {
   border-bottom-color: #fff; }
 #slice-table td.admin {
-  border-top-color: #fff; }
+  border-top-color: #fff;
+  text-align: right; }
   #slice-table td.admin a.view {
     color: #ff0000; }
 #slice-table tr.details {
