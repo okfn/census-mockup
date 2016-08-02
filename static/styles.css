@@ -1216,13 +1216,13 @@ h3, .h3 {
   font-size: 23px; }
 
 h4, .h4 {
-  font-size: 18px; }
+  font-size: 21px; }
 
 h5, .h5 {
-  font-size: 20px; }
+  font-size: 17px; }
 
 h6, .h6 {
-  font-size: 17px; }
+  font-size: 14px; }
 
 p {
   margin: 0 0 12px; }
@@ -8130,7 +8130,8 @@ body > header {
     letter-spacing: 1px; }
     @media (min-width: 992px) {
       body > header .logo {
-        padding-bottom: 23px;
+        padding-top: 1.8em;
+        padding-bottom: 1.8em;
         float: left;
         white-space: nowrap; } }
     body > header .logo .glyphicon {
@@ -8161,18 +8162,21 @@ body > header {
     body > header nav {
       text-align: right; } }
   body > header nav .user {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 14px; }
+    display: none; }
+    @media (min-width: 992px) {
+      body > header nav .user {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 0.5em;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px; } }
     body > header nav .user a:hover {
       text-decoration: none;
       color: #fff; }
   body > header nav .menu {
     margin: 0;
     margin-left: -10px;
-    padding: 0;
+    padding: 0.5em 0;
     font-size: 16px; }
     @media (min-width: 992px) {
       body > header nav .menu {
@@ -8281,6 +8285,13 @@ body.godi > header {
     border-top: solid 1px rgba(255, 255, 255, 0.4);
     margin-top: 15px;
     padding-top: 15px; }
+  .site-footer .user {
+    display: block;
+    padding-top: 15px;
+    border-top: solid 1px rgba(255, 255, 255, 0.4); }
+    @media (min-width: 992px) {
+      .site-footer .user {
+        display: none; } }
 
 .btn-primary-black {
   background-color: #181818;
@@ -8354,12 +8365,22 @@ body.godi > header {
   font-size: 14px; }
 
 #slice-table tr.queued {
-  background-color: #fef5ef; }
+  background-color: #fdfbef; }
   #slice-table tr.queued td {
     opacity: 0.5;
-    border-top-color: #fef0e5; }
+    border-top-color: #fcf9e5; }
+    #slice-table tr.queued td.queued-context {
+      opacity: 1; }
+      #slice-table tr.queued td.queued-context h6 {
+        margin: 0.2em 0 0 0;
+        font-weight: bold; }
+        #slice-table tr.queued td.queued-context h6 .icon {
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      #slice-table tr.queued td.queued-context .queued-user,
+      #slice-table tr.queued td.queued-context .queued-time {
+        font-size: 0.75em; }
     #slice-table tr.queued td.rank {
-      color: #fef5ef; }
+      color: #fdfbef; }
     #slice-table tr.queued td.admin {
       opacity: 1; }
 #slice-table tr.details {
@@ -8385,8 +8406,12 @@ body.godi > header {
 #slice-table td.admin {
   border-top-color: #fff;
   text-align: right; }
-  #slice-table td.admin a.view {
-    color: #f47c23; }
+  #slice-table td.admin a {
+    opacity: 0.3; }
+    #slice-table td.admin a:link {
+      opacity: 1; }
+    #slice-table td.admin a.view {
+      color: #f47c23; }
 #slice-table td.breakdown {
   padding: 5px 8px; }
 #slice-table td.info-expander {
