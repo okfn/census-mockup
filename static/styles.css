@@ -8373,6 +8373,50 @@ body.godi > header {
     margin-top: 5px;
     font-size: 14px; }
 
+#data-header h1, #data-header h3 {
+  font-weight: 300; }
+#data-header .open-badge {
+  text-align: right;
+  float: right;
+  clear: both;
+  width: 132px; }
+  #data-header .open-badge img {
+    width: 132px; }
+#data-header .statistics,
+#data-header .relative,
+#data-header .content,
+#data-header .navigate {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+#data-header .relative {
+  font-size: 20px;
+  font-weight: 300; }
+  #data-header .relative .change {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 4px; }
+#data-header .history {
+  clear: left;
+  margin-top: 30px;
+  font-size: 0.8em; }
+  #data-header .history h6 {
+    display: inline;
+    font-size: inherit; }
+    #data-header .history h6:after {
+      content: ':'; }
+  #data-header .history ul {
+    display: inline;
+    margin: 0;
+    padding: 0; }
+  #data-header .history li {
+    display: inline;
+    border-right: solid 1px #777777; }
+    #data-header .history li a {
+      padding-left: 0.3em;
+      padding-right: 0.3em; }
+    #data-header .history li:last-of-type {
+      border: none; }
+
 .data-table thead th {
   font-size: 14px; }
 
@@ -8728,26 +8772,6 @@ th.header.headerSortUp:after {
   font-size: 24px;
   font-weight: 300; }
 
-#data-header h1, #data-header h3 {
-  font-weight: 300; }
-#data-header .open-badge {
-  text-align: right;
-  float: right;
-  clear: both;
-  width: 132px; }
-  #data-header .open-badge img {
-    width: 132px; }
-#data-header .statistics, #data-header .relative, #data-header .content, #data-header .navigate {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-#data-header .relative {
-  font-size: 20px;
-  font-weight: 300; }
-  #data-header .relative .change {
-    text-align: center;
-    font-size: 32px;
-    margin-top: 4px; }
-
 .is_stuck {
   background-color: white; }
   .is_stuck th {
@@ -8763,9 +8787,6 @@ th.header.headerSortUp:after {
 
 .tell-me-embedded {
   margin-top: 32px; }
-
-.inline {
-  display: inline; }
 
 .story-preview {
   text-align: right;
