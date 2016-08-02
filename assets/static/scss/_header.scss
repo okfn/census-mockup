@@ -126,7 +126,8 @@ body {
         padding-top: $grid-gutter-width*0.5;
       }
 
-      & + * {
+      & + div.container,
+      & + * > .container {
         padding-top: 50px;
       }
     }

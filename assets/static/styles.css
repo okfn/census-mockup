@@ -8202,7 +8202,7 @@ body .breadcrumb-wrapper {
         background-color: inherit;
         margin-bottom: 0;
         padding-top: 15px; }
-      body .breadcrumb-wrapper + * {
+      body .breadcrumb-wrapper + div.container, body .breadcrumb-wrapper + * > .container {
         padding-top: 50px; } }
 body.godi > header {
   background-color: #EAD045;
@@ -9176,6 +9176,8 @@ body.form section {
   border-bottom: solid 1px #eeeeee; }
   body.form section:nth-of-type(odd) {
     background-color: #f6f6f6; }
+  body.form section:first-of-type .container {
+    padding-top: 50px; }
   body.form section.banner {
     background-image: url(img/icon-tile.png);
     background-size: 350px auto;
