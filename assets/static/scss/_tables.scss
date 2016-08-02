@@ -19,14 +19,32 @@
 
   tr {
     &.queued {
-      background-color: lighten($brand-warning, 42%);
+      background-color: lighten($brand-primary, 37%);
 
       td {
         opacity: 0.5;
-        border-top-color: lighten($brand-warning, 40%);
+        border-top-color: lighten($brand-primary, 35%);
+
+        &.queued-context {
+          opacity: 1;
+
+          h6 {
+            margin: 0.2em 0 0 0;
+            font-weight: bold;
+
+            .icon {
+              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+          }
+
+          .queued-user,
+          .queued-time {
+          	font-size: 0.75em;
+          }
+        }
 
         &.rank {
-          color: lighten($brand-warning, 42%);
+          color: lighten($brand-primary, 37%);
         }
 
         &.admin  {
@@ -68,8 +86,16 @@
     border-top-color: #fff;
     text-align: right;
 
-    a.view {
-      color: $brand-warning;
+    a {
+      opacity: 0.3;
+
+      &:link {
+        opacity: 1;
+      }
+
+      &.view {
+        color: $brand-warning;
+      }
     }
   }
 
