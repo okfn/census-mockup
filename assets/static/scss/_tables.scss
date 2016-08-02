@@ -139,3 +139,153 @@
     background-color: #FFF;
   }
 }
+
+.rank,
+.score {
+  text-align: center;
+  background-color: $color-okf-grey;
+}
+
+.table td.score {
+  position: relative;
+  padding: 0;
+  span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 5px;
+    bottom: 0;
+    color: black;
+    line-height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+ul.availability, ul.data-table-key {
+  margin-bottom: 0;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.availability > li {
+  display: inline-block;
+  width: 16px;
+  background-color: #CCC;
+  color: white;
+  line-height: 16px;
+  padding-left: 5px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.data-table-key li {
+  display: inline-block;
+  border-left: 16px solid #CCC;
+  line-height: 16px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.data-table-key li.maybe {
+  border-color: $color-maybe;
+}
+
+.data-table-key li.yes {
+  border-color: $color-yes;
+}
+
+.data-table-key li.no {
+  border-color: $color-no;
+}
+
+
+.availability-comparative {
+  display: table;
+  width: 100%;
+
+  li {
+    display: table-cell;
+    line-height: 24px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.availability-slice > li {
+  display: inline-block;
+  line-height: 24px;
+  width: 24px;
+  padding-left: 3px;
+  padding-right: 0;
+}
+
+.availability li.maybe {
+  background-color: $color-maybe;
+}
+
+.availability li.yes {
+  background-color: $color-yes;
+}
+
+.availability li.no {
+  background-color: $color-no;
+}
+
+ul.availability-popover {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.availability-popover {
+
+  li i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    padding: 2px;
+  }
+
+  li.yes i {
+    background-color: $color-yes;
+  }
+
+  li.maybe i {
+    background-color: $color-maybe;
+  }
+
+  li.no i {
+    background-color: $color-no;
+  }
+
+}
+
+.availability-single li {
+  margin-top: 8px;
+  margin-bottom: 8px
+}
+
+ul.availability-single {
+  list-style-type:none;
+  padding-left:0;
+}
+
+.availability-single li i {
+  color: white;
+  padding: 2px;
+  width: 22px;
+  text-align: center;
+}
+
+.availability-single li.yes i {
+  background-color: $color-yes;
+}
+
+.availability-single li.no i {
+  background-color: $color-no;
+}
+
+.availability-single li.maybe i {
+  background-color: $color-maybe;
+}

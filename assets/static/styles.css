@@ -1216,7 +1216,7 @@ h3, .h3 {
   font-size: 23px; }
 
 h4, .h4 {
-  font-size: 21px; }
+  font-size: 20px; }
 
 h5, .h5 {
   font-size: 17px; }
@@ -8302,13 +8302,25 @@ body.godi > header {
     border-color: #2a2a2a;
     color: #f5f5f5; }
 
-.jumbotron p {
-  font-weight: 300; }
-
 .popover {
   max-width: 360px;
   width: 360px;
   font-size: 14px; }
+  .popover ul {
+    margin-bottom: 12px; }
+  .popover :first-child {
+    margin-top: 0; }
+  .popover :last-child {
+    margin-bottom: 0; }
+  @media (min-width: 992px) {
+    .popover .popover-title {
+      padding: 15px 22.5px; } }
+  @media (min-width: 992px) {
+    .popover .popover-content {
+      padding: 22.5px 22.5px; } }
+
+.jumbotron p {
+  font-weight: 300; }
 
 .table {
   font-size: 14px;
@@ -8465,7 +8477,7 @@ ul.availability, ul.data-table-key {
   padding-left: 0;
   cursor: pointer; }
 
-.availability li {
+.availability > li {
   display: inline-block;
   width: 16px;
   background-color: #CCC;
@@ -8500,7 +8512,7 @@ ul.availability, ul.data-table-key {
     padding-left: 0;
     padding-right: 0; }
 
-.availability-slice li {
+.availability-slice > li {
   display: inline-block;
   line-height: 24px;
   width: 24px;
