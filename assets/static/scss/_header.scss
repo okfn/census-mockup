@@ -20,7 +20,8 @@ body {
       letter-spacing: 1px;
 
       @media (min-width: $screen-md-min) {
-        padding-bottom: 23px;
+        padding-top: 1.8em;
+        padding-bottom: 1.8em;
         float: left;
         white-space: nowrap;
       }
@@ -65,11 +66,15 @@ body {
       }
 
       .user {
-        display: block;
-        padding-top: 10px;
-        padding-bottom: 5px;
-        color: rgba($header-fg, 0.8);
-        font-size: 14px;
+        display: none;
+
+        @media (min-width: $screen-md-min) {
+          display: block;
+          padding-top: 10px;
+          padding-bottom: 0.5em;
+          color: rgba($header-fg, 0.8);
+          font-size: 14px;
+        }
 
         a:hover {
           text-decoration: none;
@@ -81,7 +86,7 @@ body {
         $menu-h-padding: 10px;
         margin: 0;
         margin-left: -$menu-h-padding;
-        padding: 0;
+        padding: 0.5em 0;
         font-size: 16px;
 
         @media (min-width: $screen-md-min) {
