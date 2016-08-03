@@ -145,12 +145,27 @@ body {
       border-bottom: solid 2px darken($header-bg, 10%);
       color: $header-fg;
 
-      nav {
-        .user {
-          color: rgba($header-fg, 0.8);
+      .logo {
+        display: block;
+        padding-top: 1.3em;
+        margin-right: $grid-gutter-width;
 
-          a:hover {
-            color: $header-fg;
+        @media (min-width: $screen-md-min) {
+          padding-bottom: 1.1em;
+        }
+
+        svg {
+          height: 50px;
+          fill: currentColor;
+        }
+      }
+
+      nav {
+        text-align: left;
+
+        .menu {
+          @media (min-width: $screen-md-min) {
+            padding-top: 1.7em;
           }
         }
       }

@@ -20,16 +20,24 @@
 
     <header>
       <div class="container">
+        {% if godi == "true" %}
+        <a href="http://index.okfn.org/" class="logo">
+          {% include 'includes/godi-logo.svg' %}
+        </a>
+        {% else %}
         <div class="logo">
           <a class="glyphicon glyphicon-th-list" aria-hidden="true"></a>
           <a class="title" href="/">UK Local Open Data Census</a>
           <span class="tagline">Powered by <a href="http://census.okfn.org">Open Data Census</a></span>
         </div>
+        {% endif %}
         <nav>
+          {% if godi != "true" %}
           <span class="user">
             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
             Logged in as Sam | <a href="http://id.census.okfn.org/logout">Log out</a>
           </span>
+          {% endif %}
 
           <ul class="menu">
             <li><a href="/about/">About</a></li>
@@ -71,10 +79,12 @@
             <a href="http://opendatacommons.org/licenses/pddl/1.0">Data License (Public Domain)</a>. <a href="https://github.com/okfn/opendatacensus/">Source code</a>.
           </p>
         </div>
+        {% if godi != "true" %}
         <span class="user">
           <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
           Logged in as Sam | <a href="http://id.census.okfn.org/logout">Log out</a>
         </span>
+        {% endif %}
       </div>
     </footer>
 
