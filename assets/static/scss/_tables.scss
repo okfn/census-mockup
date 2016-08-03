@@ -260,32 +260,3 @@ ul.availability-popover {
   }
 
 }
-
-.availability-single li {
-  margin-top: 8px;
-  margin-bottom: 8px
-}
-
-ul.availability-single {
-  list-style-type:none;
-  padding-left:0;
-}
-
-.availability-single li i {
-  color: white;
-  padding: 2px;
-  width: 22px;
-  text-align: center;
-}
-
-.availability-single li.yes i {
-  background-color: $color-yes;
-}
-
-.availability-single li.no i {
-  background-color: $color-no;
-}
-
-.availability-single li.maybe i {
-  background-color: $color-maybe;
-}

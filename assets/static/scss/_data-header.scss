@@ -3,15 +3,22 @@
     font-weight: 300;
   }
 
+  .place-openness,
+  .dataset-openness {
+    font-size: 24px;
+    font-weight: 300;
+    padding: 8px;
+    display: inline-block;
+
+    @media (min-width: $screen-md-min) {
+      float: right;
+    }
+  }
+
   .open-badge {
     text-align: right;
     float: right;
     clear: both;
-    width: 132px;
-
-    img {
-      width: 132px;
-    }
   }
 
   .statistics,
