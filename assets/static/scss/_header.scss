@@ -130,6 +130,10 @@ body {
       & + * > .container {
         padding-top: 50px;
       }
+
+      & + div.container {
+        padding-bottom: $grid-gutter-width;
+      }
     }
   }
 
