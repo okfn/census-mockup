@@ -8735,26 +8735,6 @@ ul.availability-single {
 #place-contributors {
   margin-bottom: 30px; }
 
-.home-about2, #home-visualisation {
-  background-color: #f0f0f0; }
-
-.home-about2 {
-  padding-bottom: 40px;
-  padding-top: 18px; }
-  .home-about2 h2 {
-    font-size: 42px;
-    text-align: center;
-    font-weight: 300;
-    margin-bottom: 8px; }
-
-.home-box {
-  text-align: center; }
-  .home-box p {
-    padding: 0 60px; }
-  .home-box h3 {
-    font-weight: 300;
-    font-size: 30px; }
-
 .is_stuck {
   background-color: white; }
   .is_stuck th {
