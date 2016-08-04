@@ -8722,6 +8722,8 @@ ul.availability-single {
       width: 22px;
       text-align: center;
       float: left; }
+      ul.availability-single > li i[data-toggle] {
+        cursor: pointer; }
     ul.availability-single > li span {
       display: block;
       margin-left: 30px; }
@@ -8764,9 +8766,6 @@ ul.availability-single {
 
 .article-summary {
   margin-bottom: 20px; }
-
-.pointer {
-  cursor: pointer; }
 
 a.silent-link {
   text-decoration: none;

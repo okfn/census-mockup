@@ -16,6 +16,10 @@ ul.availability-single {
       width: 22px;
       text-align: center;
       float: left;
+
+      &[data-toggle] {
+        cursor: pointer;
+      }
     }
 
     span {
