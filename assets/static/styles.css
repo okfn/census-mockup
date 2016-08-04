@@ -8665,6 +8665,18 @@ td.previous-results {
     transform: rotate(-90deg);
     padding: 8px; }
 
+th.header.headerSortDown:after {
+  font-family: FontAwesome;
+  content: "";
+  text-align: right;
+  float: right; }
+
+th.header.headerSortUp:after {
+  font-family: FontAwesome;
+  content: "";
+  text-align: right;
+  float: right; }
+
 ul.availability-single {
   list-style-type: none;
   padding-left: 0;
@@ -8722,18 +8734,6 @@ ul.availability-single {
 
 #place-contributors {
   margin-bottom: 30px; }
-
-th.header.headerSortDown:after {
-  font-family: FontAwesome;
-  content: "";
-  text-align: right;
-  float: right; }
-
-th.header.headerSortUp:after {
-  font-family: FontAwesome;
-  content: "";
-  text-align: right;
-  float: right; }
 
 .google-plus {
   color: #D34836; }
