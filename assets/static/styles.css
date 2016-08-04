@@ -8206,10 +8206,28 @@ body .breadcrumb-wrapper {
         padding-top: 50px; }
       body .breadcrumb-wrapper + div.container {
         padding-bottom: 30px; } }
+body.godi #ok-panel {
+  border-bottom-color: currentColor; }
 body.godi > header {
   background-color: #EAD045;
   border-bottom: solid 2px #e2c31a;
   color: #333333; }
+  body.godi > header .container {
+    position: relative; }
+  body.godi > header #ok-panel-wrapper {
+    margin-left: -15px;
+    margin-right: -15px; }
+    @media (min-width: 768px) {
+      body.godi > header #ok-panel-wrapper {
+        margin: 0; } }
+    body.godi > header #ok-panel-wrapper .ok-ribbon.black {
+      background-color: currentColor; }
+      @media (min-width: 768px) {
+        body.godi > header #ok-panel-wrapper .ok-ribbon.black {
+          background-color: transparent;
+          position: absolute; }
+          body.godi > header #ok-panel-wrapper .ok-ribbon.black:before {
+            background-color: currentColor; } }
   body.godi > header .logo {
     display: block;
     padding-top: 1.3em;

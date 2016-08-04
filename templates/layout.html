@@ -13,14 +13,20 @@
     <script src="{{ '/bower_components/html5shiv/dist/html5shiv.min.js'|url }}"></script>
     <![endif]-->
     <link href='//fonts.googleapis.com/css?family=Lato:400,400italic,700,300' rel='stylesheet' type='text/css'>
+    {% if godi == "true" %}
+    <link rel="stylesheet" href="//a.okfn.org/html/oki/panel/assets/css/frontend.css"/>
+    {% endif %}
     <link rel="stylesheet" href="{{ '/static/styles.css'|url }}">
   </head>
 
   <body class="{% if godi == "true" %}godi {% endif %}{% block body_class %}{% endblock %}">
-
+    {% if godi == "true" %}
+    <div id="ok-panel" class="closed"><div class="container"><iframe src="//a.okfn.org/html/oki/panel/panel.html" scrolling="no"></iframe></div></div>
+    {% endif %}
     <header>
       <div class="container">
         {% if godi == "true" %}
+        <div id="ok-panel-wrapper" data-breakpoint="768px"><a class="black ok-ribbon" href="//okfn.org/"><img src="//a.okfn.org/html/oki/panel/assets/images/oki-ribbon.png" alt="Open Knowledge"></a></div>
         <a href="http://index.okfn.org/" class="logo">
           {% include 'includes/godi-logo.svg' %}
         </a>
@@ -93,6 +99,8 @@
     </script>
 
     <script data-main="{{ '/static/scripts/site'|url }}" src="{{ '/bower_components/requirejs/require.js'|url }}"></script>
-
+    {% if godi == "true" %}
+    <script src="//a.okfn.org/html/oki/panel/assets/js/frontend.js" type="text/javascript"></script>
+    {% endif %}
   </body>
 </html>
