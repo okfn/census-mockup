@@ -18,6 +18,9 @@ body {
       padding-top: 23px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      padding-bottom: 23px;
+      display: inline-block;
+      max-width: 80%;
 
       @media (min-width: $screen-md-min) {
         padding-top: 1.8em;
@@ -36,6 +39,10 @@ body {
 
         @media (min-width: $screen-sm-min) {
           display: block;
+
+          & + div {
+            margin-left: 45px;
+          }
         }
       }
 
@@ -60,8 +67,19 @@ body {
       }
     }
 
+    .navbar-toggle {
+      margin: 24px 0 0 10px;
+
+      .icon-bar {
+        background-color: currentColor;
+      }
+    }
+
     nav {
+      clear: both;
+
       @media (min-width: $screen-md-min) {
+        clear: none;
         text-align: right;
       }
 
@@ -86,21 +104,30 @@ body {
         $menu-h-padding: 10px;
         margin: 0;
         margin-left: -$menu-h-padding;
-        padding: 0.5em 0;
+        padding: 0 0 0.5em 0;
         font-size: 16px;
 
         @media (min-width: $screen-md-min) {
           margin-left: 0;
           margin-right: -$menu-h-padding;
+          padding-top: 0.5em;
         }
 
         li {
-          display: inline-block;
+          display: block;
+
+          @media (min-width: $screen-sm-min) {
+            display: inline-block;
+          }
 
           a {
-            display: inline-block;
+            display: block;
             padding: 8px $menu-h-padding;
             border-radius: $border-radius-base;
+
+            @media (min-width: $screen-md-min) {
+              display: inline-block;
+            }
 
             &:hover {
               text-decoration: none;
@@ -176,18 +203,18 @@ body {
       }
 
       .logo {
-        display: block;
         padding-top: 1.3em;
         margin-right: $grid-gutter-width;
-
-        @media (min-width: $screen-md-min) {
-          padding-bottom: 1.1em;
-        }
+        padding-bottom: 12px;
 
         svg {
           height: 50px;
           fill: currentColor;
         }
+      }
+
+      .navbar-toggle {
+        margin-top: 30px;
       }
 
       nav {

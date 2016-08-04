@@ -8127,7 +8127,10 @@ body > header {
   body > header .logo {
     padding-top: 23px;
     text-transform: uppercase;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    padding-bottom: 23px;
+    display: inline-block;
+    max-width: 80%; }
     @media (min-width: 992px) {
       body > header .logo {
         padding-top: 1.8em;
@@ -8143,7 +8146,9 @@ body > header {
       display: none; }
       @media (min-width: 768px) {
         body > header .logo .glyphicon {
-          display: block; } }
+          display: block; }
+          body > header .logo .glyphicon + div {
+            margin-left: 45px; } }
     body > header .logo .title {
       font-weight: 700;
       font-size: 20px;
@@ -8158,39 +8163,53 @@ body > header {
       font-weight: 300; }
       body > header .logo .tagline a {
         font-weight: normal; }
-  @media (min-width: 992px) {
-    body > header nav {
-      text-align: right; } }
-  body > header nav .user {
-    display: none; }
+  body > header .navbar-toggle {
+    margin: 24px 0 0 10px; }
+    body > header .navbar-toggle .icon-bar {
+      background-color: currentColor; }
+  body > header nav {
+    clear: both; }
     @media (min-width: 992px) {
-      body > header nav .user {
-        display: block;
-        padding-top: 10px;
-        padding-bottom: 0.5em;
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 14px; } }
-    body > header nav .user a:hover {
-      text-decoration: none;
-      color: #fff; }
-  body > header nav .menu {
-    margin: 0;
-    margin-left: -10px;
-    padding: 0.5em 0;
-    font-size: 16px; }
-    @media (min-width: 992px) {
-      body > header nav .menu {
-        margin-left: 0;
-        margin-right: -10px; } }
-    body > header nav .menu li {
-      display: inline-block; }
-      body > header nav .menu li a {
-        display: inline-block;
-        padding: 8px 10px;
-        border-radius: 4px; }
-        body > header nav .menu li a:hover {
-          text-decoration: none;
-          background-color: rgba(255, 255, 255, 0.2); }
+      body > header nav {
+        clear: none;
+        text-align: right; } }
+    body > header nav .user {
+      display: none; }
+      @media (min-width: 992px) {
+        body > header nav .user {
+          display: block;
+          padding-top: 10px;
+          padding-bottom: 0.5em;
+          color: rgba(255, 255, 255, 0.8);
+          font-size: 14px; } }
+      body > header nav .user a:hover {
+        text-decoration: none;
+        color: #fff; }
+    body > header nav .menu {
+      margin: 0;
+      margin-left: -10px;
+      padding: 0 0 0.5em 0;
+      font-size: 16px; }
+      @media (min-width: 992px) {
+        body > header nav .menu {
+          margin-left: 0;
+          margin-right: -10px;
+          padding-top: 0.5em; } }
+      body > header nav .menu li {
+        display: block; }
+        @media (min-width: 768px) {
+          body > header nav .menu li {
+            display: inline-block; } }
+        body > header nav .menu li a {
+          display: block;
+          padding: 8px 10px;
+          border-radius: 4px; }
+          @media (min-width: 992px) {
+            body > header nav .menu li a {
+              display: inline-block; } }
+          body > header nav .menu li a:hover {
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.2); }
 body .breadcrumb-wrapper {
   display: none; }
   @media (min-width: 768px) {
@@ -8229,15 +8248,14 @@ body.godi > header {
           body.godi > header #ok-panel-wrapper .ok-ribbon.black:before {
             background-color: currentColor; } }
   body.godi > header .logo {
-    display: block;
     padding-top: 1.3em;
-    margin-right: 30px; }
-    @media (min-width: 992px) {
-      body.godi > header .logo {
-        padding-bottom: 1.1em; } }
+    margin-right: 30px;
+    padding-bottom: 12px; }
     body.godi > header .logo svg {
       height: 50px;
       fill: currentColor; }
+  body.godi > header .navbar-toggle {
+    margin-top: 30px; }
   body.godi > header nav {
     text-align: left; }
     @media (min-width: 992px) {
@@ -9298,12 +9316,15 @@ body.form section {
   background-image: url("images/icon-tile.png");
   background-position: center top;
   background-size: 350px auto;
-  margin-top: -20px;
+  margin-top: -5px;
   padding: 20px 0 30px 0;
   text-align: center; }
   @media (min-width: 768px) {
     .home #home-about {
       padding-bottom: 40px; } }
+  @media (min-width: 992px) {
+    .home #home-about {
+      margin-top: -20px; } }
   .home #home-about h1 {
     font-size: 2.8em;
     margin-bottom: 0.3em;
