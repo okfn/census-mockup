@@ -1,28 +1,5 @@
 // UNSORTED STYLING...
 
-h1, .h1 {
-  font-size: 34px;
-
-  a {
-    color: black;
-    &:hover {
-      color: black;
-      text-decoration: underline;
-    }
-  }
-}
-
-h3 {
-  a {
-    color: black;
-    &:hover {
-      color: black;
-      text-decoration: underline;
-    }
-  }
-}
-
-
 .place-rank, .dataset-rank {
   float: left;
   border-radius: 0 !important;
