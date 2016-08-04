@@ -8735,15 +8735,6 @@ ul.availability-single {
 #place-contributors {
   margin-bottom: 30px; }
 
-.google-plus {
-  color: #D34836; }
-
-.twitter {
-  color: #4099FF; }
-
-.facebook {
-  color: #3B5998; }
-
 .home-about2, #home-visualisation {
   background-color: #f0f0f0; }
 
@@ -8808,6 +8799,15 @@ a.silent-link {
 
 .percent-open-context {
   cursor: pointer; }
+
+.google-plus {
+  color: #D34836; }
+
+.twitter {
+  color: #4099FF; }
+
+.facebook {
+  color: #3B5998; }
 
 body.form textarea,
 body.form input,
