@@ -8363,6 +8363,9 @@ h6, .h6 {
   margin-top: 21.6px;
   margin-bottom: 13.5px; }
 
+blockquote {
+  color: #777777; }
+
 .popover {
   max-width: 360px;
   width: 360px;
@@ -8758,9 +8761,6 @@ ul.availability-single {
   text-align: right; }
   .story-image img {
     width: 260px; }
-
-blockquote {
-  color: #737373; }
 
 .article-summary {
   margin-bottom: 20px; }
