@@ -238,7 +238,6 @@ ul.availability-popover {
 }
 
 .availability-popover {
-
   li i {
     width: 20px;
     height: 20px;
@@ -258,5 +257,16 @@ ul.availability-popover {
   li.no i {
     background-color: $color-no;
   }
+}
 
+.rank-previous, .score-previous, .score-top, .rank-top {
+  opacity: 0.6;
+  padding: 2px;
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+}
+
+td.previous-results {
+  text-align: center;
 }

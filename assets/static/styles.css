@@ -8614,6 +8614,16 @@ ul.availability-popover {
 .availability-popover li.no i {
   background-color: #ff0000; }
 
+.rank-previous, .score-previous, .score-top, .rank-top {
+  opacity: 0.6;
+  padding: 2px;
+  width: 40px;
+  text-align: center;
+  display: inline-block; }
+
+td.previous-results {
+  text-align: center; }
+
 ul.availability-single {
   list-style-type: none;
   padding-left: 0;
@@ -8671,16 +8681,6 @@ ul.availability-single {
 
 #place-contributors {
   margin-bottom: 30px; }
-
-.rank-previous, .score-previous, .score-top, .rank-top {
-  opacity: 0.6;
-  padding: 2px;
-  width: 40px;
-  text-align: center;
-  display: inline-block; }
-
-td.previous-results {
-  text-align: center; }
 
 #map-container {
   margin-top: 20px; }
