@@ -8723,9 +8723,6 @@ ul.availability-single {
     transform: rotate(-90deg);
     padding: 8px; }
 
-.uppercase {
-  text-transform: uppercase; }
-
 .justify {
   text-align: justify; }
 
@@ -9355,7 +9352,8 @@ body.form section {
     color: #f5f5f5; }
   .home .summary-stats .stat span {
     display: block;
-    margin-top: 10px; }
+    margin-top: 10px;
+    text-transform: uppercase; }
   .home .summary-stats .stat small {
     display: block;
     margin-top: 5px;
