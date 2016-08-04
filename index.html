@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Contents — Open Data Census</title>
+    <title>Home — Open Data Census</title>
     <!--[if lt IE 9]>
     <script src="./bower_components/html5shiv/dist/html5shiv.min.js"></script>
     <![endif]-->
@@ -17,18 +17,27 @@
     <link rel="stylesheet" href="./static/styles.css">
   </head>
 
-  <body class="">
+  <body class="home">
     
     <header>
       <div class="container">
         
         <div class="logo">
           <a class="glyphicon glyphicon-th-list" aria-hidden="true"></a>
-          <a class="title" href="/">UK Local Open Data Census</a>
-          <span class="tagline">Powered by <a href="http://census.okfn.org">Open Data Census</a></span>
+          <div>
+            <a class="title" href="/">UK Local Open Data Census</a>
+            <span class="tagline">Powered by <a href="http://census.okfn.org">Open Data Census</a></span>
+          </div>
         </div>
         
-        <nav>
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="nav">
           
           <span class="user">
             <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
@@ -48,16 +57,8 @@
     </header>
 
     
-<div class="breadcrumb-wrapper">
-  <ol class="breadcrumb container">
-    <li>
-        <a href="./">Home</a>
-    </li>
-    <li class="active">Contents</li>
-  </ol>
-</div>
-
     
+
 <div class="container">
   <p>Mockups for <a href="https://github.com/okfn/opendatacensus/issues/757">#757</a></p>
 <ul>
@@ -68,6 +69,7 @@
 </ul>
 
 </div>
+
 
 
     <footer class="site-footer">
