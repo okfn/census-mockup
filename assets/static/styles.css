@@ -8641,6 +8641,30 @@ ul.availability-popover {
 td.previous-results {
   text-align: center; }
 
+#places_overview_table thead tr th:first-child, #datasets_overview_table thead tr th:first-child, #slice-table thead tr th:first-child {
+  cursor: pointer;
+  color: #262626; }
+#places_overview_table thead tr th:nth-child(2), #datasets_overview_table thead tr th:nth-child(2), #slice-table thead tr th:nth-child(2) {
+  cursor: pointer;
+  color: #262626; }
+#places_overview_table thead tr th:last-child, #datasets_overview_table thead tr th:last-child, #slice-table thead tr th:last-child {
+  cursor: pointer;
+  color: #262626; }
+
+#places_overview_table tr td {
+  padding: 8px 4px 8px 4px !important; }
+  #places_overview_table tr td a {
+    font-size: 12px; }
+#places_overview_table thead tr th {
+  height: 100px; }
+  #places_overview_table thead tr th .dataset-title-context {
+    display: block;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    padding: 8px; }
+
 ul.availability-single {
   list-style-type: none;
   padding-left: 0;
@@ -8698,30 +8722,6 @@ ul.availability-single {
 
 #place-contributors {
   margin-bottom: 30px; }
-
-#places_overview_table thead tr th:first-child, #datasets_overview_table thead tr th:first-child, #slice-table thead tr th:first-child {
-  cursor: pointer;
-  color: #262626; }
-#places_overview_table thead tr th:nth-child(2), #datasets_overview_table thead tr th:nth-child(2), #slice-table thead tr th:nth-child(2) {
-  cursor: pointer;
-  color: #262626; }
-#places_overview_table thead tr th:last-child, #datasets_overview_table thead tr th:last-child, #slice-table thead tr th:last-child {
-  cursor: pointer;
-  color: #262626; }
-
-#places_overview_table tr td {
-  padding: 8px 4px 8px 4px !important; }
-  #places_overview_table tr td a {
-    font-size: 12px; }
-#places_overview_table thead tr th {
-  height: 100px; }
-  #places_overview_table thead tr th .dataset-title-context {
-    display: block;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    padding: 8px; }
 
 .justify {
   text-align: justify; }
