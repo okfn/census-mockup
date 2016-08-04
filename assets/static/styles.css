@@ -8449,6 +8449,13 @@ h6, .h6 {
       padding-right: 0.3em; }
     #data-header .history li:last-of-type {
       border: none; }
+#data-header .place-rank,
+#data-header .dataset-rank {
+  float: left;
+  font-size: 24px;
+  font-weight: 300;
+  background-color: #f5f5f5;
+  padding: 8px; }
 #data-header #map-container {
   margin-top: 20px; }
 
@@ -8692,13 +8699,6 @@ ul.availability-single {
 #place-contributors {
   margin-bottom: 30px; }
 
-.place-rank, .dataset-rank {
-  float: left;
-  border-radius: 0 !important;
-  font-size: 30px;
-  font-weight: 300;
-  background-color: #181818; }
-
 #places_overview_table thead tr th:first-child, #datasets_overview_table thead tr th:first-child, #slice-table thead tr th:first-child {
   cursor: pointer;
   color: #262626; }
@@ -8769,13 +8769,6 @@ th.header.headerSortUp:after {
   .home-box h3 {
     font-weight: 300;
     font-size: 30px; }
-
-.place-rank {
-  background-color: #f5f5f5;
-  color: #181818;
-  padding: 8px;
-  font-size: 24px;
-  font-weight: 300; }
 
 .is_stuck {
   background-color: white; }

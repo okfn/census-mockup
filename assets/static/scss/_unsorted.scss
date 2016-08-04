@@ -1,13 +1,5 @@
 // UNSORTED STYLING...
 
-.place-rank, .dataset-rank {
-  float: left;
-  border-radius: 0 !important;
-  font-size: 30px;
-  font-weight: 300;
-  background-color: $color-okf-black;
-}
-
 #places_overview_table thead tr th, #datasets_overview_table thead tr th, #slice-table thead tr th {
 
   &:first-child {
@@ -111,13 +103,7 @@ th.header.headerSortUp:after {
   }
 }
 
-.place-rank {
-  background-color: #f5f5f5;
-  color: $color-okf-black;
-  padding: 8px;
-  font-size: 24px;
-  font-weight: 300;
-}
+
 
 
 
