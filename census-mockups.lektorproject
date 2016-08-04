@@ -4,3 +4,7 @@ name = census-mockup
 [servers.ghpages]
 target = ghpages://okfn/census-mockup
 default = yes
+
+[servers.godi]
+target = ghpages://okfn/index-mockup
+default = no
