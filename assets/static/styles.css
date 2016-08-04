@@ -8748,9 +8748,6 @@ ul.availability-single {
 #place-contributors {
   margin-bottom: 30px; }
 
-.tell-me-embedded {
-  margin-top: 32px; }
-
 .story-preview {
   text-align: right;
   margin-top: 20px; }
@@ -8788,6 +8785,9 @@ a.silent-link {
 
 .facebook {
   color: #3B5998; }
+
+.tell-me-embedded {
+  margin-top: 32px; }
 
 body.form textarea,
 body.form input,
