@@ -1,38 +1,5 @@
 // UNSORTED STYLING...
 
-#home-visualisation, #permalink-visualisation {
-  width: 100%;
-  height: auto;
-}
-
-#home-visualisation {
-  margin-top: -20px;
-  .map_visualisation {
-    background-image: url('/static/images/map-bg.png');
-    background-repeat: repeat;
-    background-position: center;
-    background-color: #f0f0f0;
-    .map {
-      padding: 30px;
-    }
-  }
-  .chart_visualisation {
-    background-color: #eeeeee;
-    .chart {
-      padding: 30px;
-      img {
-        min-width: 100px;
-        max-width: 175px;
-        min-height: 100px;
-        max-height: 175px;
-        height: 100%;
-        width: 100%;
-        margin: 25px;
-      }
-    }
-  }
-}
-
 .summary-compared {
   font-size: 0.75em;
 }
