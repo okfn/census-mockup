@@ -8677,6 +8677,19 @@ th.header.headerSortUp:after {
   text-align: right;
   float: right; }
 
+.is_stuck {
+  background-color: white; }
+  .is_stuck th {
+    min-width: 69px; }
+
+.dataset-title-context {
+  cursor: pointer; }
+
+.dataset-context {
+  float: right;
+  cursor: pointer;
+  color: #428bca; }
+
 ul.availability-single {
   list-style-type: none;
   padding-left: 0;
@@ -8734,19 +8747,6 @@ ul.availability-single {
 
 #place-contributors {
   margin-bottom: 30px; }
-
-.is_stuck {
-  background-color: white; }
-  .is_stuck th {
-    min-width: 69px; }
-
-.dataset-title-context {
-  cursor: pointer; }
-
-.dataset-context {
-  float: right;
-  cursor: pointer;
-  color: #428bca; }
 
 .tell-me-embedded {
   margin-top: 32px; }

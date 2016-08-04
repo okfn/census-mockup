@@ -325,3 +325,22 @@ th.header.headerSortUp:after {
   text-align: right;
   float: right;
 }
+
+
+.is_stuck {
+  background-color: white;
+
+  th {
+    min-width: 69px;
+  }
+}
+
+.dataset-title-context {
+  cursor: pointer;
+}
+
+.dataset-context {
+  float: right;
+  cursor: pointer;
+  color: #428bca;
+}
