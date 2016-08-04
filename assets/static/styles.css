@@ -8441,6 +8441,8 @@ h6, .h6 {
       padding-right: 0.3em; }
     #data-header .history li:last-of-type {
       border: none; }
+#data-header #map-container {
+  margin-top: 20px; }
 
 .data-table thead th {
   font-size: 14px; }
@@ -8681,9 +8683,6 @@ ul.availability-single {
 
 #place-contributors {
   margin-bottom: 30px; }
-
-#map-container {
-  margin-top: 20px; }
 
 h1, .h1 {
   font-size: 34px; }
