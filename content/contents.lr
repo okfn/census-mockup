@@ -7,6 +7,6 @@ body:
 Mockups for [#757](https://github.com/okfn/opendatacensus/issues/757)
 
 - [Form](form)
-- [Dataset](dataset)
-- [Entry](entry)
-- [Generic](generic)
+- [Dataset](dataset) ([GODI](http://okfnlabs.org/index-mockup/dataset/))
+- [Entry](entry) ([GODI](http://okfnlabs.org/index-mockup/entry/))
+- [Generic](generic) ([GODI](http://okfnlabs.org/index-mockup/generic/))
