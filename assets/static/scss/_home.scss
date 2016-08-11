@@ -76,6 +76,9 @@
     }
 
     .stat {
+      a {
+        text-decoration: none;
+      }
       strong {
         padding: 10px 10px;
         font-size: 2.5em;
