@@ -8383,6 +8383,9 @@ blockquote {
     .popover .popover-content {
       padding: 22.5px 22.5px; } }
 
+[data-toggle] {
+  cursor: pointer; }
+
 .jumbotron p {
   font-weight: 300; }
 
@@ -8722,8 +8725,6 @@ ul.availability-single {
       width: 22px;
       text-align: center;
       float: left; }
-      ul.availability-single > li i[data-toggle] {
-        cursor: pointer; }
     ul.availability-single > li span {
       display: block;
       margin-left: 30px; }
@@ -8766,15 +8767,6 @@ ul.availability-single {
 
 .article-summary {
   margin-bottom: 20px; }
-
-a.silent-link {
-  text-decoration: none;
-  color: black; }
-  a.silent-link:hover {
-    text-decoration: none; }
-
-.percent-open-context {
-  cursor: pointer; }
 
 .google-plus {
   color: #D34836; }
@@ -9311,6 +9303,8 @@ body.form section {
       padding: 2px 4px 2px 4px;
       border-radius: 4px;
       font-style: normal; }
+  .home .summary-stats .stat a {
+    text-decoration: none; }
   .home .summary-stats .stat strong {
     padding: 10px 10px;
     font-size: 2.5em;
