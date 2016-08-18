@@ -166,4 +166,55 @@
       }
     }
   }
+
+  .summary.featured {
+    padding: $grid-gutter-width 0 0 0;
+    margin: 0;
+    font-size: 1.1em;
+
+    li {
+      display: block;
+      margin-bottom: $padding-base-vertical;
+
+      dl {
+        margin: 0;
+        padding: 0;
+
+        dt,
+        dd {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        dt {
+          margin-right: $padding-base-vertical;
+        }
+
+        dd {
+          padding: 0 $padding-base-vertical;
+          font-size: 1.1em;
+          background-color: $color-okf-black;
+          color: $color-okf-white;
+          font-weight: bold;
+        }
+      }
+    }
+
+    @media (min-width: $screen-md-min) {
+      display: table;
+      width: 100%;
+
+      li {
+        display: table-cell;
+        text-align: center;
+
+        &:first-child {
+          text-align: left;
+        }
+        &:last-child {
+          text-align: right;
+        }
+      }
+    }
+  }
 }

@@ -8116,15 +8116,15 @@ table.response-summary thead tr th.place-score,
 .sexyHeader table tr th.place-score {
   width: 65px !important; }
 
-body > header {
+body #header {
   background-color: #428bca;
   border-bottom: solid 2px #3071a9;
   color: #fff; }
-  body > header a {
+  body #header a {
     color: inherit; }
-    body > header a:hover {
+    body #header a:hover {
       color: inherit; }
-  body > header .logo {
+  body #header .logo {
     padding-top: 23px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -8132,12 +8132,12 @@ body > header {
     display: inline-block;
     max-width: 80%; }
     @media (min-width: 992px) {
-      body > header .logo {
+      body #header .logo {
         padding-top: 1.8em;
         padding-bottom: 1.8em;
         float: left;
         white-space: nowrap; } }
-    body > header .logo .glyphicon {
+    body #header .logo .glyphicon {
       float: left;
       font-size: 33px;
       line-height: 1.1;
@@ -8145,69 +8145,69 @@ body > header {
       text-decoration: none;
       display: none; }
       @media (min-width: 768px) {
-        body > header .logo .glyphicon {
+        body #header .logo .glyphicon {
           display: block; }
-          body > header .logo .glyphicon + div {
+          body #header .logo .glyphicon + div {
             margin-left: 45px; } }
-    body > header .logo .title {
+    body #header .logo .title {
       font-weight: 700;
       font-size: 20px;
       text-decoration: none;
       color: inherit;
       display: block;
       line-height: 1.2; }
-    body > header .logo .tagline {
+    body #header .logo .tagline {
       display: block;
       font-size: 12px;
       line-height: 1.1;
       font-weight: 300; }
-      body > header .logo .tagline a {
+      body #header .logo .tagline a {
         font-weight: normal; }
-  body > header .navbar-toggle {
+  body #header .navbar-toggle {
     margin: 24px 0 0 10px; }
-    body > header .navbar-toggle .icon-bar {
+    body #header .navbar-toggle .icon-bar {
       background-color: currentColor; }
-  body > header nav {
+  body #header nav {
     clear: both; }
     @media (min-width: 992px) {
-      body > header nav {
+      body #header nav {
         clear: none;
         text-align: right; } }
-    body > header nav .user {
+    body #header nav .user {
       display: none; }
       @media (min-width: 992px) {
-        body > header nav .user {
+        body #header nav .user {
           display: block;
           padding-top: 10px;
           padding-bottom: 0.5em;
           color: rgba(255, 255, 255, 0.8);
           font-size: 14px; } }
-      body > header nav .user a:hover {
+      body #header nav .user a:hover {
         text-decoration: none;
         color: #fff; }
-    body > header nav .menu {
+    body #header nav .menu {
       margin: 0;
       margin-left: -10px;
       padding: 0 0 0.5em 0;
       font-size: 16px; }
       @media (min-width: 992px) {
-        body > header nav .menu {
+        body #header nav .menu {
           margin-left: 0;
           margin-right: -10px;
           padding-top: 0.5em; } }
-      body > header nav .menu li {
+      body #header nav .menu li {
         display: block; }
         @media (min-width: 768px) {
-          body > header nav .menu li {
+          body #header nav .menu li {
             display: inline-block; } }
-        body > header nav .menu li a {
+        body #header nav .menu li a {
           display: block;
           padding: 8px 10px;
           border-radius: 4px; }
           @media (min-width: 992px) {
-            body > header nav .menu li a {
+            body #header nav .menu li a {
               display: inline-block; } }
-          body > header nav .menu li a:hover {
+          body #header nav .menu li a:hover {
             text-decoration: none;
             background-color: rgba(255, 255, 255, 0.2); }
 body .breadcrumb-wrapper {
@@ -8227,39 +8227,39 @@ body .breadcrumb-wrapper {
         padding-bottom: 30px; } }
 body.godi #ok-panel {
   border-bottom-color: currentColor; }
-body.godi > header {
+body.godi #header {
   background-color: #EAD045;
   border-bottom: solid 2px #e2c31a;
   color: #333333; }
-  body.godi > header .container {
+  body.godi #header .container {
     position: relative; }
-  body.godi > header #ok-panel-wrapper {
+  body.godi #header #ok-panel-wrapper {
     margin-left: -15px;
     margin-right: -15px; }
     @media (min-width: 768px) {
-      body.godi > header #ok-panel-wrapper {
+      body.godi #header #ok-panel-wrapper {
         margin: 0; } }
-    body.godi > header #ok-panel-wrapper .ok-ribbon.black {
+    body.godi #header #ok-panel-wrapper .ok-ribbon.black {
       background-color: currentColor; }
       @media (min-width: 768px) {
-        body.godi > header #ok-panel-wrapper .ok-ribbon.black {
+        body.godi #header #ok-panel-wrapper .ok-ribbon.black {
           background-color: transparent;
           position: absolute; }
-          body.godi > header #ok-panel-wrapper .ok-ribbon.black:before {
+          body.godi #header #ok-panel-wrapper .ok-ribbon.black:before {
             background-color: currentColor; } }
-  body.godi > header .logo {
+  body.godi #header .logo {
     padding-top: 1.3em;
     margin-right: 30px;
     padding-bottom: 12px; }
-    body.godi > header .logo svg {
+    body.godi #header .logo svg {
       height: 50px;
       fill: currentColor; }
-  body.godi > header .navbar-toggle {
+  body.godi #header .navbar-toggle {
     margin-top: 30px; }
-  body.godi > header nav {
+  body.godi #header nav {
     text-align: left; }
     @media (min-width: 992px) {
-      body.godi > header nav .menu {
+      body.godi #header nav .menu {
         padding-top: 1.7em; } }
 
 .site-footer {
@@ -8382,6 +8382,14 @@ blockquote {
   @media (min-width: 992px) {
     .popover .popover-content {
       padding: 22.5px 22.5px; } }
+  .popover .popover-content .btn-group {
+    width: 100%;
+    display: table;
+    table-layout: fixed; }
+    .popover .popover-content .btn-group .btn {
+      display: table-cell;
+      float: none;
+      border: none; }
 
 [data-toggle] {
   cursor: pointer; }
@@ -8695,6 +8703,42 @@ th.header.headerSortUp:after {
   float: right;
   cursor: pointer;
   color: #428bca; }
+
+table .status {
+  position: relative;
+  overflow: visible; }
+  table .status .entry-year {
+    clear: left;
+    height: 16px;
+    position: absolute;
+    bottom: 1px;
+    color: #fff;
+    text-align: left;
+    font-size: 9px;
+    line-height: 16px;
+    padding: 0 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    pointer-events: none; }
+    table .status .entry-year.label-success {
+      background-color: rgba(0, 0, 0, 0.05);
+      color: #333;
+      text-shadow: none;
+      font-weight: 500; }
+    table .status .entry-year.label-important {
+      background-color: #333; }
+    table .status .entry-year.label-warning {
+      background-color: #666; }
+    table .status .entry-year.label-success {
+      visibility: hidden; }
+  table .status .pending {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    padding: 2px 4px;
+    z-index: 2;
+    background-color: #f47c23;
+    font-size: 10px;
+    pointer-events: none; }
 
 ul.availability-single {
   list-style-type: none;
@@ -9401,5 +9445,38 @@ body.form section {
         .home .chart_visualisation .container > div .summary-stats {
           padding-top: 80px;
           text-align: left; } }
+.home .summary.featured {
+  padding: 30px 0 0 0;
+  margin: 0;
+  font-size: 1.1em; }
+  .home .summary.featured li {
+    display: block;
+    margin-bottom: 6px; }
+    .home .summary.featured li dl {
+      margin: 0;
+      padding: 0; }
+      .home .summary.featured li dl dt,
+      .home .summary.featured li dl dd {
+        display: inline-block;
+        vertical-align: middle; }
+      .home .summary.featured li dl dt {
+        margin-right: 6px; }
+      .home .summary.featured li dl dd {
+        padding: 0 6px;
+        font-size: 1.1em;
+        background-color: #181818;
+        color: #f5f5f5;
+        font-weight: bold; }
+  @media (min-width: 992px) {
+    .home .summary.featured {
+      display: table;
+      width: 100%; }
+      .home .summary.featured li {
+        display: table-cell;
+        text-align: center; }
+        .home .summary.featured li:first-child {
+          text-align: left; }
+        .home .summary.featured li:last-child {
+          text-align: right; } }
 
 /*# sourceMappingURL=styles.css.map */

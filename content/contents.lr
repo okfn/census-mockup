@@ -4,9 +4,4 @@ _model: home
 ---
 body:
 
-Mockups for [#757](https://github.com/okfn/opendatacensus/issues/757)
-
-- [Form](form)
-- [Dataset](dataset) ([GODI](http://okfnlabs.org/index-mockup/dataset/))
-- [Entry](entry) ([GODI](http://okfnlabs.org/index-mockup/entry/))
-- [Generic](generic) ([GODI](http://okfnlabs.org/index-mockup/generic/))
+Welcome to the Global Open Data Index survey website! **The results in this page are not the official results. For the official results, please visit index.okfn.org** The Survey site is now closed, please visit us at https://discuss.okfn.org/c/open-data-index for more updates about the Global Index for 2016.

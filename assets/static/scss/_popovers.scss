@@ -25,6 +25,18 @@
     @media (min-width: $screen-md-min) {
       padding: $grid-gutter-width*0.75 $grid-gutter-width*0.75;
     }
+
+    .btn-group {
+      width: 100%;
+      display: table;
+      table-layout: fixed;
+
+      .btn {
+        display: table-cell;
+        float: none;
+        border: none;
+      }
+    }
   }
 }
 

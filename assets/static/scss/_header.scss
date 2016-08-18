@@ -1,5 +1,5 @@
 body {
-  & > header {
+  #header {
     $header-bg: $brand-info;
     $header-fg: #fff;
     background-color: $header-bg;
@@ -169,7 +169,7 @@ body {
       border-bottom-color: currentColor;
     }
 
-    & > header {
+    #header {
       $header-bg: $brand-primary;
       $header-fg: $gray-dark;
       background-color: $header-bg;

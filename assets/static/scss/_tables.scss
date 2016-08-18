@@ -344,3 +344,56 @@ th.header.headerSortUp:after {
   cursor: pointer;
   color: #428bca;
 }
+
+
+// admin status for census
+table {
+  .status {
+    position: relative;
+    overflow: visible;
+
+    .entry-year {
+      clear: left;
+      height: 16px;
+      position: absolute;
+      bottom: 1px;
+      color: #fff;
+      text-align: left;
+      font-size: 9px;
+      line-height: 16px;
+      padding: 0 5px;
+      background-color: rgba(0,0,0, 0.1);
+      pointer-events: none;
+
+      &.label-success {
+        background-color: rgba(0,0,0, 0.05);
+        color: #333;
+        text-shadow: none;
+        font-weight: 500;
+      }
+
+      &.label-important {
+        background-color: #333;
+      }
+
+      &.label-warning {
+        background-color: #666;
+      }
+
+      &.label-success {
+        visibility: hidden;
+      }
+    }
+
+    .pending {
+      position: absolute;
+      top: 1px;
+      right: 0;
+      padding: 2px 4px;
+      z-index: 2;
+      background-color: $brand-warning;
+      font-size: 10px;
+      pointer-events: none;
+    }
+  }
+}
