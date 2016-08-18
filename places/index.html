@@ -8,16 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home — Open Data Census</title>
+    <title>Places — Open Data Census</title>
     <!--[if lt IE 9]>
-    <script src="./bower_components/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../bower_components/html5shiv/dist/html5shiv.min.js"></script>
     <![endif]-->
     <link href='//fonts.googleapis.com/css?family=Lato:400,400italic,700,300' rel='stylesheet' type='text/css'>
     
-    <link rel="stylesheet" href="./static/styles.css">
+    <link rel="stylesheet" href="../static/styles.css">
   </head>
 
-  <body class="home">
+  <body class="">
     
     <header id="header">
       <div class="container">
@@ -57,40 +57,62 @@
     </header>
 
     
+<div class="breadcrumb-wrapper">
+  <ol class="breadcrumb container">
+    <li>
+        <a href="../">Home</a>
+    </li>
+    <li class="active">Places</li>
+  </ol>
+</div>
+
     
 
+<header id="place-intro">
+  <div class="container">
+    <h1>Place overview </h1>
+    <hr>
+
+    <div id="summary-stats" class="row">
+      <div class="stat col-md-3">
+        <strong>9%</strong>
+        <span class="percent-open-context" data-toggle="popover" title="" data-content="This is the percentage of all the dataset entries that are open as per the Open Definition. We get one dataset entry for each dataset and place (e.g. Transport Timetables for the United Kingdom is one dataset entry). For each entry we check whether the dataset is fully open as per the Open Definition, and then divide by the total number of entries to get a percentage. &lt;a href=&quot;faq/#open-data&quot;&gt;Find out more about Open Data&lt;/a&gt;" data-original-title="What does this mean?">Percent Open <i class="fa fa-question-circle"></i></span>
+        <small>
+            Down
+            from 12% in 2014
+        </small>
+      </div>
+      <div class="stat col-md-3">
+        <strong>122</strong>
+        <span>Number of Places</span>
+        <small>
+            Up
+            from 97 in 2014
+        </small>
+      </div>
+      <div class="stat col-md-3">
+        <strong>1586</strong>
+        <span>Number of Entries</span>
+        <small>
+            Up
+            from 970 in 2014
+        </small>
+      </div>
+      <div class="stat col-md-3">
+        <strong>156</strong>
+        <span>Number of Open Datasets</span>
+        <small>
+            Up
+            from 124 in 2014
+        </small>
+      </div>
+    </div>
+    <hr>
+  </div>
+</header>
+
+
 <div class="container">
-  <ul class="summary featured">
-    <li>
-      <dl>
-        <dt>Number of places</dt>
-        <dd id="nc">149</dd>
-      </dl>
-    </li>
-    <li>
-      <dl>
-        <dt>Number of datasets</dt>
-        <dd id="nds">1963</dd>
-      </dl>
-    </li>
-    <li>
-      <dl>
-        <dt>Number of open datasets</dt>
-        <dd id="nok">174</dd>
-      </dl>
-    </li>
-    <li>
-      <dl>
-        <dt>Percentage <a href="http://okfn.org/opendata/">open</a></dt>
-        <dd id="nokpercent">8%</dd>
-      </dl>
-    </li>
-  </ul>
-
-  <hr />
-  <p>Welcome to the Global Open Data Index survey website! <strong>The results in this page are not the official results. For the official results, please visit index.okfn.org</strong> The Survey site is now closed, please visit us at <a href="https://discuss.okfn.org/c/open-data-index">https://discuss.okfn.org/c/open-data-index</a> for more updates about the Global Index for 2016.</p>
-
-
   <div class="row">
     <div class="col-md-4">
       <h5>Search</h5>
@@ -141,7 +163,10 @@
       </div>
     </div>
   </div>
-  <hr />
+  <hr>
+</div>
+
+<div class="container">
   <div class="table-responsive">
   <div class="sexyTableContainer" style="margin: 0px 0px 20px;"><div class="sexyDragContainer kinetic-active kinetic-moving-left kinetic-moving-up" style="cursor: move;"><table id="places_overview_table" class="table data-table sexyTable" style="margin: 0px;">
     <thead>
@@ -5913,10 +5938,10 @@ no Monitor  data for NOx exsit maybe the data ...&lt;/p&gt;
     </footer>
 
     <script>
-      var siteUrl = "./"
+      var siteUrl = "../"
     </script>
 
-    <script data-main="./static/scripts/site" src="./bower_components/requirejs/require.js"></script>
+    <script data-main="../static/scripts/site" src="../bower_components/requirejs/require.js"></script>
     
   </body>
 </html>
