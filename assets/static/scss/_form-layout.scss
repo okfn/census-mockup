@@ -332,11 +332,28 @@ body.form {
           font-size: 18px;
           font-weight: bold;
           padding: 0.6em 0.5em;
+          position: relative;
 
           select {
             width: 100%;
             border:none;
             background-color: #fff;
+            -webkit-appearance:none;
+          }
+
+          &:after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 8px 5px 0 5px;
+            border-color: $text-color transparent transparent transparent;
+            display: block;
+            position: absolute;
+            pointer-events: none;
+            right: 1em;
+            top: 50%;
+            margin-top: -2px;
           }
         }
       }

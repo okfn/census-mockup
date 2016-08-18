@@ -9101,11 +9101,26 @@ body.form section {
       border: solid 2px #333333;
       font-size: 18px;
       font-weight: bold;
-      padding: 0.6em 0.5em; }
+      padding: 0.6em 0.5em;
+      position: relative; }
       body.form section .question.select .answer select {
         width: 100%;
         border: none;
-        background-color: #fff; }
+        background-color: #fff;
+        -webkit-appearance: none; }
+      body.form section .question.select .answer:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 5px 0 5px;
+        border-color: #333333 transparent transparent transparent;
+        display: block;
+        position: absolute;
+        pointer-events: none;
+        right: 1em;
+        top: 50%;
+        margin-top: -2px; }
     body.form section .question.multiple ul {
       margin: 0 -5px;
       padding: 0; }
