@@ -9494,4 +9494,40 @@ body.form section {
         .home .summary.featured li:last-child {
           text-align: right; } }
 
+.quality-assessments ul {
+  display: table;
+  margin: -6px 0 0 0;
+  padding: 0;
+  border-collapse: separate;
+  border-spacing: 0 6px; }
+  .quality-assessments ul li {
+    display: table-row-group; }
+  .quality-assessments ul dl {
+    display: table-row; }
+    .quality-assessments ul dl dt,
+    .quality-assessments ul dl dd {
+      display: table-cell;
+      font-size: 0.7em;
+      border: solid 1px #777777; }
+    .quality-assessments ul dl dt {
+      font-weight: normal;
+      border-right: none;
+      padding: 1px 5px; }
+    .quality-assessments ul dl dd {
+      padding-left: 6px;
+      border-left: none;
+      padding: 1px;
+      margin-right: 12px; }
+      .quality-assessments ul dl dd > span {
+        background-color: #428bca;
+        color: #fff;
+        padding: 0.05em 0.5em;
+        display: block; }
+      .quality-assessments ul dl dd.pass > span {
+        background-color: #7AB800; }
+      .quality-assessments ul dl dd.fail > span {
+        background-color: #ff0000; }
+      .quality-assessments ul dl dd .glyphicon {
+        padding-right: 0.1em; }
+
 /*# sourceMappingURL=styles.css.map */
