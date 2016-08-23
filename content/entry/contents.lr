@@ -2,3 +2,6 @@ title: Entry
 ---
 _model: place_dataset
 ---
+goodtables_valid: true
+---
+goodtables_text: Valid

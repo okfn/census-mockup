@@ -53,6 +53,32 @@
                       </div>
                     </div>
 
+                    <div class="quality-assessments">
+                      <h5>Data Quality</h5>
+                      <ul>
+                        <li>
+                          <dl>
+                            <dt>
+                              GoodTables
+                            </dt>
+                            <dd class="{% if this.goodtables_valid %}pass{% else %}fail{% endif %}">
+                              <span>{{ this.goodtables_text }}</span>
+                            </dd>
+                          </dl>
+                        </li>
+                        <li>
+                          <dl>
+                            <dt>
+                              Last seen
+                            </dt>
+                            <dd class="pass">
+                              <span>01/08/16</span>
+                            </dd>
+                          </dl>
+                        </li>
+                      </ul>
+                    </div>
+
                     {% if godi == "true" %}
                     <div class="history">
                       <h6>See other years</h6>
