@@ -6,7 +6,9 @@ require.config({
         stickykit: {deps: ['jquery']},
         kinetic: {deps: ['jquery']},
         sexyTables: {deps: ['kinetic']},
-        censusForm: {deps: ['bootstrap']}
+        censusForm: {deps: ['bootstrap']},
+        dotDotDot: {deps: ['jquery']},
+        appList: {deps: ['dotDotDot']}
     },
     paths: {
         app: 'static/scripts/site/main',
@@ -22,7 +24,9 @@ require.config({
         ui: 'static/scripts/site/ui',
         kinetic: 'static/scripts/vendor/jquery.kinetic.min',
         sexyTables: 'static/scripts/vendor/sexytables-1.0.min',
-        censusForm: 'static/scripts/form'
+        censusForm: 'static/scripts/form',
+        dotDotDot: 'bower_components/jQuery.dotdotdot/src/jquery.dotdotdot.min',
+        appList: 'static/scripts/applist',
     }
 });
 
