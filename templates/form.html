@@ -2,6 +2,107 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body_class %}form{% endblock %}
 {% block body %}
+<header class="form-header">
+  <div class="container">
+    <h1>
+      <span>
+        Cambridge <a href="#"><span>(change place)</span></a>
+        <span>
+          <ul>
+            <li>Nottingham</li>
+            <li class="selected">Cambridge</li>
+            <li>Leeds</li>
+            <li>Manchester</li>
+            <li>Bristol</li>
+            <li>Sheffield</li>
+            <li>Oxford</li>
+            <li>London</li>
+            <li>Birmingham</li>
+            <li>Liverpool</li>
+            <li>York</li>
+            <li>Belfast</li>
+            <li>Oldham</li>
+            <li>Glasgow</li>
+            <li>Cardiff</li>
+            <li>Chelmsford</li>
+            <li>Bury</li>
+            <li>Rochdale</li>
+            <li>Stockport</li>
+            <li>Tameside</li>
+            <li>Trafford</li>
+            <li>Aberdeen</li>
+            <li>Aldershot</li>
+            <li>Bath</li>
+            <li>Birkenhead</li>
+            <li>Blackburn</li>
+            <li>Blackpool</li>
+            <li>Bolton</li>
+            <li>Bournemouth</li>
+            <li>Brighton</li>
+            <li>Coventry</li>
+            <li>Crawley</li>
+            <li>Derby</li>
+            <li>Dundee</li>
+            <li>Eastbourne</li>
+            <li>Edinburgh</li>
+            <li>Exeter</li>
+            <li>Falkirk</li>
+            <li>Gloucester</li>
+            <li>Grimsby/Cleethorpes</li>
+            <li>Ipswich</li>
+            <li>Kingston-upon-Hull</li>
+            <li>Leicester</li>
+            <li>Lincoln</li>
+            <li>Luton/Dunstable</li>
+            <li>Milton Keynes</li>
+            <li>Newcastle</li>
+            <li>Newport</li>
+            <li>Northampton</li>
+            <li>Norwich</li>
+            <li>Peterborough</li>
+            <li>Plymouth</li>
+            <li>Portsmouth</li>
+            <li>Preston</li>
+            <li>Reading</li>
+            <li>Slough</li>
+            <li>Southampton</li>
+            <li>Southend</li>
+            <li>Sunderland</li>
+            <li>Swansea</li>
+            <li>Swindon</li>
+            <li>Telford</li>
+            <li>Wigan</li>
+          </ul>
+        </span>
+
+      </span>
+      <span>
+        Air Quality <a href="#"><span>(change dataset)</span></a>
+        <span>
+          <ul>
+            <li>Dataset</li>
+            <li>Expenditure (detailed)</li>
+            <li>Procurement contracts</li>
+            <li class="selected">Air Quality</li>
+            <li>Public Facilities</li>
+            <li>Election results</li>
+            <li>Transport Timetables</li>
+            <li>Annual Budget</li>
+            <li>Building permits</li>
+            <li>Traffic accidents</li>
+            <li>Real-Time Transit</li>
+            <li>Business Permits</li>
+            <li>Business Listings</li>
+            <li>Service Requests</li>
+          </ul>
+        </span>
+      </span>
+    </h1>
+    <p>
+      Data on air quality (e.g. levels of major pollutants) on a granular basis - that is at least broken down by month (preferably by day). Geographic breakdown (e.g. by grid point) would be nice but is not required.
+    </p>
+  </div>
+</header>
 <section>
   <div class="container">
     <div class="intro">
@@ -84,112 +185,6 @@
   <div class="container">
     <div class="intro">
       <h1>Section B - About the data</h1>
-    </div>
-
-    <div class="select question">
-      <div class="instructions">
-      </div>
-      <div class="main">
-        <h2>Place</h2>
-        <div class="answer">
-          <select>
-            <option value="">Please select</option>
-            <option value="nottingham">Nottingham</option>
-            <option value="cambridge">Cambridge</option>
-            <option value="leeds">Leeds</option>
-            <option value="manchester">Manchester</option>
-            <option value="bristol">Bristol</option>
-            <option value="sheffield">Sheffield</option>
-            <option value="oxford">Oxford</option>
-            <option value="london">London</option>
-            <option value="birmingham">Birmingham</option>
-            <option value="liverpool">Liverpool</option>
-            <option value="york">York</option>
-            <option value="belfast">Belfast</option>
-            <option value="oldham"> Oldham</option>
-            <option value="glasgow">Glasgow</option>
-            <option value="cardiff">Cardiff</option>
-            <option value="chelmsford">Chelmsford</option>
-            <option value="bury"> Bury</option>
-            <option value="rochdale"> Rochdale</option>
-            <option value="stockport"> Stockport</option>
-            <option value="tameside"> Tameside</option>
-            <option value="trafford"> Trafford</option>
-            <option value="aberdeen">Aberdeen</option>
-            <option value="aldershot">Aldershot</option>
-            <option value="bath">Bath</option>
-            <option value="birkenhead">Birkenhead</option>
-            <option value="blackburn">Blackburn</option>
-            <option value="blackpool">Blackpool</option>
-            <option value="bolton">Bolton</option>
-            <option value="bournemouth">Bournemouth</option>
-            <option value="brighton">Brighton</option>
-            <option value="coventry">Coventry</option>
-            <option value="crawley">Crawley</option>
-            <option value="derby">Derby</option>
-            <option value="dundee">Dundee</option>
-            <option value="eastbourne">Eastbourne</option>
-            <option value="edinburgh">Edinburgh</option>
-            <option value="exeter">Exeter</option>
-            <option value="falkirk">Falkirk</option>
-            <option value="gloucester">Gloucester</option>
-            <option value="grimsby">Grimsby/Cleethorpes</option>
-            <option value="ipswich">Ipswich</option>
-            <option value="kingston-upon-hull">Kingston-upon-Hull</option>
-            <option value="leicester">Leicester</option>
-            <option value="lincoln">Lincoln</option>
-            <option value="luton">Luton/Dunstable</option>
-            <option value="milton-keynes">Milton Keynes</option>
-            <option value="newcastle">Newcastle</option>
-            <option value="newport">Newport</option>
-            <option value="northampton">Northampton</option>
-            <option value="norwich">Norwich</option>
-            <option value="peterborough">Peterborough</option>
-            <option value="plymouth">Plymouth</option>
-            <option value="portsmouth">Portsmouth</option>
-            <option value="preston">Preston</option>
-            <option value="reading">Reading</option>
-            <option value="slough">Slough</option>
-            <option value="southampton">Southampton</option>
-            <option value="southend">Southend</option>
-            <option value="sunderland">Sunderland</option>
-            <option value="swansea">Swansea</option>
-            <option value="swindon">Swindon</option>
-            <option value="telford">Telford</option>
-            <option value="wigan">Wigan</option>
-          </select>
-        </div>
-      </div>
-      <div class="comments">
-      </div>
-    </div>
-
-    <div class="select question">
-      <div class="instructions">
-      </div>
-      <div class="main">
-        <h2>Dataset</h2>
-        <div class="answer">
-          <select>
-            <option value="">Please select</option>
-            <option value="spending">Expenditure (detailed)</option>
-            <option value="contracts">Procurement contracts</option>
-            <option value="air-quality">Air Quality</option>
-            <option value="public-facilities">Public Facilities</option>
-            <option value="elections">Election results</option>
-            <option value="timetables">Transport Timetables</option>
-            <option value="budget">Annual Budget</option>
-            <option value="building-permits">Building permits</option>
-            <option value="traffic-accidents">Traffic accidents</option>
-            <option value="transport-realtime">Real-Time Transit</option>
-            <option value="business-permits">Business Permits</option>
-            <option value="business-listings">Business Listings</option>
-            <option value="service-requests">Service Requests</option>
-          </select>
-        </div>
-      </div>
-      <div class="comments">
-      </div>
     </div>
 
     <div class="yes-no question">
@@ -611,7 +606,7 @@
   </div>
 </section>
 
-<section>
+<footer class="form-footer">
   <div class="container">
     <div class="yes-no sub neutral question">
       <div class="instructions">
@@ -659,5 +654,5 @@
     </div>
 
   </div>
-</section>
+</footer>
 {% endblock %}
