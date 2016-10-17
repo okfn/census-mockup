@@ -9316,6 +9316,7 @@ body.form .form-footer {
         border: none;
         background-color: #fff;
         -webkit-appearance: none;
+        -moz-appearance: none;
         line-height: normal; }
       body.form section .question.select .answer:after,
       body.form .form-header .question.select .answer:after,
