@@ -198,9 +198,27 @@ body.form {
             padding: 0.5em 1em;
             margin: $grid-gutter-width/2;
             border: solid $ui-border $text-color;
+            word-wrap: break-word;
 
             @media (min-width: $screen-md-min) {
               margin: 0 $grid-gutter-width $grid-gutter-width/4 0;
+            }
+
+            ul {
+              margin: 0;
+              padding: 0;
+
+              li {
+                display: block;
+
+                &:nth-child(2) {
+                  border-top-style: solid;
+                  border-width: $ui-border;
+                  border-color: inherit;
+                  margin-top: 0.4em;
+                  padding-top: 0.4em;
+                }
+              }
             }
           }
 
