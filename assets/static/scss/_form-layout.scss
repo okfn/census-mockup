@@ -170,9 +170,15 @@ body.form {
         @include make-md-column(4);
         clear: left;
         position: relative;
+        display: none;
+
+        @media (min-width: $screen-md-min) {
+          display: block;
+        }
 
         dl {
           border: solid 2px rgba($gray-light, 0.2);
+          margin-top: $grid-gutter-width;
           margin-left: 0;
           margin-right: 0;
           padding: $grid-gutter-width/8 0;
@@ -188,8 +194,13 @@ body.form {
           dt {
             font-size: 13px;
             font-weight: normal;
-            position: absolute;
-            bottom: 100%;
+            padding-left: 1em;
+
+            @media (min-width: $screen-md-min) {
+              position: absolute;
+              bottom: 100%;
+              padding-left: 0.1em;
+            }
           }
 
           dd {
@@ -234,6 +245,8 @@ body.form {
         }
 
         &.changed {
+          display: block;
+
           dl {
             border-color: $gray-light;
 
