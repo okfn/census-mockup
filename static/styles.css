@@ -9084,17 +9084,24 @@ body.form .form-footer {
       padding-left: 15px;
       padding-right: 15px;
       clear: left;
-      position: relative; }
+      position: relative;
+      display: none; }
       @media (min-width: 992px) {
         body.form section .question .current,
         body.form .form-header .question .current,
         body.form .form-footer .question .current {
           float: left;
           width: 33.33333%; } }
+      @media (min-width: 992px) {
+        body.form section .question .current,
+        body.form .form-header .question .current,
+        body.form .form-footer .question .current {
+          display: block; } }
       body.form section .question .current dl,
       body.form .form-header .question .current dl,
       body.form .form-footer .question .current dl {
         border: solid 2px rgba(119, 119, 119, 0.2);
+        margin-top: 30px;
         margin-left: 0;
         margin-right: 0;
         padding: 3.75px 0; }
@@ -9112,8 +9119,14 @@ body.form .form-footer {
         body.form .form-footer .question .current dl dt {
           font-size: 13px;
           font-weight: normal;
-          position: absolute;
-          bottom: 100%; }
+          padding-left: 1em; }
+          @media (min-width: 992px) {
+            body.form section .question .current dl dt,
+            body.form .form-header .question .current dl dt,
+            body.form .form-footer .question .current dl dt {
+              position: absolute;
+              bottom: 100%;
+              padding-left: 0.1em; } }
         body.form section .question .current dl dd,
         body.form .form-header .question .current dl dd,
         body.form .form-footer .question .current dl dd {
@@ -9153,14 +9166,18 @@ body.form .form-footer {
         body.form .form-header .question .current dl:hover > *,
         body.form .form-footer .question .current dl:hover > * {
           opacity: 1; }
-      body.form section .question .current.changed dl,
-      body.form .form-header .question .current.changed dl,
-      body.form .form-footer .question .current.changed dl {
-        border-color: #777777; }
-        body.form section .question .current.changed dl > *,
-        body.form .form-header .question .current.changed dl > *,
-        body.form .form-footer .question .current.changed dl > * {
-          opacity: 1; }
+      body.form section .question .current.changed,
+      body.form .form-header .question .current.changed,
+      body.form .form-footer .question .current.changed {
+        display: block; }
+        body.form section .question .current.changed dl,
+        body.form .form-header .question .current.changed dl,
+        body.form .form-footer .question .current.changed dl {
+          border-color: #777777; }
+          body.form section .question .current.changed dl > *,
+          body.form .form-header .question .current.changed dl > *,
+          body.form .form-footer .question .current.changed dl > * {
+            opacity: 1; }
     body.form section .question .answer-wrapper,
     body.form .form-header .question .answer-wrapper,
     body.form .form-footer .question .answer-wrapper {
