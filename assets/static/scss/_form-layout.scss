@@ -64,7 +64,7 @@ body.form {
       }
 
       .instructions {
-        @include make-md-column(3);
+        @include make-md-column(4);
         clear: left;
         text-align: right;
         font-size: 14px;
@@ -158,9 +158,81 @@ body.form {
             }
           }
         }
+
+        & + h2,
+        & + h3,
+        & + p {
+          @include make-md-column(8);
+        }
       }
+
+      .current {
+        @include make-md-column(4);
+        clear: left;
+        position: relative;
+
+        dl {
+          border: solid 2px rgba($gray-light, 0.2);
+          margin-left: 0;
+          margin-right: 0;
+          padding: $grid-gutter-width/8 0;
+
+          @media (min-width: $screen-md-min) {
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+            margin: -2px 0 0 0;
+            padding: $grid-gutter-width/4 0 $grid-gutter-width/8 0;
+          }
+
+          dt {
+            font-size: 13px;
+            font-weight: normal;
+            position: absolute;
+            bottom: 100%;
+          }
+
+          dd {
+            display: block;
+            font-size: 0.9em;
+            padding: 0.5em 1em;
+            margin: $grid-gutter-width/2;
+            border: solid $ui-border $text-color;
+
+            @media (min-width: $screen-md-min) {
+              margin: 0 $grid-gutter-width $grid-gutter-width/4 0;
+            }
+          }
+
+          & > * {
+            opacity: 0.2;
+          }
+
+          &:hover {
+            & > * {
+              opacity: 1;
+            }
+          }
+        }
+
+        &.changed {
+          dl {
+            border-color: $gray-light;
+
+            & > * {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .answer-wrapper {
+        @include make-md-column(8);
+      }
+
       .main {
-        @include make-md-column(6);
+        @include make-md-column(9);
+        padding: 0;
 
         p {
           margin-bottom: 1.2em;
@@ -273,6 +345,13 @@ body.form {
             }
           }
         }
+
+        .current {
+          dd {
+            font-weight: bold;
+            text-align: center;
+          }
+        }
       }
 
       &.scale {
@@ -329,6 +408,13 @@ body.form {
                 display: block;
               }
             }
+          }
+        }
+
+        .current {
+          dd {
+            font-weight: bold;
+            text-align: center;
           }
         }
       }
@@ -416,83 +502,95 @@ body.form {
             margin-top: -2px;
           }
         }
+        .current {
+          dd {
+            font-weight: bold;
+          }
+        }
       }
 
       &.multiple {
-        ul {
-          margin: 0 -5px;
-          padding: 0;
+        .answer {
+          ul {
+            margin: 0 -5px;
+            padding: 0;
 
-          li {
-            display: block;
-            @include make-md-column(6);
-            padding: 5px;
-
-            label {
+            li {
               display: block;
-              border: solid $ui-border $text-color;
-              font-size: 18px;
-              padding: 0.5em;
-              margin: 0;
-              cursor: pointer;
+              @include make-md-column(6);
+              padding: 5px;
 
-              .letter {
-                display: inline-block;
-                border: solid 2px $text-color;
-                width: 1.95em;
-                text-align: center;
-                border-radius: 4px;
-                opacity: 0.7;
-                font-size: 14px;
-                padding: 0.15em;
-                float: left;
-                overflow: hidden;
-                position: relative;
+              label {
+                display: block;
+                border: solid $ui-border $text-color;
+                font-size: 18px;
+                padding: 0.5em;
+                margin: 0;
+                cursor: pointer;
 
-                &:after {
-                  position: absolute;
-                  top: 0;
-                  right: 0;
-                  bottom: 0;
-                  left: 0;
-                  text-indent: 0;
-                  padding-top: 0.25em;
-                  font-family: 'Glyphicons Halflings';
-                  font-style: normal;
-                  font-weight: normal;
-                  line-height: 1;
-                  -webkit-font-smoothing: antialiased;
-                  -moz-osx-font-smoothing: grayscale;
+                .letter {
+                  display: inline-block;
+                  border: solid 2px $text-color;
+                  width: 1.95em;
+                  text-align: center;
+                  border-radius: 4px;
+                  opacity: 0.7;
+                  font-size: 14px;
+                  padding: 0.15em;
+                  float: left;
+                  overflow: hidden;
+                  position: relative;
+
+                  &:after {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    text-indent: 0;
+                    padding-top: 0.25em;
+                    font-family: 'Glyphicons Halflings';
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                  }
+                }
+
+                .description {
+                  display: block;
+                  margin-left: 2em;
                 }
               }
 
-              .description {
-                display: block;
-                margin-left: 2em;
-              }
-            }
+              input {
+                display: none;
 
-            input {
-              display: none;
+                &:checked {
+                  & + label {
+                    background-color: $text-color;
+                    color: #fff;
 
-              &:checked {
-                & + label {
-                  background-color: $text-color;
-                  color: #fff;
+                    .letter {
+                      border-color: #fff;
+                      opacity: 1;
+                      text-indent: -4em;
 
-                  .letter {
-                    border-color: #fff;
-                    opacity: 1;
-                    text-indent: -4em;
-
-                    &:after {
-                      display: block;
-                      content: "\e013";
+                      &:after {
+                        display: block;
+                        content: "\e013";
+                      }
                     }
                   }
                 }
               }
             }
+          }
+        }
+        .current {
+          dd {
+            font-weight: bold;
           }
         }
       }
@@ -571,6 +669,18 @@ body.form {
           input[type="text"] {
             padding-top: $grid-gutter-width*0.25;
             padding-bottom: $grid-gutter-width*0.25;
+          }
+        }
+
+        .current {
+          dl {
+            font-size: 0.9em;
+
+            dd {
+              border-width: $ui-border-sub;
+              padding-top: 0.3em;
+              padding: 0.3em 0.8em;
+            }
           }
         }
       }

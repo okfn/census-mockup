@@ -8954,7 +8954,7 @@ body.form .form-footer {
         body.form .form-header .question .instructions,
         body.form .form-footer .question .instructions {
           float: left;
-          width: 25%; } }
+          width: 33.33333%; } }
       body.form section .question .instructions div,
       body.form .form-header .question .instructions div,
       body.form .form-footer .question .instructions div {
@@ -9055,19 +9055,121 @@ body.form .form-footer {
             top: auto;
             right: auto;
             z-index: auto; } }
+      body.form section .question .instructions + h2, body.form section .question .instructions + h3, body.form section .question .instructions + p,
+      body.form .form-header .question .instructions + h2,
+      body.form .form-header .question .instructions + h3,
+      body.form .form-header .question .instructions + p,
+      body.form .form-footer .question .instructions + h2,
+      body.form .form-footer .question .instructions + h3,
+      body.form .form-footer .question .instructions + p {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px; }
+        @media (min-width: 992px) {
+          body.form section .question .instructions + h2, body.form section .question .instructions + h3, body.form section .question .instructions + p,
+          body.form .form-header .question .instructions + h2,
+          body.form .form-header .question .instructions + h3,
+          body.form .form-header .question .instructions + p,
+          body.form .form-footer .question .instructions + h2,
+          body.form .form-footer .question .instructions + h3,
+          body.form .form-footer .question .instructions + p {
+            float: left;
+            width: 66.66667%; } }
+    body.form section .question .current,
+    body.form .form-header .question .current,
+    body.form .form-footer .question .current {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      clear: left;
+      position: relative; }
+      @media (min-width: 992px) {
+        body.form section .question .current,
+        body.form .form-header .question .current,
+        body.form .form-footer .question .current {
+          float: left;
+          width: 33.33333%; } }
+      body.form section .question .current dl,
+      body.form .form-header .question .current dl,
+      body.form .form-footer .question .current dl {
+        border: solid 2px rgba(119, 119, 119, 0.2);
+        margin-left: 0;
+        margin-right: 0;
+        padding: 3.75px 0; }
+        @media (min-width: 992px) {
+          body.form section .question .current dl,
+          body.form .form-header .question .current dl,
+          body.form .form-footer .question .current dl {
+            border-top: none;
+            border-left: none;
+            border-bottom: none;
+            margin: -2px 0 0 0;
+            padding: 7.5px 0 3.75px 0; } }
+        body.form section .question .current dl dt,
+        body.form .form-header .question .current dl dt,
+        body.form .form-footer .question .current dl dt {
+          font-size: 13px;
+          font-weight: normal;
+          position: absolute;
+          bottom: 100%; }
+        body.form section .question .current dl dd,
+        body.form .form-header .question .current dl dd,
+        body.form .form-footer .question .current dl dd {
+          display: block;
+          font-size: 0.9em;
+          padding: 0.5em 1em;
+          margin: 15px;
+          border: solid 2px #333333; }
+          @media (min-width: 992px) {
+            body.form section .question .current dl dd,
+            body.form .form-header .question .current dl dd,
+            body.form .form-footer .question .current dl dd {
+              margin: 0 30px 7.5px 0; } }
+        body.form section .question .current dl > *,
+        body.form .form-header .question .current dl > *,
+        body.form .form-footer .question .current dl > * {
+          opacity: 0.2; }
+        body.form section .question .current dl:hover > *,
+        body.form .form-header .question .current dl:hover > *,
+        body.form .form-footer .question .current dl:hover > * {
+          opacity: 1; }
+      body.form section .question .current.changed dl,
+      body.form .form-header .question .current.changed dl,
+      body.form .form-footer .question .current.changed dl {
+        border-color: #777777; }
+        body.form section .question .current.changed dl > *,
+        body.form .form-header .question .current.changed dl > *,
+        body.form .form-footer .question .current.changed dl > * {
+          opacity: 1; }
+    body.form section .question .answer-wrapper,
+    body.form .form-header .question .answer-wrapper,
+    body.form .form-footer .question .answer-wrapper {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px; }
+      @media (min-width: 992px) {
+        body.form section .question .answer-wrapper,
+        body.form .form-header .question .answer-wrapper,
+        body.form .form-footer .question .answer-wrapper {
+          float: left;
+          width: 66.66667%; } }
     body.form section .question .main,
     body.form .form-header .question .main,
     body.form .form-footer .question .main {
       position: relative;
       min-height: 1px;
       padding-left: 15px;
-      padding-right: 15px; }
+      padding-right: 15px;
+      padding: 0; }
       @media (min-width: 992px) {
         body.form section .question .main,
         body.form .form-header .question .main,
         body.form .form-footer .question .main {
           float: left;
-          width: 50%; } }
+          width: 75%; } }
       body.form section .question .main p,
       body.form .form-header .question .main p,
       body.form .form-footer .question .main p {
@@ -9187,6 +9289,11 @@ body.form .form-footer {
           body.form .form-header .question.yes-no .answer label:last-of-type em,
           body.form .form-footer .question.yes-no .answer label:last-of-type em {
             display: block; }
+    body.form section .question.yes-no .current dd,
+    body.form .form-header .question.yes-no .current dd,
+    body.form .form-footer .question.yes-no .current dd {
+      font-weight: bold;
+      text-align: center; }
     body.form section .question.scale .answer,
     body.form .form-header .question.scale .answer,
     body.form .form-footer .question.scale .answer {
@@ -9254,6 +9361,11 @@ body.form .form-footer {
           body.form .form-header .question.scale .answer > span:last-of-type em,
           body.form .form-footer .question.scale .answer > span:last-of-type em {
             display: block; }
+    body.form section .question.scale .current dd,
+    body.form .form-header .question.scale .current dd,
+    body.form .form-footer .question.scale .current dd {
+      font-weight: bold;
+      text-align: center; }
     body.form section .question.source .answer,
     body.form .form-header .question.source .answer,
     body.form .form-footer .question.source .answer {
@@ -9333,14 +9445,18 @@ body.form .form-footer {
         right: 1em;
         top: 50%;
         margin-top: -2px; }
-    body.form section .question.multiple ul,
-    body.form .form-header .question.multiple ul,
-    body.form .form-footer .question.multiple ul {
+    body.form section .question.select .current dd,
+    body.form .form-header .question.select .current dd,
+    body.form .form-footer .question.select .current dd {
+      font-weight: bold; }
+    body.form section .question.multiple .answer ul,
+    body.form .form-header .question.multiple .answer ul,
+    body.form .form-footer .question.multiple .answer ul {
       margin: 0 -5px;
       padding: 0; }
-      body.form section .question.multiple ul li,
-      body.form .form-header .question.multiple ul li,
-      body.form .form-footer .question.multiple ul li {
+      body.form section .question.multiple .answer ul li,
+      body.form .form-header .question.multiple .answer ul li,
+      body.form .form-footer .question.multiple .answer ul li {
         display: block;
         position: relative;
         min-height: 1px;
@@ -9348,23 +9464,23 @@ body.form .form-footer {
         padding-right: 15px;
         padding: 5px; }
         @media (min-width: 992px) {
-          body.form section .question.multiple ul li,
-          body.form .form-header .question.multiple ul li,
-          body.form .form-footer .question.multiple ul li {
+          body.form section .question.multiple .answer ul li,
+          body.form .form-header .question.multiple .answer ul li,
+          body.form .form-footer .question.multiple .answer ul li {
             float: left;
             width: 50%; } }
-        body.form section .question.multiple ul li label,
-        body.form .form-header .question.multiple ul li label,
-        body.form .form-footer .question.multiple ul li label {
+        body.form section .question.multiple .answer ul li label,
+        body.form .form-header .question.multiple .answer ul li label,
+        body.form .form-footer .question.multiple .answer ul li label {
           display: block;
           border: solid 2px #333333;
           font-size: 18px;
           padding: 0.5em;
           margin: 0;
           cursor: pointer; }
-          body.form section .question.multiple ul li label .letter,
-          body.form .form-header .question.multiple ul li label .letter,
-          body.form .form-footer .question.multiple ul li label .letter {
+          body.form section .question.multiple .answer ul li label .letter,
+          body.form .form-header .question.multiple .answer ul li label .letter,
+          body.form .form-footer .question.multiple .answer ul li label .letter {
             display: inline-block;
             border: solid 2px #333333;
             width: 1.95em;
@@ -9376,9 +9492,9 @@ body.form .form-footer {
             float: left;
             overflow: hidden;
             position: relative; }
-            body.form section .question.multiple ul li label .letter:after,
-            body.form .form-header .question.multiple ul li label .letter:after,
-            body.form .form-footer .question.multiple ul li label .letter:after {
+            body.form section .question.multiple .answer ul li label .letter:after,
+            body.form .form-header .question.multiple .answer ul li label .letter:after,
+            body.form .form-footer .question.multiple .answer ul li label .letter:after {
               position: absolute;
               top: 0;
               right: 0;
@@ -9392,31 +9508,35 @@ body.form .form-footer {
               line-height: 1;
               -webkit-font-smoothing: antialiased;
               -moz-osx-font-smoothing: grayscale; }
-          body.form section .question.multiple ul li label .description,
-          body.form .form-header .question.multiple ul li label .description,
-          body.form .form-footer .question.multiple ul li label .description {
+          body.form section .question.multiple .answer ul li label .description,
+          body.form .form-header .question.multiple .answer ul li label .description,
+          body.form .form-footer .question.multiple .answer ul li label .description {
             display: block;
             margin-left: 2em; }
-        body.form section .question.multiple ul li input,
-        body.form .form-header .question.multiple ul li input,
-        body.form .form-footer .question.multiple ul li input {
+        body.form section .question.multiple .answer ul li input,
+        body.form .form-header .question.multiple .answer ul li input,
+        body.form .form-footer .question.multiple .answer ul li input {
           display: none; }
-          body.form section .question.multiple ul li input:checked + label,
-          body.form .form-header .question.multiple ul li input:checked + label,
-          body.form .form-footer .question.multiple ul li input:checked + label {
+          body.form section .question.multiple .answer ul li input:checked + label,
+          body.form .form-header .question.multiple .answer ul li input:checked + label,
+          body.form .form-footer .question.multiple .answer ul li input:checked + label {
             background-color: #333333;
             color: #fff; }
-            body.form section .question.multiple ul li input:checked + label .letter,
-            body.form .form-header .question.multiple ul li input:checked + label .letter,
-            body.form .form-footer .question.multiple ul li input:checked + label .letter {
+            body.form section .question.multiple .answer ul li input:checked + label .letter,
+            body.form .form-header .question.multiple .answer ul li input:checked + label .letter,
+            body.form .form-footer .question.multiple .answer ul li input:checked + label .letter {
               border-color: #fff;
               opacity: 1;
               text-indent: -4em; }
-              body.form section .question.multiple ul li input:checked + label .letter:after,
-              body.form .form-header .question.multiple ul li input:checked + label .letter:after,
-              body.form .form-footer .question.multiple ul li input:checked + label .letter:after {
+              body.form section .question.multiple .answer ul li input:checked + label .letter:after,
+              body.form .form-header .question.multiple .answer ul li input:checked + label .letter:after,
+              body.form .form-footer .question.multiple .answer ul li input:checked + label .letter:after {
                 display: block;
                 content: "\e013"; }
+    body.form section .question.multiple .current dd,
+    body.form .form-header .question.multiple .current dd,
+    body.form .form-footer .question.multiple .current dd {
+      font-weight: bold; }
     body.form section .question.text textarea,
     body.form section .question.text input[type="text"],
     body.form .form-header .question.text textarea,
@@ -9493,6 +9613,16 @@ body.form .form-footer {
       body.form .form-footer .question.sub.text input[type="text"] {
         padding-top: 7.5px;
         padding-bottom: 7.5px; }
+      body.form section .question.sub .current dl,
+      body.form .form-header .question.sub .current dl,
+      body.form .form-footer .question.sub .current dl {
+        font-size: 0.9em; }
+        body.form section .question.sub .current dl dd,
+        body.form .form-header .question.sub .current dl dd,
+        body.form .form-footer .question.sub .current dl dd {
+          border-width: 2px;
+          padding-top: 0.3em;
+          padding: 0.3em 0.8em; }
     body.form section .question.continuation,
     body.form .form-header .question.continuation,
     body.form .form-footer .question.continuation {
@@ -9623,6 +9753,12 @@ body.form .form-footer {
   body.form .form-footer .question .instructions .toggle .icon {
     background-color: #428bca;
     font-weight: 700; }
+  body.form section .question .current dl dd,
+  body.form .form-footer .question .current dl dd {
+    border-radius: 6px; }
+  body.form section .question .current.changed dl,
+  body.form .form-footer .question .current.changed dl {
+    border-color: #f47c23; }
   body.form section .question .comments label,
   body.form .form-footer .question .comments label {
     font-weight: normal; }
@@ -9683,11 +9819,11 @@ body.form .form-footer {
     body.form section .question.select .answer select,
     body.form .form-footer .question.select .answer select {
       background-color: transparent; }
-  body.form section .question.multiple ul li label,
-  body.form .form-footer .question.multiple ul li label {
+  body.form section .question.multiple .answer ul li label,
+  body.form .form-footer .question.multiple .answer ul li label {
     border-radius: 6px; }
-  body.form section .question.multiple ul li input:checked + label,
-  body.form .form-footer .question.multiple ul li input:checked + label {
+  body.form section .question.multiple .answer ul li input:checked + label,
+  body.form .form-footer .question.multiple .answer ul li input:checked + label {
     background-color: #7AB800;
     border-color: #365200; }
   body.form section .question.text textarea,
@@ -9731,6 +9867,9 @@ body.form .form-footer {
   body.form .form-footer .question.sub.text textarea,
   body.form .form-footer .question.sub.text input[type="text"] {
     border-radius: 4px; }
+  body.form section .question.sub .current dl dd,
+  body.form .form-footer .question.sub .current dl dd {
+    border-radius: 4px; }
   body.form section .question:not(.answered).scale .answer label span, body.form section .question:not(.answered).yes-no .answer label span,
   body.form .form-footer .question:not(.answered).scale .answer label span,
   body.form .form-footer .question:not(.answered).yes-no .answer label span {
@@ -9744,8 +9883,8 @@ body.form .form-footer {
   body.form section .question:not(.answered).select .answer,
   body.form .form-footer .question:not(.answered).select .answer {
     border-color: #777777; }
-  body.form section .question:not(.answered).multiple ul li label,
-  body.form .form-footer .question:not(.answered).multiple ul li label {
+  body.form section .question:not(.answered).multiple .answer ul li label,
+  body.form .form-footer .question:not(.answered).multiple .answer ul li label {
     border-color: #777777; }
   body.form section .question:not(.answered).text textarea,
   body.form section .question:not(.answered).text input[type="text"],
