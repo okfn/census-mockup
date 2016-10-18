@@ -9121,12 +9121,30 @@ body.form .form-footer {
           font-size: 0.9em;
           padding: 0.5em 1em;
           margin: 15px;
-          border: solid 2px #333333; }
+          border: solid 2px #333333;
+          word-wrap: break-word; }
           @media (min-width: 992px) {
             body.form section .question .current dl dd,
             body.form .form-header .question .current dl dd,
             body.form .form-footer .question .current dl dd {
               margin: 0 30px 7.5px 0; } }
+          body.form section .question .current dl dd ul,
+          body.form .form-header .question .current dl dd ul,
+          body.form .form-footer .question .current dl dd ul {
+            margin: 0;
+            padding: 0; }
+            body.form section .question .current dl dd ul li,
+            body.form .form-header .question .current dl dd ul li,
+            body.form .form-footer .question .current dl dd ul li {
+              display: block; }
+              body.form section .question .current dl dd ul li:nth-child(2),
+              body.form .form-header .question .current dl dd ul li:nth-child(2),
+              body.form .form-footer .question .current dl dd ul li:nth-child(2) {
+                border-top-style: solid;
+                border-width: 2px;
+                border-color: inherit;
+                margin-top: 0.4em;
+                padding-top: 0.4em; }
         body.form section .question .current dl > *,
         body.form .form-header .question .current dl > *,
         body.form .form-footer .question .current dl > * {
