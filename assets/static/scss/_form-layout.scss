@@ -635,6 +635,14 @@ body.form {
           font-size: 16px;
           max-width: 100%;
         }
+
+        .current {
+          dd {
+            font-size: 0.8em;
+            max-height: 11em;
+            overflow: auto;
+          }
+        }
       }
 
       &.submit {
