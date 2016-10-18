@@ -9583,6 +9583,12 @@ body.form .form-footer {
       padding: 15px;
       font-size: 16px;
       max-width: 100%; }
+    body.form section .question.text .current dd,
+    body.form .form-header .question.text .current dd,
+    body.form .form-footer .question.text .current dd {
+      font-size: 0.8em;
+      max-height: 11em;
+      overflow: auto; }
     body.form section .question.submit button,
     body.form .form-header .question.submit button,
     body.form .form-footer .question.submit button {
