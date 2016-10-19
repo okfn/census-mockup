@@ -9078,27 +9078,67 @@ body.form .form-footer {
             top: auto;
             right: auto;
             z-index: auto; } }
-      body.form section .question .instructions + h2, body.form section .question .instructions + h3, body.form section .question .instructions + p,
+      body.form section .question .instructions + h2, body.form section .question .instructions + h3, body.form section .question .instructions + h4, body.form section .question .instructions + p,
       body.form .form-header .question .instructions + h2,
       body.form .form-header .question .instructions + h3,
+      body.form .form-header .question .instructions + h4,
       body.form .form-header .question .instructions + p,
       body.form .form-footer .question .instructions + h2,
       body.form .form-footer .question .instructions + h3,
+      body.form .form-footer .question .instructions + h4,
       body.form .form-footer .question .instructions + p {
         position: relative;
         min-height: 1px;
         padding-left: 15px;
         padding-right: 15px; }
         @media (min-width: 992px) {
-          body.form section .question .instructions + h2, body.form section .question .instructions + h3, body.form section .question .instructions + p,
+          body.form section .question .instructions + h2, body.form section .question .instructions + h3, body.form section .question .instructions + h4, body.form section .question .instructions + p,
           body.form .form-header .question .instructions + h2,
           body.form .form-header .question .instructions + h3,
+          body.form .form-header .question .instructions + h4,
           body.form .form-header .question .instructions + p,
           body.form .form-footer .question .instructions + h2,
           body.form .form-footer .question .instructions + h3,
+          body.form .form-footer .question .instructions + h4,
           body.form .form-footer .question .instructions + p {
             float: left;
             width: 66.66667%; } }
+        body.form section .question .instructions + h2 ~ p, body.form section .question .instructions + h3 ~ p, body.form section .question .instructions + h4 ~ p, body.form section .question .instructions + p ~ p,
+        body.form .form-header .question .instructions + h2 ~ p,
+        body.form .form-header .question .instructions + h3 ~ p,
+        body.form .form-header .question .instructions + h4 ~ p,
+        body.form .form-header .question .instructions + p ~ p,
+        body.form .form-footer .question .instructions + h2 ~ p,
+        body.form .form-footer .question .instructions + h3 ~ p,
+        body.form .form-footer .question .instructions + h4 ~ p,
+        body.form .form-footer .question .instructions + p ~ p {
+          position: relative;
+          min-height: 1px;
+          padding-left: 15px;
+          padding-right: 15px; }
+          @media (min-width: 992px) {
+            body.form section .question .instructions + h2 ~ p, body.form section .question .instructions + h3 ~ p, body.form section .question .instructions + h4 ~ p, body.form section .question .instructions + p ~ p,
+            body.form .form-header .question .instructions + h2 ~ p,
+            body.form .form-header .question .instructions + h3 ~ p,
+            body.form .form-header .question .instructions + h4 ~ p,
+            body.form .form-header .question .instructions + p ~ p,
+            body.form .form-footer .question .instructions + h2 ~ p,
+            body.form .form-footer .question .instructions + h3 ~ p,
+            body.form .form-footer .question .instructions + h4 ~ p,
+            body.form .form-footer .question .instructions + p ~ p {
+              float: left;
+              width: 66.66667%; } }
+          @media (min-width: 992px) {
+            body.form section .question .instructions + h2 ~ p, body.form section .question .instructions + h3 ~ p, body.form section .question .instructions + h4 ~ p, body.form section .question .instructions + p ~ p,
+            body.form .form-header .question .instructions + h2 ~ p,
+            body.form .form-header .question .instructions + h3 ~ p,
+            body.form .form-header .question .instructions + h4 ~ p,
+            body.form .form-header .question .instructions + p ~ p,
+            body.form .form-footer .question .instructions + h2 ~ p,
+            body.form .form-footer .question .instructions + h3 ~ p,
+            body.form .form-footer .question .instructions + h4 ~ p,
+            body.form .form-footer .question .instructions + p ~ p {
+              margin-left: 33.33333%; } }
     body.form section .question .current,
     body.form .form-header .question .current,
     body.form .form-footer .question .current {
@@ -9228,10 +9268,6 @@ body.form .form-footer {
         body.form .form-footer .question .main {
           float: left;
           width: 75%; } }
-      body.form section .question .main p,
-      body.form .form-header .question .main p,
-      body.form .form-footer .question .main p {
-        margin-bottom: 1.2em; }
     body.form section .question .comments,
     body.form .form-header .question .comments,
     body.form .form-footer .question .comments {
@@ -9619,7 +9655,16 @@ body.form .form-footer {
       color: #fff;
       border: none;
       font-size: 18px;
-      padding: 15px 30px; }
+      padding: 10px 30px;
+      margin-top: 1.2em; }
+      body.form section .question.submit button.reject,
+      body.form .form-header .question.submit button.reject,
+      body.form .form-footer .question.submit button.reject {
+        background-color: #ff0000; }
+      body.form section .question.submit button + button,
+      body.form .form-header .question.submit button + button,
+      body.form .form-footer .question.submit button + button {
+        margin-left: 15px; }
     body.form section .question.sub,
     body.form .form-header .question.sub,
     body.form .form-footer .question.sub {

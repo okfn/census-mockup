@@ -171,8 +171,14 @@ body.form {
 
         & + h2,
         & + h3,
+        & + h4,
         & + p {
           @include make-md-column(8);
+
+          & ~ p {
+            @include make-md-column(8);
+            @include make-md-column-offset(4);
+          }
         }
       }
 
@@ -274,11 +280,8 @@ body.form {
       .main {
         @include make-md-column(9);
         padding: 0;
-
-        p {
-          margin-bottom: 1.2em;
-        }
       }
+
       .comments {
         @include make-md-column(3);
 
@@ -661,7 +664,16 @@ body.form {
           color: #fff;
           border: none;
           font-size: 18px;
-          padding: $grid-gutter-width/2 $grid-gutter-width;
+          padding: $padding-large-vertical $grid-gutter-width;
+          margin-top: 1.2em;
+
+          &.reject {
+            background-color: $brand-danger;
+          }
+
+          & + button {
+            margin-left: $grid-gutter-width/2;
+          }
         }
       }
 
