@@ -16,6 +16,16 @@ body.form {
     .container {
       padding-top: $grid-gutter-width;
       padding-bottom: $grid-gutter-width;
+
+      & > .alert {
+        font-size: 0.9em;
+        @include make-md-column(8);
+        @include make-md-column-offset(2);
+
+        .close {
+          right: auto;
+        }
+      }
     }
 
     .intro {
