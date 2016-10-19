@@ -1287,11 +1287,11 @@ a.text-success:focus {
   color: #e6e6e6; }
 
 .text-info {
-  color: #3071a9; }
+  color: #fff; }
 
 a.text-info:hover,
 a.text-info:focus {
-  color: #245682; }
+  color: #e6e6e6; }
 
 .text-warning {
   color: #fff; }
@@ -1325,11 +1325,11 @@ a.bg-success:focus {
   background-color: #588500; }
 
 .bg-info {
-  background-color: #e1edf7; }
+  background-color: #428bca; }
 
 a.bg-info:hover,
 a.bg-info:focus {
-  background-color: #b9d4ec; }
+  background-color: #3071a9; }
 
 .bg-warning {
   background-color: #f47c23; }
@@ -2301,11 +2301,11 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.info,
 .table > tfoot > tr.info > td,
 .table > tfoot > tr.info > th {
-  background-color: #e1edf7; }
+  background-color: #428bca; }
 
 .table-hover > tbody > tr > td.info:hover,
 .table-hover > tbody > tr > th.info:hover, .table-hover > tbody > tr.info:hover > td, .table-hover > tbody > tr:hover > .info, .table-hover > tbody > tr.info:hover > th {
-  background-color: #cde1f1; }
+  background-color: #357ebd; }
 
 .table > thead > tr > td.warning,
 .table > thead > tr > th.warning, .table > thead > tr.warning > td, .table > thead > tr.warning > th,
@@ -4388,13 +4388,13 @@ a.thumbnail.active {
     color: #e6e6e6; }
 
 .alert-info {
-  background-color: #e1edf7;
-  border-color: #c5e3ef;
-  color: #3071a9; }
+  background-color: #428bca;
+  border-color: #338fb5;
+  color: #fff; }
   .alert-info hr {
-    border-top-color: #b2d9e9; }
+    border-top-color: #2d7fa2; }
   .alert-info .alert-link {
-    color: #245682; }
+    color: #e6e6e6; }
 
 .alert-warning {
   background-color: #f47c23;
@@ -4619,27 +4619,27 @@ button.list-group-item-success {
     border-color: #fff; }
 
 .list-group-item-info {
-  color: #3071a9;
-  background-color: #e1edf7; }
+  color: #fff;
+  background-color: #428bca; }
 
 a.list-group-item-info,
 button.list-group-item-info {
-  color: #3071a9; }
+  color: #fff; }
   a.list-group-item-info .list-group-item-heading,
   button.list-group-item-info .list-group-item-heading {
     color: inherit; }
   a.list-group-item-info:hover, a.list-group-item-info:focus,
   button.list-group-item-info:hover,
   button.list-group-item-info:focus {
-    color: #3071a9;
-    background-color: #cde1f1; }
+    color: #fff;
+    background-color: #357ebd; }
   a.list-group-item-info.active, a.list-group-item-info.active:hover, a.list-group-item-info.active:focus,
   button.list-group-item-info.active,
   button.list-group-item-info.active:hover,
   button.list-group-item-info.active:focus {
     color: #fff;
-    background-color: #3071a9;
-    border-color: #3071a9; }
+    background-color: #fff;
+    border-color: #fff; }
 
 .list-group-item-warning {
   color: #fff;
@@ -4949,18 +4949,18 @@ button.list-group-item-danger {
     border-bottom-color: #849f00; }
 
 .panel-info {
-  border-color: #c5e3ef; }
+  border-color: #338fb5; }
   .panel-info > .panel-heading {
-    color: #3071a9;
-    background-color: #e1edf7;
-    border-color: #c5e3ef; }
+    color: #fff;
+    background-color: #428bca;
+    border-color: #338fb5; }
     .panel-info > .panel-heading + .panel-collapse > .panel-body {
-      border-top-color: #c5e3ef; }
+      border-top-color: #338fb5; }
     .panel-info > .panel-heading .badge {
-      color: #e1edf7;
-      background-color: #3071a9; }
+      color: #428bca;
+      background-color: #fff; }
   .panel-info > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #c5e3ef; }
+    border-bottom-color: #338fb5; }
 
 .panel-warning {
   border-color: #f1480c; }
@@ -8839,29 +8839,6 @@ body.form .form-footer {
   body.form .form-footer .container {
     padding-top: 30px;
     padding-bottom: 30px; }
-    body.form section .container > .alert,
-    body.form .form-header .container > .alert,
-    body.form .form-footer .container > .alert {
-      font-size: 0.9em;
-      position: relative;
-      min-height: 1px;
-      padding-left: 15px;
-      padding-right: 15px; }
-      @media (min-width: 992px) {
-        body.form section .container > .alert,
-        body.form .form-header .container > .alert,
-        body.form .form-footer .container > .alert {
-          float: left;
-          width: 66.66667%; } }
-      @media (min-width: 992px) {
-        body.form section .container > .alert,
-        body.form .form-header .container > .alert,
-        body.form .form-footer .container > .alert {
-          margin-left: 16.66667%; } }
-      body.form section .container > .alert .close,
-      body.form .form-header .container > .alert .close,
-      body.form .form-footer .container > .alert .close {
-        right: auto; }
   body.form section .intro,
   body.form .form-header .intro,
   body.form .form-footer .intro {
@@ -9731,20 +9708,12 @@ body.form .form-header .secondary-meta {
       width: 25%; } }
   @media (min-width: 992px) {
     body.form .form-header .secondary-meta {
-      text-align: right;
       margin-top: 27px; } }
   body.form .form-header .secondary-meta dl {
-    text-align: left;
     background-color: #333333;
     color: #fff;
-    margin: 0;
-    padding-bottom: 0.3em; }
-    @media (min-width: 992px) {
-      body.form .form-header .secondary-meta dl {
-        display: inline-block; } }
-    body.form .form-header .secondary-meta dl dd {
-      font-size: 0.8em;
-      padding: 2px 12px; }
+    border-radius: 4px;
+    font-size: 0.8em; }
     body.form .form-header .secondary-meta dl dt {
       position: absolute;
       width: 1px;
@@ -9755,15 +9724,7 @@ body.form .form-header .secondary-meta {
       clip: rect(0, 0, 0, 0);
       border: 0; }
       body.form .form-header .secondary-meta dl dt.status + dd {
-        font-size: 1em;
-        text-transform: capitalize;
-        background-color: #f47c23;
-        padding-top: 4px;
-        margin-bottom: 4px; }
-    body.form .form-header .secondary-meta dl.accepted dt.status + dd {
-      background-color: #7AB800; }
-    body.form .form-header .secondary-meta dl.rejected dt.status + dd {
-      background-color: #ff0000; }
+        font-size: 1.1em; }
 body.form .form-header h1 {
   font-weight: bold; }
   body.form .form-header h1 > span {
