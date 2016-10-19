@@ -744,13 +744,68 @@ body.form {
   }
 
   .form-header {
-    h1 {
-      font-weight: bold;
+    .container > div {
+      @include make-row();
+    }
+
+    .primary-meta {
+      @include make-md-column(6);
+      @include make-md-column-offset(3);
+    }
+
+    .secondary-meta {
+      @include make-md-column(3);
 
       @media (min-width: $screen-md-min) {
-        @include make-md-column(6);
-        @include make-md-column-offset(3);
+        text-align: right;
+        margin-top: 27px;
       }
+
+      dl {
+        text-align: left;
+        background-color: $text-color;
+        color: #fff;
+        margin: 0;
+        padding-bottom: 0.3em;
+
+        @media (min-width: $screen-md-min) {
+          display: inline-block;
+        }
+
+        dd {
+          font-size: 0.8em;
+          padding: 2px 12px;
+        }
+
+        dt {
+          @include sr-only;
+
+          &.status {
+            & + dd {
+              font-size: 1em;
+              text-transform: capitalize;
+              background-color: $brand-warning;
+              padding-top: 4px;
+              margin-bottom: 4px;
+            }
+          }
+        }
+
+        &.accepted {
+          dt.status + dd {
+            background-color: $brand-success;
+          }
+        }
+        &.rejected {
+          dt.status + dd {
+            background-color: $brand-danger;
+          }
+        }
+      }
+    }
+
+    h1 {
+      font-weight: bold;
 
       & > span {
         position: relative;
@@ -829,14 +884,6 @@ body.form {
         }
       }
     }
-
-    p {
-      @media (min-width: $screen-md-min) {
-        @include make-md-column(6);
-        @include make-md-column-offset(3);
-        clear: left;
-      }
-    }
   }
 
   section {
@@ -845,6 +892,31 @@ body.form {
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAYAAAD0In+KAAAAEklEQVQImWP48OHD/w8fPvwHACIjB58VdezUAAAAAElFTkSuQmCC);
         background-repeat: repeat-y;
         background-position: 76% 0;
+      }
+    }
+  }
+
+  & > .alert {
+    margin-top: -1px;
+    margin-bottom: 0;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    padding-left: 0;
+    padding-right: 0;
+
+    .container {
+      & > div {
+        @include make-row();
+
+        & > * {
+          @include make-md-column(6);
+          @include make-md-column-offset(3);
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }
