@@ -9552,17 +9552,7 @@ body.form .form-footer {
       body.form .form-header .question.multiple .answer ul li,
       body.form .form-footer .question.multiple .answer ul li {
         display: block;
-        position: relative;
-        min-height: 1px;
-        padding-left: 15px;
-        padding-right: 15px;
         padding: 5px; }
-        @media (min-width: 992px) {
-          body.form section .question.multiple .answer ul li,
-          body.form .form-header .question.multiple .answer ul li,
-          body.form .form-footer .question.multiple .answer ul li {
-            float: left;
-            width: 50%; } }
         body.form section .question.multiple .answer ul li label,
         body.form .form-header .question.multiple .answer ul li label,
         body.form .form-footer .question.multiple .answer ul li label {
@@ -9627,6 +9617,20 @@ body.form .form-footer {
               body.form .form-footer .question.multiple .answer ul li input:checked + label .letter:after {
                 display: block;
                 content: "\e013"; }
+    body.form section .question.multiple .answer.short ul li,
+    body.form .form-header .question.multiple .answer.short ul li,
+    body.form .form-footer .question.multiple .answer.short ul li {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding: 5px; }
+      @media (min-width: 992px) {
+        body.form section .question.multiple .answer.short ul li,
+        body.form .form-header .question.multiple .answer.short ul li,
+        body.form .form-footer .question.multiple .answer.short ul li {
+          float: left;
+          width: 50%; } }
     body.form section .question.multiple .current dd,
     body.form .form-header .question.multiple .current dd,
     body.form .form-footer .question.multiple .current dd {

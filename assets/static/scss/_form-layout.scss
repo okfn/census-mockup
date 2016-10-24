@@ -561,7 +561,6 @@ body.form {
 
             li {
               display: block;
-              @include make-md-column(6);
               padding: 5px;
 
               label {
@@ -630,6 +629,11 @@ body.form {
                 }
               }
             }
+          }
+
+          &.short ul li {
+            @include make-md-column(6);
+            padding: 5px;
           }
         }
         .current {
