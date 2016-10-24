@@ -938,8 +938,20 @@ body.form {
           &:last-child {
             margin-bottom: 0;
           }
+
+          .btn {
+            vertical-align: inherit;
+            background-color: #fff;
+            color: $text-color;
+            font-weight: bold;
+          }
         }
       }
+    }
+
+    &.alert-dismissible .close {
+      top: 3px;
+      right: $grid-gutter-width/2;
     }
   }
 
