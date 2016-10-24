@@ -942,4 +942,12 @@ body.form {
       }
     }
   }
+
+  .error-message {
+    display: block;
+    background-color: $brand-danger;
+    color: #fff;
+    font-size: 0.8em;
+    padding: $padding-base-vertical 8px;
+  }
 }

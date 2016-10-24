@@ -9903,6 +9903,12 @@ body.form > .alert {
           margin-left: 25%; } }
       body.form > .alert .container > div > *:last-child {
         margin-bottom: 0; }
+body.form .error-message {
+  display: block;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 6px 8px; }
 
 body.form h2 span, body.form h3 span {
   color: #777777; }
@@ -10054,6 +10060,14 @@ body.form .form-footer {
   body.form section .question:not(.answered).source .answer ul li .select,
   body.form .form-footer .question:not(.answered).source .answer ul li .select {
     border-color: #777777; }
+  body.form section .question:not(.answered).source .answer ul li.has-error input,
+  body.form .form-footer .question:not(.answered).source .answer ul li.has-error input {
+    border-color: #ff0000; }
+  body.form section .question:not(.answered).source .answer ul li.has-error .error-message,
+  body.form .form-footer .question:not(.answered).source .answer ul li.has-error .error-message {
+    margin-top: -4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
   body.form section .question:not(.answered).select .answer,
   body.form .form-footer .question:not(.answered).select .answer {
     border-color: #777777; }
@@ -10079,6 +10093,8 @@ body.form .form-header {
   body.form .form-header .question.select .answer {
     border: none;
     font-size: 24px; }
+body.form .error-message {
+  border-radius: 4px; }
 
 .home #home-about {
   color: #000;

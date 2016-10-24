@@ -294,6 +294,17 @@ body.form {
                 .select {
                   border-color: $gray-light;
                 }
+
+                &.has-error {
+                  input {
+                    border-color: $brand-danger;
+                  }
+                  .error-message {
+                    margin-top: -$border-radius-base;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0; 
+                  }
+                }
               }
             }
           }
@@ -339,5 +350,9 @@ body.form {
         }
       }
     }
+  }
+
+  .error-message {
+    border-radius: $border-radius-base;
   }
 }
