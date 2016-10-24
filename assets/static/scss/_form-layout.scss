@@ -870,6 +870,11 @@ body.form {
                   background-color: $brand-info;
                   color: #fff;
                 }
+
+                a {
+                  color: inherit;
+                  text-decoration: none;
+                }
               }
 
               &:hover {
