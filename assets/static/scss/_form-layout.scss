@@ -643,6 +643,7 @@ body.form {
         }
       }
 
+      &.text,
       &.text .answer, .text.other .answer {
         textarea,
         input[type="text"] {
@@ -725,6 +726,7 @@ body.form {
           }
         }
 
+        &.text,
         &.text .answer {
           textarea,
           input[type="text"] {
