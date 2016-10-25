@@ -199,7 +199,7 @@ body.form {
         }
       }
 
-      &.text {
+      &.text .answer, .text.other .answer {
         textarea,
         input[type="text"] {
           border-radius: $border-radius-large;
@@ -256,7 +256,7 @@ body.form {
             }
           }
         }
-        &.text {
+        &.text .answer, .text.other .answer {
           textarea,
           input[type="text"] {
             border-radius: $border-radius-base;
@@ -272,7 +272,7 @@ body.form {
         }
       }
 
-      &:not(.answered) {
+      &.disabled {
         &.scale,
         &.yes-no {
           .answer {
@@ -302,7 +302,7 @@ body.form {
                   .error-message {
                     margin-top: -$border-radius-base;
                     border-top-left-radius: 0;
-                    border-top-right-radius: 0; 
+                    border-top-right-radius: 0;
                   }
                 }
               }
@@ -325,7 +325,7 @@ body.form {
             }
           }
         }
-        &.text {
+        &.text, .text.other {
           textarea,
           input[type="text"] {
             border-color: $gray-light;

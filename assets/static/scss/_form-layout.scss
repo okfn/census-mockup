@@ -68,7 +68,7 @@ body.form {
         margin-bottom: 0.6em;
       }
 
-      h3 {
+      h3, &.sub h2 {
         font-size: 20px;
         margin-top: 0;
       }
@@ -643,7 +643,7 @@ body.form {
         }
       }
 
-      &.text {
+      &.text .answer, .text.other .answer {
         textarea,
         input[type="text"] {
           width: 100%;
@@ -681,7 +681,7 @@ body.form {
         }
       }
 
-      &.sub {
+      &.sub, .sub {
         padding-top: 0;
         padding-bottom: $grid-gutter-width/2;
 
@@ -725,7 +725,7 @@ body.form {
           }
         }
 
-        &.text {
+        &.text .answer {
           textarea,
           input[type="text"] {
             border-width: $ui-border-sub;
@@ -763,7 +763,7 @@ body.form {
         }
       }
 
-      &:not(.answered) + :not(.answered) {
+      &.disabled {
         opacity: 0.2;
       }
     }
