@@ -8957,9 +8957,11 @@ body.form .form-footer {
       font-size: 26px;
       margin-top: 0;
       margin-bottom: 0.6em; }
-    body.form section .question h3,
+    body.form section .question h3, body.form section .question.sub h2,
     body.form .form-header .question h3,
-    body.form .form-footer .question h3 {
+    body.form .form-header .question.sub h2,
+    body.form .form-footer .question h3,
+    body.form .form-footer .question.sub h2 {
       font-size: 20px;
       margin-top: 0; }
     body.form section .question .instructions,
@@ -9636,19 +9638,33 @@ body.form .form-footer {
     body.form .form-footer .question.multiple .current dd {
       font-weight: bold; }
     body.form section .question.text textarea,
-    body.form section .question.text input[type="text"],
+    body.form section .question.text input[type="text"], body.form section .question.text .answer textarea,
+    body.form section .question.text .answer input[type="text"], body.form section .question .text.other .answer textarea,
+    body.form section .question .text.other .answer input[type="text"],
     body.form .form-header .question.text textarea,
     body.form .form-header .question.text input[type="text"],
+    body.form .form-header .question.text .answer textarea,
+    body.form .form-header .question.text .answer input[type="text"],
+    body.form .form-header .question .text.other .answer textarea,
+    body.form .form-header .question .text.other .answer input[type="text"],
     body.form .form-footer .question.text textarea,
-    body.form .form-footer .question.text input[type="text"] {
+    body.form .form-footer .question.text input[type="text"],
+    body.form .form-footer .question.text .answer textarea,
+    body.form .form-footer .question.text .answer input[type="text"],
+    body.form .form-footer .question .text.other .answer textarea,
+    body.form .form-footer .question .text.other .answer input[type="text"] {
       width: 100%;
       border: solid 2px #333333;
       padding: 15px;
       font-size: 16px;
       max-width: 100%; }
-    body.form section .question.text .current dd,
+    body.form section .question.text .current dd, body.form section .question.text .answer .current dd, body.form section .question .text.other .answer .current dd,
     body.form .form-header .question.text .current dd,
-    body.form .form-footer .question.text .current dd {
+    body.form .form-header .question.text .answer .current dd,
+    body.form .form-header .question .text.other .answer .current dd,
+    body.form .form-footer .question.text .current dd,
+    body.form .form-footer .question.text .answer .current dd,
+    body.form .form-footer .question .text.other .answer .current dd {
       font-size: 0.8em;
       max-height: 11em;
       overflow: auto; }
@@ -9669,70 +9685,125 @@ body.form .form-footer {
       body.form .form-header .question.submit button + button,
       body.form .form-footer .question.submit button + button {
         margin-left: 15px; }
-    body.form section .question.sub,
+    body.form section .question.sub, body.form section .question .sub,
     body.form .form-header .question.sub,
-    body.form .form-footer .question.sub {
+    body.form .form-header .question .sub,
+    body.form .form-footer .question.sub,
+    body.form .form-footer .question .sub {
       padding-top: 0;
       padding-bottom: 15px; }
-      body.form section .question.sub.scale .answer > label span, body.form section .question.sub.scale .answer > span span, body.form section .question.sub.yes-no .answer > label span, body.form section .question.sub.yes-no .answer > span span,
+      body.form section .question.sub.scale .answer > label span, body.form section .question.sub.scale .answer > span span, body.form section .question.sub.yes-no .answer > label span, body.form section .question.sub.yes-no .answer > span span, body.form section .question .sub.scale .answer > label span, body.form section .question .sub.scale .answer > span span, body.form section .question .sub.yes-no .answer > label span, body.form section .question .sub.yes-no .answer > span span,
       body.form .form-header .question.sub.scale .answer > label span,
       body.form .form-header .question.sub.scale .answer > span span,
       body.form .form-header .question.sub.yes-no .answer > label span,
       body.form .form-header .question.sub.yes-no .answer > span span,
+      body.form .form-header .question .sub.scale .answer > label span,
+      body.form .form-header .question .sub.scale .answer > span span,
+      body.form .form-header .question .sub.yes-no .answer > label span,
+      body.form .form-header .question .sub.yes-no .answer > span span,
       body.form .form-footer .question.sub.scale .answer > label span,
       body.form .form-footer .question.sub.scale .answer > span span,
       body.form .form-footer .question.sub.yes-no .answer > label span,
-      body.form .form-footer .question.sub.yes-no .answer > span span {
+      body.form .form-footer .question.sub.yes-no .answer > span span,
+      body.form .form-footer .question .sub.scale .answer > label span,
+      body.form .form-footer .question .sub.scale .answer > span span,
+      body.form .form-footer .question .sub.yes-no .answer > label span,
+      body.form .form-footer .question .sub.yes-no .answer > span span {
         border-width: 2px 1px;
         font-size: 16px; }
-      body.form section .question.sub.scale .answer > label:first-of-type span, body.form section .question.sub.scale .answer > span:first-of-type span, body.form section .question.sub.yes-no .answer > label:first-of-type span, body.form section .question.sub.yes-no .answer > span:first-of-type span,
+      body.form section .question.sub.scale .answer > label:first-of-type span, body.form section .question.sub.scale .answer > span:first-of-type span, body.form section .question.sub.yes-no .answer > label:first-of-type span, body.form section .question.sub.yes-no .answer > span:first-of-type span, body.form section .question .sub.scale .answer > label:first-of-type span, body.form section .question .sub.scale .answer > span:first-of-type span, body.form section .question .sub.yes-no .answer > label:first-of-type span, body.form section .question .sub.yes-no .answer > span:first-of-type span,
       body.form .form-header .question.sub.scale .answer > label:first-of-type span,
       body.form .form-header .question.sub.scale .answer > span:first-of-type span,
       body.form .form-header .question.sub.yes-no .answer > label:first-of-type span,
       body.form .form-header .question.sub.yes-no .answer > span:first-of-type span,
+      body.form .form-header .question .sub.scale .answer > label:first-of-type span,
+      body.form .form-header .question .sub.scale .answer > span:first-of-type span,
+      body.form .form-header .question .sub.yes-no .answer > label:first-of-type span,
+      body.form .form-header .question .sub.yes-no .answer > span:first-of-type span,
       body.form .form-footer .question.sub.scale .answer > label:first-of-type span,
       body.form .form-footer .question.sub.scale .answer > span:first-of-type span,
       body.form .form-footer .question.sub.yes-no .answer > label:first-of-type span,
-      body.form .form-footer .question.sub.yes-no .answer > span:first-of-type span {
+      body.form .form-footer .question.sub.yes-no .answer > span:first-of-type span,
+      body.form .form-footer .question .sub.scale .answer > label:first-of-type span,
+      body.form .form-footer .question .sub.scale .answer > span:first-of-type span,
+      body.form .form-footer .question .sub.yes-no .answer > label:first-of-type span,
+      body.form .form-footer .question .sub.yes-no .answer > span:first-of-type span {
         border-left-width: 2px; }
-      body.form section .question.sub.scale .answer > label:last-of-type span, body.form section .question.sub.scale .answer > span:last-of-type span, body.form section .question.sub.yes-no .answer > label:last-of-type span, body.form section .question.sub.yes-no .answer > span:last-of-type span,
+      body.form section .question.sub.scale .answer > label:last-of-type span, body.form section .question.sub.scale .answer > span:last-of-type span, body.form section .question.sub.yes-no .answer > label:last-of-type span, body.form section .question.sub.yes-no .answer > span:last-of-type span, body.form section .question .sub.scale .answer > label:last-of-type span, body.form section .question .sub.scale .answer > span:last-of-type span, body.form section .question .sub.yes-no .answer > label:last-of-type span, body.form section .question .sub.yes-no .answer > span:last-of-type span,
       body.form .form-header .question.sub.scale .answer > label:last-of-type span,
       body.form .form-header .question.sub.scale .answer > span:last-of-type span,
       body.form .form-header .question.sub.yes-no .answer > label:last-of-type span,
       body.form .form-header .question.sub.yes-no .answer > span:last-of-type span,
+      body.form .form-header .question .sub.scale .answer > label:last-of-type span,
+      body.form .form-header .question .sub.scale .answer > span:last-of-type span,
+      body.form .form-header .question .sub.yes-no .answer > label:last-of-type span,
+      body.form .form-header .question .sub.yes-no .answer > span:last-of-type span,
       body.form .form-footer .question.sub.scale .answer > label:last-of-type span,
       body.form .form-footer .question.sub.scale .answer > span:last-of-type span,
       body.form .form-footer .question.sub.yes-no .answer > label:last-of-type span,
-      body.form .form-footer .question.sub.yes-no .answer > span:last-of-type span {
+      body.form .form-footer .question.sub.yes-no .answer > span:last-of-type span,
+      body.form .form-footer .question .sub.scale .answer > label:last-of-type span,
+      body.form .form-footer .question .sub.scale .answer > span:last-of-type span,
+      body.form .form-footer .question .sub.yes-no .answer > label:last-of-type span,
+      body.form .form-footer .question .sub.yes-no .answer > span:last-of-type span {
         border-right-width: 2px; }
-      body.form section .question.sub.source .answer ul li input,
+      body.form section .question.sub.source .answer ul li input, body.form section .question .sub.source .answer ul li input,
       body.form .form-header .question.sub.source .answer ul li input,
-      body.form .form-footer .question.sub.source .answer ul li input {
+      body.form .form-header .question .sub.source .answer ul li input,
+      body.form .form-footer .question.sub.source .answer ul li input,
+      body.form .form-footer .question .sub.source .answer ul li input {
         border-width: 2px; }
-      body.form section .question.sub.source .answer ul li .select,
+      body.form section .question.sub.source .answer ul li .select, body.form section .question .sub.source .answer ul li .select,
       body.form .form-header .question.sub.source .answer ul li .select,
-      body.form .form-footer .question.sub.source .answer ul li .select {
+      body.form .form-header .question .sub.source .answer ul li .select,
+      body.form .form-footer .question.sub.source .answer ul li .select,
+      body.form .form-footer .question .sub.source .answer ul li .select {
         border-width: 2px; }
       body.form section .question.sub.text textarea,
-      body.form section .question.sub.text input[type="text"],
+      body.form section .question.sub.text input[type="text"], body.form section .question.sub.text .answer textarea,
+      body.form section .question.sub.text .answer input[type="text"], body.form section .question .sub.text textarea,
+      body.form section .question .sub.text input[type="text"], body.form section .question .sub.text .answer textarea,
+      body.form section .question .sub.text .answer input[type="text"],
       body.form .form-header .question.sub.text textarea,
       body.form .form-header .question.sub.text input[type="text"],
+      body.form .form-header .question.sub.text .answer textarea,
+      body.form .form-header .question.sub.text .answer input[type="text"],
+      body.form .form-header .question .sub.text textarea,
+      body.form .form-header .question .sub.text input[type="text"],
+      body.form .form-header .question .sub.text .answer textarea,
+      body.form .form-header .question .sub.text .answer input[type="text"],
       body.form .form-footer .question.sub.text textarea,
-      body.form .form-footer .question.sub.text input[type="text"] {
+      body.form .form-footer .question.sub.text input[type="text"],
+      body.form .form-footer .question.sub.text .answer textarea,
+      body.form .form-footer .question.sub.text .answer input[type="text"],
+      body.form .form-footer .question .sub.text textarea,
+      body.form .form-footer .question .sub.text input[type="text"],
+      body.form .form-footer .question .sub.text .answer textarea,
+      body.form .form-footer .question .sub.text .answer input[type="text"] {
         border-width: 2px;
         font-size: 14px; }
-      body.form section .question.sub.text input[type="text"],
+      body.form section .question.sub.text input[type="text"], body.form section .question.sub.text .answer input[type="text"], body.form section .question .sub.text input[type="text"], body.form section .question .sub.text .answer input[type="text"],
       body.form .form-header .question.sub.text input[type="text"],
-      body.form .form-footer .question.sub.text input[type="text"] {
+      body.form .form-header .question.sub.text .answer input[type="text"],
+      body.form .form-header .question .sub.text input[type="text"],
+      body.form .form-header .question .sub.text .answer input[type="text"],
+      body.form .form-footer .question.sub.text input[type="text"],
+      body.form .form-footer .question.sub.text .answer input[type="text"],
+      body.form .form-footer .question .sub.text input[type="text"],
+      body.form .form-footer .question .sub.text .answer input[type="text"] {
         padding-top: 7.5px;
         padding-bottom: 7.5px; }
-      body.form section .question.sub .current dl,
+      body.form section .question.sub .current dl, body.form section .question .sub .current dl,
       body.form .form-header .question.sub .current dl,
-      body.form .form-footer .question.sub .current dl {
+      body.form .form-header .question .sub .current dl,
+      body.form .form-footer .question.sub .current dl,
+      body.form .form-footer .question .sub .current dl {
         font-size: 0.9em; }
-        body.form section .question.sub .current dl dd,
+        body.form section .question.sub .current dl dd, body.form section .question .sub .current dl dd,
         body.form .form-header .question.sub .current dl dd,
-        body.form .form-footer .question.sub .current dl dd {
+        body.form .form-header .question .sub .current dl dd,
+        body.form .form-footer .question.sub .current dl dd,
+        body.form .form-footer .question .sub .current dl dd {
           border-width: 2px;
           padding-top: 0.3em;
           padding: 0.3em 0.8em; }
@@ -9745,9 +9816,9 @@ body.form .form-footer {
     body.form .form-footer .question.first .comments label {
       height: auto;
       width: auto; }
-    body.form section .question:not(.answered) + :not(.answered),
-    body.form .form-header .question:not(.answered) + :not(.answered),
-    body.form .form-footer .question:not(.answered) + :not(.answered) {
+    body.form section .question.disabled,
+    body.form .form-header .question.disabled,
+    body.form .form-footer .question.disabled {
       opacity: 0.2; }
 body.form .form-header .container > div {
   margin-left: -15px;
@@ -10017,6 +10088,14 @@ body.form .form-footer {
   body.form section .question.source .answer ul li .select,
   body.form .form-footer .question.source .answer ul li .select {
     border-radius: 6px; }
+  body.form section .question.source .answer ul li.has-error input,
+  body.form .form-footer .question.source .answer ul li.has-error input {
+    border-color: #ff0000 !important; }
+  body.form section .question.source .answer ul li.has-error .error-message,
+  body.form .form-footer .question.source .answer ul li.has-error .error-message {
+    margin-top: -4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
   body.form section .question.select .answer,
   body.form .form-footer .question.select .answer {
     border-radius: 6px; }
@@ -10031,14 +10110,26 @@ body.form .form-footer {
     background-color: #7AB800;
     border-color: #365200; }
   body.form section .question.text textarea,
-  body.form section .question.text input[type="text"],
+  body.form section .question.text input[type="text"], body.form section .question.text .answer textarea,
+  body.form section .question.text .answer input[type="text"], body.form section .question .text.other .answer textarea,
+  body.form section .question .text.other .answer input[type="text"],
   body.form .form-footer .question.text textarea,
-  body.form .form-footer .question.text input[type="text"] {
+  body.form .form-footer .question.text input[type="text"],
+  body.form .form-footer .question.text .answer textarea,
+  body.form .form-footer .question.text .answer input[type="text"],
+  body.form .form-footer .question .text.other .answer textarea,
+  body.form .form-footer .question .text.other .answer input[type="text"] {
     border-radius: 6px; }
     body.form section .question.text textarea:not(:focus),
-    body.form section .question.text input[type="text"]:not(:focus),
+    body.form section .question.text input[type="text"]:not(:focus), body.form section .question.text .answer textarea:not(:focus),
+    body.form section .question.text .answer input[type="text"]:not(:focus), body.form section .question .text.other .answer textarea:not(:focus),
+    body.form section .question .text.other .answer input[type="text"]:not(:focus),
     body.form .form-footer .question.text textarea:not(:focus),
-    body.form .form-footer .question.text input[type="text"]:not(:focus) {
+    body.form .form-footer .question.text input[type="text"]:not(:focus),
+    body.form .form-footer .question.text .answer textarea:not(:focus),
+    body.form .form-footer .question.text .answer input[type="text"]:not(:focus),
+    body.form .form-footer .question .text.other .answer textarea:not(:focus),
+    body.form .form-footer .question .text.other .answer input[type="text"]:not(:focus) {
       background-color: transparent; }
   body.form section .question.submit button,
   body.form .form-footer .question.submit button {
@@ -10067,41 +10158,42 @@ body.form .form-footer {
     body.form .form-footer .question.sub.source .answer ul li .select select {
       background-color: transparent; }
   body.form section .question.sub.text textarea,
-  body.form section .question.sub.text input[type="text"],
+  body.form section .question.sub.text input[type="text"], body.form section .question.sub.text .answer textarea,
+  body.form section .question.sub.text .answer input[type="text"], body.form section .question.sub .text.other .answer textarea,
+  body.form section .question.sub .text.other .answer input[type="text"],
   body.form .form-footer .question.sub.text textarea,
-  body.form .form-footer .question.sub.text input[type="text"] {
+  body.form .form-footer .question.sub.text input[type="text"],
+  body.form .form-footer .question.sub.text .answer textarea,
+  body.form .form-footer .question.sub.text .answer input[type="text"],
+  body.form .form-footer .question.sub .text.other .answer textarea,
+  body.form .form-footer .question.sub .text.other .answer input[type="text"] {
     border-radius: 4px; }
   body.form section .question.sub .current dl dd,
   body.form .form-footer .question.sub .current dl dd {
     border-radius: 4px; }
-  body.form section .question:not(.answered).scale .answer label span, body.form section .question:not(.answered).yes-no .answer label span,
-  body.form .form-footer .question:not(.answered).scale .answer label span,
-  body.form .form-footer .question:not(.answered).yes-no .answer label span {
+  body.form section .question.disabled.scale .answer label span, body.form section .question.disabled.yes-no .answer label span,
+  body.form .form-footer .question.disabled.scale .answer label span,
+  body.form .form-footer .question.disabled.yes-no .answer label span {
     border-color: #777777; }
-  body.form section .question:not(.answered).source .answer ul li input,
-  body.form .form-footer .question:not(.answered).source .answer ul li input {
+  body.form section .question.disabled.source .answer ul li input,
+  body.form .form-footer .question.disabled.source .answer ul li input {
     border-color: #777777; }
-  body.form section .question:not(.answered).source .answer ul li .select,
-  body.form .form-footer .question:not(.answered).source .answer ul li .select {
+  body.form section .question.disabled.source .answer ul li .select,
+  body.form .form-footer .question.disabled.source .answer ul li .select {
     border-color: #777777; }
-  body.form section .question:not(.answered).source .answer ul li.has-error input,
-  body.form .form-footer .question:not(.answered).source .answer ul li.has-error input {
-    border-color: #ff0000; }
-  body.form section .question:not(.answered).source .answer ul li.has-error .error-message,
-  body.form .form-footer .question:not(.answered).source .answer ul li.has-error .error-message {
-    margin-top: -4px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0; }
-  body.form section .question:not(.answered).select .answer,
-  body.form .form-footer .question:not(.answered).select .answer {
+  body.form section .question.disabled.select .answer,
+  body.form .form-footer .question.disabled.select .answer {
     border-color: #777777; }
-  body.form section .question:not(.answered).multiple .answer ul li label,
-  body.form .form-footer .question:not(.answered).multiple .answer ul li label {
+  body.form section .question.disabled.multiple .answer ul li label,
+  body.form .form-footer .question.disabled.multiple .answer ul li label {
     border-color: #777777; }
-  body.form section .question:not(.answered).text textarea,
-  body.form section .question:not(.answered).text input[type="text"],
-  body.form .form-footer .question:not(.answered).text textarea,
-  body.form .form-footer .question:not(.answered).text input[type="text"] {
+  body.form section .question.disabled.text textarea,
+  body.form section .question.disabled.text input[type="text"], body.form section .question.disabled .text.other textarea,
+  body.form section .question.disabled .text.other input[type="text"],
+  body.form .form-footer .question.disabled.text textarea,
+  body.form .form-footer .question.disabled.text input[type="text"],
+  body.form .form-footer .question.disabled .text.other textarea,
+  body.form .form-footer .question.disabled .text.other input[type="text"] {
     border-color: #777777; }
 body.form .form-header {
   border-bottom: solid 1px #eeeeee; }
