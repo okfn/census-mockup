@@ -9826,10 +9826,11 @@ body.form .form-header h1 {
       position: absolute;
       z-index: 1;
       top: 1em;
-      right: 0;
+      left: 0;
       padding: 0.5em 0 0 0; }
       body.form .form-header h1 > span.no-js:hover span ul, body.form .form-header h1 > span.active span ul {
         max-height: 60vh;
+        max-width: 90vw;
         overflow: auto;
         background-color: #eeeeee;
         border-radius: 3px;
