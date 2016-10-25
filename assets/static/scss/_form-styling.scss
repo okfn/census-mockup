@@ -211,12 +211,14 @@ body.form {
       }
 
       &.text,
-      &.text .answer, .text.other .answer {
-        textarea,
-        input[type="text"] {
-          border-radius: $border-radius-large;
-          &:not(:focus) {
-            background-color: transparent;
+      .text.other {
+        .answer {
+          textarea,
+          input[type="text"] {
+            border-radius: $border-radius-large;
+            &:not(:focus) {
+              background-color: transparent;
+            }
           }
         }
       }
@@ -269,10 +271,12 @@ body.form {
           }
         }
         &.text,
-        &.text .answer, .text.other .answer {
-          textarea,
-          input[type="text"] {
-            border-radius: $border-radius-base;
+        .text.other {
+          .answer {
+            textarea,
+            input[type="text"] {
+              border-radius: $border-radius-base;
+            }
           }
         }
 
