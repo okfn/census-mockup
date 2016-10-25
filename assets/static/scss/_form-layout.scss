@@ -836,6 +836,7 @@ body.form {
       & > span {
         position: relative;
         white-space: nowrap;
+        display: inline-block;
 
         span {
           display: none;

@@ -9817,7 +9817,8 @@ body.form .form-header h1 {
   font-weight: bold; }
   body.form .form-header h1 > span {
     position: relative;
-    white-space: nowrap; }
+    white-space: nowrap;
+    display: inline-block; }
     body.form .form-header h1 > span span {
       display: none; }
     body.form .form-header h1 > span.no-js:hover span, body.form .form-header h1 > span.active span {
