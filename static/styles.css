@@ -9981,6 +9981,8 @@ body.form > .alert {
         color: #333333;
         font-weight: bold;
         text-decoration: none; }
+    body.form > .alert .container > div > ul li, body.form > .alert .container > div > ol li {
+      margin-left: 30px; }
   body.form > .alert.alert-dismissible .close {
     top: 3px;
     right: 15px; }
