@@ -8413,6 +8413,10 @@ blockquote {
 .table > tfoot > tr > td {
   vertical-align: middle; }
 
+.alert a {
+  color: inherit;
+  text-decoration: underline; }
+
 #data-header h1, #data-header h3 {
   font-weight: 300; }
 #data-header .place-openness,
@@ -9975,7 +9979,8 @@ body.form > .alert {
         vertical-align: inherit;
         background-color: #fff;
         color: #333333;
-        font-weight: bold; }
+        font-weight: bold;
+        text-decoration: none; }
   body.form > .alert.alert-dismissible .close {
     top: 3px;
     right: 15px; }
