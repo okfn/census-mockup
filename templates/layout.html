@@ -1,4 +1,13 @@
-{# set godi = "true" #}
+{% if bag('context.brand') == 'godi' %}
+{% set godi = "true" %}
+{% endif %}
+{% set current_year = bag('context.current_year') %}
+{% set last_year = (current_year|int -1) %}
+{% if bag('context.data_year')|int < last_year|int %}
+{% set year_class = "past-year" %}
+{% elif bag('context.data_year')|int == last_year|int %}
+{% set year_class = "last-year" %}
+{% endif %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +28,7 @@
     <link rel="stylesheet" href="{{ '/static/styles.css'|url }}">
   </head>
 
-  <body class="{% if godi == "true" %}godi {% endif %}{% block body_class %}{% endblock %}">
+  <body class="{% if godi == "true" %}godi {% endif %}{% if year_class %}{{ year_class }} {% endif %}{% block body_class %}{% endblock %}">
     {% if godi == "true" %}
     <div id="ok-panel" class="closed"><div class="container"><iframe src="//a.okfn.org/html/oki/panel/panel.html" scrolling="no"></iframe></div></div>
     {% endif %}
@@ -29,6 +38,9 @@
         <div id="ok-panel-wrapper" data-breakpoint="768px"><a class="black ok-ribbon" href="//okfn.org/"><img src="//a.okfn.org/html/oki/panel/assets/images/oki-ribbon.png" alt="Open Knowledge"></a></div>
         <a href="http://index.okfn.org/" class="logo">
           {% include 'includes/godi-logo.svg' %}
+          {% if bag('context.data_year')|int != current_year|int %}
+          <span class="year">{{ bag('context.data_year') }}</span>
+          {% endif %}
         </a>
         {% else %}
         <div class="logo">
