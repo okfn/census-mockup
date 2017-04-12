@@ -10248,7 +10248,7 @@ body.form .error-message {
   position: relative; }
   @media (min-width: 768px) {
     .home #home-about {
-      min-height: 101vh;
+      height: 101vh;
       padding-top: 100px;
       padding-bottom: 40px;
       display: table;
