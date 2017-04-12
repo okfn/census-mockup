@@ -8282,6 +8282,21 @@ body.godi.past-year #header {
   background-color: #d7d7d7;
   border-bottom-color: #d7d7d7; }
 
+#summary-stats {
+  background-color: #222222;
+  color: #fff; }
+  #summary-stats .chart {
+    float: left; }
+    #summary-stats .chart svg {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      transform: rotate(-90deg); }
+      #summary-stats .chart svg circle {
+        fill: rgba(255, 255, 255, 0.2);
+        stroke: #fff;
+        stroke-width: 32; }
+
 .site-footer {
   background-color: #333; }
 
