@@ -80,10 +80,10 @@
     {% block breadcrumb %}{% endblock %}
     {% block body %}{% endblock %}
 
-    {% set percent_open_char = bag('stats.percent_open').split(' ') %}
-    {% set places_char = bag('stats.places').split(' ') %}
-    {% set entries_char = bag('stats.entries').split(' ') %}
-    {% set open_datasets_char = bag('stats.open_datasets').split(' ') %}
+    {% set percent_open_char = bag('stats.percent_open')|list %}
+    {% set places_char = bag('stats.places')|list %}
+    {% set entries_char = bag('stats.entries')|list %}
+    {% set open_datasets_char = bag('stats.open_datasets')|list %}
     <div id="summary-stats">
       <div class="container">
         <ul class="stats">
