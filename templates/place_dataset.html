@@ -224,40 +224,95 @@
               <span>The data <strong>does</strong> exist.</span>
         </li>
       </ul>
-
-      <div class="place-details">
-        <h4><strong>Details</strong></h4>
-        <p>Companies House, the public body responsible for maintaining company registers in the UK, has since June 2012 made available a subset of the fields of the register for all companies for bulk download as monthly 'snapshot', at no charge and on an open basis. The specifications for the data are documented at <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/370248/CompanyDataProductDataset.pdf">https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/370248/CompanyDataProductDataset.pdf</a> and meets the minimum requirements of the definition of this element of the OKFN Census 2013. Additionally, full information from individual company registers is no longer subject to payment. Data is timely and was last updated on Oct 1st, 2015.</p>
-      </div>
-
-      <div class="place-comments">
-        <h4><strong>Reviewer comments</strong></h4>
-        <p>All fields satisfied, no issues. Updated title and short description and details fields.</p>
-      </div>
-
   </div>
 </section>
-{% if godi == "true" %}
-<section id="place-contributors">
+
+
+
+<section>
   <div class="container">
-    <h2>Contributors</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <h4>Reviewers</h4>
-        <ul>
-            <li>Rebecca Sentance</li>
-        </ul>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="detailsHeading">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#detailsCollapse" aria-expanded="true" aria-controls="collapseOne">
+              Details
+            </a>
+          </h4>
+        </div>
+        <div id="detailsCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="detailsHeading">
+          <div class="panel-body">
+              <p>Companies House, the public body responsible for maintaining company registers in the UK, has since June 2012 made available a subset of the fields of the register for all companies for bulk download as monthly 'snapshot', at no charge and on an open basis. The specifications for the data are documented at <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/370248/CompanyDataProductDataset.pdf">https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/370248/CompanyDataProductDataset.pdf</a> and meets the minimum requirements of the definition of this element of the OKFN Census 2013. Additionally, full information from individual company registers is no longer subject to payment. Data is timely and was last updated on Oct 1st, 2015.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-          <h4>Submitters</h4>
-          <ul>
-              <li>Mor Rubinstein</li>
-          </ul>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="commentsHeading">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#commentsCollapse" aria-expanded="false" aria-controls="commentsCollapse">
+              Reviewer comments
+            </a>
+          </h4>
+        </div>
+        <div id="commentsCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="commentsHeading">
+          <div class="panel-body">
+            <p>All fields satisfied, no issues. Updated title and short description and details fields.</p>
+          </div>
+        </div>
+      </div>
+      {% if godi == "true" %}
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="contributorsHeading">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#contributorsCollapse" aria-expanded="false" aria-controls="contributorsCollapse">
+              Contributors
+            </a>
+          </h4>
+        </div>
+        <div id="contributorsCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="contributorsHeading">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Reviewers</h4>
+                <ul>
+                    <li>Rebecca Sentance</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                  <h4>Submitters</h4>
+                  <ul>
+                      <li>Mor Rubinstein</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="metaHeading">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#metaCollapse" aria-expanded="false" aria-controls="metaCollapse">
+              Meta data
+            </a>
+          </h4>
+        </div>
+        <div id="metaCollapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="metaHeading">
+          <div class="panel-body">
+            <table class="table table-striped yntable">
+              <tbody><tr><td>Date the data became available</td><td>&nbsp;&nbsp;&nbsp;Unknown</td></tr>
+              <tr><td>Format of data</td><td>&nbsp;&nbsp;&nbsp;XML</td></tr>
+              <tr><td>Reviewer</td><td>&nbsp;&nbsp;&nbsp;Ying Chu Chen</td></tr>
+              <tr><td>Submitters</td><td>&nbsp;&nbsp;&nbsp;TH Schee</td></tr>
+              <tr><td>Last modified</td><td>&nbsp;&nbsp;&nbsp;Tue Nov 04 2014 02:38:46 GMT+0000 (UTC)</td></tr>
+            </tbody></table>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
+</div>
+{% if godi == "true" %}
 <div class="container">
   <div class="panel panel-default">
     <div class="panel-body">
@@ -338,24 +393,9 @@
           <a class="btn btn-sm btn-info" href="#" rel="external">More</a>
         </span>
       </li>
-      
+
     </ul>
   </div>
 </section>
-
-{% if godi != "true" %}
-<section class="place-meta">
-  <div class="container">
-    <h3>Meta data</h3>
-    <table class="table table-striped yntable">
-      <tbody><tr><td>Date the data became available</td><td>&nbsp;&nbsp;&nbsp;Unknown</td></tr>
-      <tr><td>Format of data</td><td>&nbsp;&nbsp;&nbsp;XML</td></tr>
-      <tr><td>Reviewer</td><td>&nbsp;&nbsp;&nbsp;Ying Chu Chen</td></tr>
-      <tr><td>Submitters</td><td>&nbsp;&nbsp;&nbsp;TH Schee</td></tr>
-      <tr><td>Last modified</td><td>&nbsp;&nbsp;&nbsp;Tue Nov 04 2014 02:38:46 GMT+0000 (UTC)</td></tr>
-    </tbody></table>
-  </div>
-</section>
-{% endif %}
 
 {% endblock %}
