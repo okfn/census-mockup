@@ -8491,6 +8491,44 @@ blockquote {
   color: inherit;
   text-decoration: underline; }
 
+.place-intro {
+  padding-bottom: 30px; }
+  .place-intro .container {
+    position: relative; }
+  .place-intro .share h5 {
+    font-weight: 400;
+    font-size: 0.9em; }
+  @media (min-width: 992px) {
+    .place-intro .share {
+      position: absolute;
+      text-align: right;
+      top: 50px;
+      right: 15px; } }
+
+.place-content .tab-content {
+  padding-top: 15px;
+  padding-bottom: 30px; }
+
+.history {
+  font-size: 0.8em; }
+  .history h6 {
+    display: inline;
+    font-size: inherit; }
+    .history h6:after {
+      content: ':'; }
+  .history ul {
+    display: inline;
+    margin: 0;
+    padding: 0; }
+  .history li {
+    display: inline;
+    border-right: solid 1px #777777; }
+    .history li a {
+      padding-left: 0.3em;
+      padding-right: 0.3em; }
+    .history li:last-of-type {
+      border: none; }
+
 #data-header h1, #data-header h3 {
   font-weight: 300; }
 #data-header .place-openness,
@@ -8522,25 +8560,7 @@ blockquote {
     margin-top: 4px; }
 #data-header .history {
   clear: left;
-  margin-top: 30px;
-  font-size: 0.8em; }
-  #data-header .history h6 {
-    display: inline;
-    font-size: inherit; }
-    #data-header .history h6:after {
-      content: ':'; }
-  #data-header .history ul {
-    display: inline;
-    margin: 0;
-    padding: 0; }
-  #data-header .history li {
-    display: inline;
-    border-right: solid 1px #777777; }
-    #data-header .history li a {
-      padding-left: 0.3em;
-      padding-right: 0.3em; }
-    #data-header .history li:last-of-type {
-      border: none; }
+  margin-top: 30px; }
 #data-header .place-rank,
 #data-header .dataset-rank {
   float: left;
