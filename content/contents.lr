@@ -1,6 +1,8 @@
+_model: home
+---
 title: Home
 ---
-_model: home
+godi_title: Global Open Data Index
 ---
 body:
 
