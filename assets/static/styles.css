@@ -8505,6 +8505,8 @@ blockquote {
       top: 50px;
       right: 15px; } }
 
+.place-content .data-table-tools {
+  margin-bottom: 15px; }
 .place-content .tab-content {
   padding-top: 15px;
   padding-bottom: 30px; }

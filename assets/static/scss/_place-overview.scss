@@ -22,6 +22,9 @@
 }
 
 .place-content {
+  .data-table-tools {
+    margin-bottom: $grid-gutter-width/2;
+  }
   .tab-content {
     padding-top: $grid-gutter-width/2;
     padding-bottom: $grid-gutter-width;
