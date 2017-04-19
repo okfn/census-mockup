@@ -1,0 +1,210 @@
+{% extends "page.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<header class="place-intro">
+  <div class="container">
+    <h1>{{ this.title }}</h1>
+    <div class="share">
+      <h5>Share or embed this page</h5>
+      <div class="btn-group">
+        <a href="http://twitter.com/share?url=http://index.okfn.org/place/&amp;text=Check out this data from the Global Open Data Index" class="btn btn-default btn-sm twitter" target="_blank">
+          <i class="fa fa-twitter"></i> Twitter  </a>
+        <a href="http://www.facebook.com/sharer/sharer.php?u=http://index.okfn.org/place/" class="btn btn-default btn-sm facebook" target="_blank">
+          <i class="fa fa-facebook"></i> Facebook  </a>
+        <a href="https://plus.google.com/share?url=http://index.okfn.org/place/" class="btn btn-default btn-sm google-plus" target="_blank">
+          <i class="fa fa-google-plus"></i> Google+  </a>
+      </div>
+    </div>
+    {% if godi == "true" %}
+    <div class="statistics">
+      <table>
+        <tr data-rank="1" data-score="80" data-place="tw" data-name="Taiwan">
+            <td class="rank" data-rank="1">
+              <div>Ranked #1 against other places in the Index</div>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="yes" data-content="Yes"></li>
+                <li class="no" data-content="No"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="no" data-content="No"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="yes" data-content="Yes"></li>
+                <li class="no" data-content="No"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="no" data-content="No"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="yes" data-content="Yes"></li>
+                <li class="no" data-content="No"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="no" data-content="No"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="no" data-content="No"></li>
+                <li class="no" data-content="No"></li>
+                <li class="no" data-content="No"></li>
+                <li class="no" data-content="No"></li>
+                <li class="no" data-content="No"></li>
+                <li class="no" data-content="No"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="no" data-content="No"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+                <li class="yes" data-content="Yes"></li>
+              </ul>
+            </td>
+            <td class="status">
+              <ul class="availability availability-comparative">
+                <li class="no" data-content="No"></li>
+                <li class="no" data-content="No"></li>
+                <li class="no" data-content="No"></li>
+                <li class="no" data-content="No"></li>
+                <li class="no" data-content="No"></li>
+                <li class="no" data-content="No"></li>
+              </ul>
+            </td>
+            <td class="open" style="background-color: rgb(214, 202, 47); color: white;">
+              <span>60%</span> <small data-container="body" data-toggle="popover" data-placement="top" data-content='{{ bag("definitions.open")|markdown }}' data-original-title="What does this mean?">Open</small>
+            </td>
+            <td class="score" data-score="80">
+              <span>80%</span> <small data-container="body" data-toggle="popover" data-placement="top" data-content='{{ bag("definitions.score")|markdown }}' data-original-title="What does this mean?">Score</small>
+            </td>
+          </tr>
+      </table>
+    </div>
+    {% else %}
+    <span style="background-color: rgb(214, 202, 47); color: white;" class="dataset-openness" data-score="60">60% open</span>
+    {% endif %}
+  </div>
+</header>
+
+<section id="dataset-slice-table">
+  <div class="container">
+    <h3>Breakdown</h3>
+    {% include 'includes/dataviews/table_slice_place.html' %}
+    {% if godi == "true" %}
+    <div class="history">
+      <h6>See other years</h6>
+      <ul>
+        <li><a href="#" title="2014">2014</a></li>
+        <li><a href="#" title="2013">2013</a></li>
+      </ul>
+      <p>
+        <small>Note: The methodology used in the Global Open Data Index has changed over time; significantly so between 2015 and 2016. For this reason, the results are not directly comparable over time.</small>
+      </p>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+{% endblock %}
