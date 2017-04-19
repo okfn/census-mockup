@@ -171,6 +171,10 @@
         margin-top: $grid-gutter-width*1.5;
       }
     }
+
+    & + #summary-stats {
+      margin-top: 0;
+    }
   }
 
   .summary-stats {

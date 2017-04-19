@@ -8284,7 +8284,8 @@ body.godi.past-year #header {
 
 #summary-stats {
   background-color: #222222;
-  color: rgba(255, 255, 255, 0.8); }
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 30px; }
   #summary-stats .stats {
     margin: 15px 0 0 0;
     padding: 0; }
@@ -8554,8 +8555,7 @@ blockquote {
 .place-content .data-table-tools {
   margin-bottom: 15px; }
 .place-content .tab-content {
-  padding-top: 15px;
-  padding-bottom: 30px; }
+  padding-top: 15px; }
 
 .history {
   font-size: 0.8em; }
@@ -10459,6 +10459,8 @@ body.form .error-message {
     @media (min-width: 992px) {
       .home #home-about .actions {
         margin-top: 45px; } }
+  .home #home-about + #summary-stats {
+    margin-top: 0; }
 .home .summary-stats {
   text-align: center; }
   .home .summary-stats .explain span {
